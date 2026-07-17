@@ -1,0 +1,16 @@
+node_modules/
+.aws-sam/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+mirror/mirror-errors.txt
+.idea/
+.vscode/
+samconfig.toml.bak
+node_modules/
+.aws-sam/
+website-deploy.zip
+.amplify-app-id

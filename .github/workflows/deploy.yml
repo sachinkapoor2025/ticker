@@ -1,0 +1,141 @@
+name: Deploy Tickerplay
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  AWS_REGION: us-east-1
+  STACK_NAME: tickerplay-api-prod
+
+jobs:
+  deploy-api:
+    name: Deploy API (SAM / Lambda)
+    runs-on: ubuntu-latest
+    outputs:
+      api_url: ${{ steps.outputs.outputs.api_url }}
+      contact_endpoint: ${{ steps.outputs.outputs.contact_endpoint }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - uses: aws-actions/setup-sam@v2
+        with:
+          use-installer: true
+
+      - name: Install API dependencies
+        working-directory: api/contact
+        run: npm ci --omit=dev || npm install --omit=dev
+
+      - name: Build & deploy SAM stack
+        env:
+          CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
+          CONTACT_FROM_EMAIL: ${{ secrets.CONTACT_FROM_EMAIL }}
+        run: |
+          sam build -t infra/template.yaml
+          PARAMS=("EnvironmentName=prod" "AllowedOrigin=*")
+          if [ -n "$CONTACT_TO_EMAIL" ]; then PARAMS+=("ToEmail=$CONTACT_TO_EMAIL"); fi
+          if [ -n "$CONTACT_FROM_EMAIL" ]; then PARAMS+=("FromEmail=$CONTACT_FROM_EMAIL"); fi
+          sam deploy \
+            --stack-name "$STACK_NAME" \
+            --capabilities CAPABILITY_IAM \
+            --resolve-s3 \
+            --no-confirm-changeset \
+            --no-fail-on-empty-changeset \
+            --parameter-overrides "${PARAMS[@]}"
+
+      - name: Export stack outputs
+        id: outputs
+        run: |
+          API_URL=$(aws cloudformation describe-stacks \
+            --stack-name "$STACK_NAME" \
+            --query "Stacks[0].Outputs[?OutputKey=='ApiUrl'].OutputValue" \
+            --output text)
+          CONTACT=$(aws cloudformation describe-stacks \
+            --stack-name "$STACK_NAME" \
+            --query "Stacks[0].Outputs[?OutputKey=='ContactEndpoint'].OutputValue" \
+            --output text)
+          echo "api_url=$API_URL" >> "$GITHUB_OUTPUT"
+          echo "contact_endpoint=$CONTACT" >> "$GITHUB_OUTPUT"
+          echo "API_URL=$API_URL"
+          echo "CONTACT=$CONTACT"
+
+  deploy-amplify:
+    name: Deploy website (Amplify)
+    needs: deploy-api
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Ensure Amplify rewrite for /api/contact
+        env:
+          AMPLIFY_APP_ID: ${{ secrets.AMPLIFY_APP_ID }}
+          CONTACT_ENDPOINT: ${{ needs.deploy-api.outputs.contact_endpoint }}
+        run: |
+          if [ -z "$AMPLIFY_APP_ID" ] || [ -z "$CONTACT_ENDPOINT" ]; then
+            echo "Missing AMPLIFY_APP_ID or contact endpoint"
+            exit 1
+          fi
+          # Proxy /api/contact to API Gateway so the static site can keep fetch('/api/contact')
+          RULES=$(jq -n \
+            --arg target "$CONTACT_ENDPOINT" \
+            '[{"source":"/api/contact","target":$target,"status":"200"}]')
+          aws amplify update-app --app-id "$AMPLIFY_APP_ID" --custom-rules "$RULES"
+
+      - name: Create Amplify deployment package
+        run: |
+          cd website
+          zip -r ../website-deploy.zip . -x "*.DS_Store"
+          cd ..
+
+      - name: Start Amplify deployment
+        env:
+          AMPLIFY_APP_ID: ${{ secrets.AMPLIFY_APP_ID }}
+          AMPLIFY_BRANCH: main
+        run: |
+          JOB=$(aws amplify create-deployment \
+            --app-id "$AMPLIFY_APP_ID" \
+            --branch-name "$AMPLIFY_BRANCH" \
+            --output json)
+          JOB_ID=$(echo "$JOB" | jq -r .jobId)
+          UPLOAD_URL=$(echo "$JOB" | jq -r .zipUploadUrl)
+          echo "jobId=$JOB_ID"
+          curl -sS --fail -T website-deploy.zip "$UPLOAD_URL"
+          aws amplify start-deployment \
+            --app-id "$AMPLIFY_APP_ID" \
+            --branch-name "$AMPLIFY_BRANCH" \
+            --job-id "$JOB_ID"
+
+          echo "Waiting for Amplify job $JOB_ID..."
+          for i in $(seq 1 60); do
+            STATUS=$(aws amplify get-job \
+              --app-id "$AMPLIFY_APP_ID" \
+              --branch-name "$AMPLIFY_BRANCH" \
+              --job-id "$JOB_ID" \
+              --query 'job.summary.status' \
+              --output text)
+            echo "status=$STATUS"
+            case "$STATUS" in
+              SUCCEED) exit 0 ;;
+              FAILED|CANCELLED) exit 1 ;;
+            esac
+            sleep 15
+          done
+          echo "Timed out waiting for Amplify"
+          exit 1

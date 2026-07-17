@@ -1,0 +1,100 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Tickerplay serverless API (contact form) + supporting resources
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Default: prod
+  FromEmail:
+    Type: String
+    Default: ""
+    Description: Verified SES sender (optional until SES is configured)
+  ToEmail:
+    Type: String
+    Default: ""
+    Description: Inbox for lead notifications (optional)
+  AllowedOrigin:
+    Type: String
+    Default: "*"
+
+Globals:
+  Function:
+    Runtime: nodejs20.x
+    Timeout: 15
+    MemorySize: 256
+    Architectures:
+      - arm64
+
+Resources:
+  LeadsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub tickerplay-leads-${EnvironmentName}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+
+  ContactFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub tickerplay-contact-${EnvironmentName}
+      CodeUri: ../api/contact/
+      Handler: handler.handler
+      Environment:
+        Variables:
+          LEADS_TABLE: !Ref LeadsTable
+          FROM_EMAIL: !Ref FromEmail
+          TO_EMAIL: !Ref ToEmail
+          ALLOWED_ORIGIN: !Ref AllowedOrigin
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref LeadsTable
+        - Statement:
+            - Effect: Allow
+              Action:
+                - ses:SendEmail
+                - ses:SendRawEmail
+              Resource: "*"
+      Events:
+        ContactPost:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/contact
+            Method: POST
+        ContactOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/contact
+            Method: OPTIONS
+
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: !Ref EnvironmentName
+      CorsConfiguration:
+        AllowOrigins:
+          - !Ref AllowedOrigin
+        AllowHeaders:
+          - Content-Type
+        AllowMethods:
+          - POST
+          - OPTIONS
+
+Outputs:
+  ApiUrl:
+    Description: HTTP API base URL
+    Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}
+  ContactEndpoint:
+    Description: Contact form endpoint
+    Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/contact
+  LeadsTableName:
+    Value: !Ref LeadsTable
+  ContactFunctionName:
+    Value: !Ref ContactFunction

@@ -1,0 +1,8 @@
+{
+  "appId": "d299j6vzg4qbwh",
+  "defaultDomain": "d299j6vzg4qbwh.amplifyapp.com",
+  "branch": "main",
+  "region": "us-east-1",
+  "url": "https://main.d299j6vzg4qbwh.amplifyapp.com",
+  "contactApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "tickerplay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tickerplay.com — mirrored locally, hosted on AWS Amplify + API Gateway/Lambda",
+  "scripts": {
+    "serve": "npx --yes serve website -l 4173",
+    "api:install": "npm install --prefix api/contact",
+    "deploy:aws": "bash scripts/setup-aws.sh",
+    "sam:build": "sam build -t infra/template.yaml",
+    "sam:deploy": "sam deploy --stack-name tickerplay-api-prod --capabilities CAPABILITY_IAM --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset"
+  }
+}
