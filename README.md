@@ -15,6 +15,7 @@ Local copy of [tickerplay.com](https://tickerplay.com) prepared for serverless h
 ```
 Browser → Amplify (CloudFront) → website/*
          ↘ rewrite /api/contact → API Gateway → Lambda → DynamoDB (+ SES)
+
 ```
 
 ## Repo layout
