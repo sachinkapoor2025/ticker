@@ -1,0 +1,967 @@
+[
+  {
+    "source": "/api/contact",
+    "target": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact",
+    "status": "200"
+  },
+  {
+    "source": "/blog/10-points-to-ponder-to-become-a-successful-investor/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/10-points-to-ponder-to-become-a-successful-investor",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/5-reasons-advertiser-choosing-led-sign-boards-promotions/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/5-reasons-advertiser-choosing-led-sign-boards-promotions",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/5-trading-myths-of-stock-market/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/5-trading-myths-of-stock-market",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Create-your-Own-sports-Bar-in-House-using-Sports-Ticker-Tapes/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Create-your-Own-sports-Bar-in-House-using-Sports-Ticker-Tapes",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Gymnastics-At-2016-Rio-Olympics-Scoring-And-Judging-With-Sport-Ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Gymnastics-At-2016-Rio-Olympics-Scoring-And-Judging-With-Sport-Ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Oil-Climbs-The-Index-As-Dollar-Takes-A-Dip/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Oil-Climbs-The-Index-As-Dollar-Takes-A-Dip",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Scrolling-LED-Sign-Can-Be-The-Great-Christmas-Gift-For-The-Traders/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Scrolling-LED-Sign-Can-Be-The-Great-Christmas-Gift-For-The-Traders",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Ticker-Display-Streaming-Custom-made-Messages-in-Varied-Architectural-Design-Atmospheres/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/Ticker-Display-Streaming-Custom-made-Messages-in-Varied-Architectural-Design-Atmospheres",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/a-big-strategy-for-active-investors/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/a-big-strategy-for-active-investors",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/a-perfect-medium-to-create-the-feel-of-the-live-sporting-event/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/a-perfect-medium-to-create-the-feel-of-the-live-sporting-event",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/americas-outdoor-digital-signage-umbrella-is-the-speed-of-technology/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/americas-outdoor-digital-signage-umbrella-is-the-speed-of-technology",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/an-attractive-wooden-timepiece-device-for-sound-and-notification-display/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/an-attractive-wooden-timepiece-device-for-sound-and-notification-display",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/an-outdoor-ticker-tape-led-screen-will-help-art-council-to-transform-james-joyce-street-dublin/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/an-outdoor-ticker-tape-led-screen-will-help-art-council-to-transform-james-joyce-street-dublin",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/beneficial-salient-features-indoor-outdoor-display/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/beneficial-salient-features-indoor-outdoor-display",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/best-business-services-ensure-productive-year/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/best-business-services-ensure-productive-year",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/blogeverything-know-ticker-displays/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/blogeverything-know-ticker-displays",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/bloglehow-led-ticker-tapes-are-helpful-for-you/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/bloglehow-led-ticker-tapes-are-helpful-for-you",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/blogs/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/blogs",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/boost-your-business-with-led-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/boost-your-business-with-led-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/brighten-your-investments-with-an-led-stock-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/brighten-your-investments-with-an-led-stock-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/buying-ticker-business-commercial-needs/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/buying-ticker-business-commercial-needs",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/canada-will-invest-in-new-safety-features-for-decrease-the-crash-rate/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/canada-will-invest-in-new-safety-features-for-decrease-the-crash-rate",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/check-out-the-preferable-stock-and-its-effect/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/check-out-the-preferable-stock-and-its-effect",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/check-ranges-ticker-models-finance-lab/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/check-ranges-ticker-models-finance-lab",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/chinas-arj21-gets-largest-single-commercial-order/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/chinas-arj21-gets-largest-single-commercial-order",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/custom-led-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/custom-led-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/devices-for-the-digitized-world/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/devices-for-the-digitized-world",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/displaying-real-time-information-led-ticker-tapes/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/displaying-real-time-information-led-ticker-tapes",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/dollar-fell-stocks-dips-euro-hit-parity-stock-tickers/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/dollar-fell-stocks-dips-euro-hit-parity-stock-tickers",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/drop-in-shares-prices-raises-a-concern-for-joe-biden-that-leads-to-hold-a-meeting-in-washington/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/drop-in-shares-prices-raises-a-concern-for-joe-biden-that-leads-to-hold-a-meeting-in-washington",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/education-dept-clarifies-rule-governing-online-courses/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/education-dept-clarifies-rule-governing-online-courses",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/eight-important-triggers-that-can-change-market-in-one-day/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/eight-important-triggers-that-can-change-market-in-one-day",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/electronic-alert-signs-deter-crime/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/electronic-alert-signs-deter-crime",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/electronic-led-signs-stock-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/electronic-led-signs-stock-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/enhance-trading-strategies-with-stock-ticker-display-screens/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/enhance-trading-strategies-with-stock-ticker-display-screens",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/every-business-man-precious-tool-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/every-business-man-precious-tool-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/future-detect-gestures-without-touch/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/future-detect-gestures-without-touch",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/get-current-stockshare-market-quotes-news-stock-display/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/get-current-stockshare-market-quotes-news-stock-display",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/get-ready-for-the-turning-way-of-stock-market/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/get-ready-for-the-turning-way-of-stock-market",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/gets-an-eye-catching-promotion-through-programmable-led/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/gets-an-eye-catching-promotion-through-programmable-led",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/hang-seng-stocks-edge-higher-consolidating-gains/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/hang-seng-stocks-edge-higher-consolidating-gains",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-hadoop-technology-and-big-data-concept-manage-stock-market-data-in-real-time/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-hadoop-technology-and-big-data-concept-manage-stock-market-data-in-real-time",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-boost-your-business-with-electronic-ticker-tapes-and-custom-signage/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-boost-your-business-with-electronic-ticker-tapes-and-custom-signage",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-successfully-run-a-trading-company-with-stock-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-successfully-run-a-trading-company-with-stock-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-understand-the-uses-and-advantages-that-a-ticker-display-provides-to-any-business-/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/how-to-understand-the-uses-and-advantages-that-a-ticker-display-provides-to-any-business-",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/innovation-led-ticker-booming-boosting-business-maximum/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/innovation-led-ticker-booming-boosting-business-maximum",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/keep-customers-clients-updated-sports-news-led-ticket-tape-display/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/keep-customers-clients-updated-sports-news-led-ticket-tape-display",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/keep-financially-updated-ticker-displays/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/keep-financially-updated-ticker-displays",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/know-electronic-ticker-tape-can-great-way-attract-new-customer/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/know-electronic-ticker-tape-can-great-way-attract-new-customer",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-financial-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-financial-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-outdoor-displays-signage-new-era-advertising/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-outdoor-displays-signage-new-era-advertising",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-sports-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-sports-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker-display-complete-set-packed-features/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker-display-complete-set-packed-features",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker-displays-illuminating-financial-information-at-your-fingertips/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-stock-ticker-displays-illuminating-financial-information-at-your-fingertips",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-display-key-tool-growing-industry/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-display-key-tool-growing-industry",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-tape-display-ideal-choice-grab-onlookers-campaign/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-ticker-tape-display-ideal-choice-grab-onlookers-campaign",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-tickers-tapes-growing-trend/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-tickers-tapes-growing-trend",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-twitter-ticker-display-for-indoor-and-outdoor-usage/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/led-twitter-ticker-display-for-indoor-and-outdoor-usage",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/lighting-simplifies-transition-led-technology-urban-high-bay-environments/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/lighting-simplifies-transition-led-technology-urban-high-bay-environments",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/live-stock-market-quote-become-helpful-traders/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/live-stock-market-quote-become-helpful-traders",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/make-big-money-stock-market-simple-5-steps/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/make-big-money-stock-market-simple-5-steps",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nikkei-slides-as-all-eyes-look-to-bank-of-japan/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nikkei-slides-as-all-eyes-look-to-bank-of-japan",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-eliminate-rule-48/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-eliminate-rule-48",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-president-tom-farley-weighed-in-safe-havens-from-global-uncertainty/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-president-tom-farley-weighed-in-safe-havens-from-global-uncertainty",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-suspend-trading-in-itt-educational-services-stock/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/nyse-suspend-trading-in-itt-educational-services-stock",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/oracle-will-hold-about-40-percent-of-netsuite-inc/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/oracle-will-hold-about-40-percent-of-netsuite-inc",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/organizations-use-programmable-led-sign-making-people-aware/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/organizations-use-programmable-led-sign-making-people-aware",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/outdoor-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/outdoor-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/popularity-led-signs-increasing-smart-city/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/popularity-led-signs-increasing-smart-city",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/promote-business-programmable-led-signs/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/promote-business-programmable-led-signs",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/self-practice-stock-trading-with-ticker-tape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/self-practice-stock-trading-with-ticker-tape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/soybean-market-bids-lower-despite-good-demand-prospects-in-future/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/soybean-market-bids-lower-despite-good-demand-prospects-in-future",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/sports-ticker-tape-constant-updates-sports-news-scores/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/sports-ticker-tape-constant-updates-sports-news-scores",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-market-factors-watch-springtime-earnings-commences/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-market-factors-watch-springtime-earnings-commences",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-market-ticker-tape-displaying-real-time-information-share-market/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-market-ticker-tape-displaying-real-time-information-share-market",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-ticker-display-display-full-information-one-can-gather-ease/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-ticker-display-display-full-information-one-can-gather-ease",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-ticker-tape-helpful-investors-brokers/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/stock-ticker-tape-helpful-investors-brokers",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/super-market-uses-colored-scrolling-led-sign-increase-sales/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/super-market-uses-colored-scrolling-led-sign-increase-sales",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/technical-analysis-become-important-factor-stock-market/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/technical-analysis-become-important-factor-stock-market",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/ten-reasons-why-gold-prices-will-rise-in-the-future/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/ten-reasons-why-gold-prices-will-rise-in-the-future",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-basic-understanding-of-tickertape/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-basic-understanding-of-tickertape",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-climbing-hogs-fatten-up-over-badly-struggling-cattle-market-this-year/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-climbing-hogs-fatten-up-over-badly-struggling-cattle-market-this-year",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-effect-of-us-election-on-economy-and-stock-market/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-effect-of-us-election-on-economy-and-stock-market",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-stadium-impresses-with-led-one-has-stepped-inside/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/the-stadium-impresses-with-led-one-has-stepped-inside",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/things-everyone-display-programmable-led-signage/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/things-everyone-display-programmable-led-signage",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/ticker-tapes-investment-wealth-management/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/ticker-tapes-investment-wealth-management",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/tiny-commodity-market-hits-king-size-diamond-jackpot/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/tiny-commodity-market-hits-king-size-diamond-jackpot",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/top-finance-university-in-the-united-states-2016/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/top-finance-university-in-the-united-states-2016",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/twitter-ticker-tape-unbeatable-approach-deliver-message-target-audience/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/twitter-ticker-tape-unbeatable-approach-deliver-message-target-audience",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/unique-christmas-gift-for-finance-advisers-in-2016/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/unique-christmas-gift-for-finance-advisers-in-2016",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/wallingford-places-moratorium-led-display/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/wallingford-places-moratorium-led-display",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/we-have-been-using-ticker-display-signs-for-easy-life/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/we-have-been-using-ticker-display-signs-for-easy-life",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/what-is-a-led-stock-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/what-is-a-led-stock-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/what-jp-morgan-signals-to-show-on-stock-ticker/",
+    "status": "301",
+    "target": "/blogs/"
+  },
+  {
+    "source": "/blog/what-jp-morgan-signals-to-show-on-stock-ticker",
+    "status": "301",
+    "target": "/blogs/"
+  }
+]

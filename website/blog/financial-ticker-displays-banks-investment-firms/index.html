@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="x2TVSaiGBx9F_unjNk_O1mEB64-JF5s3lmTguSQvstw" />
+    <meta name="description" content="Improve financial communication and market visibility with real-time financial ticker displays for banks, brokerages, and investment firms.">
+    <meta name="keywords" content="Financial ticker display, financial ticker display board, LED financial ticker display, digital financial ticker, real-time financial display">
+    <meta name="author" content="Photonplay">
+    <title>Financial Ticker Display: Real-Time Data for Finance</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/blog/financial-ticker-displays-banks-investment-firms/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/blog/financial-ticker-displays-banks-investment-firms/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+
+    <!-- Static -->
+    <meta name="author" content="Tickerplay">
+    <meta name="publisher" content="Tickerplay">
+    <meta property="locale" content="en_US" />
+    <meta property="type" content="website" />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+
+    <style>
+    
+    .modal-box {
+    width: 320px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/* Header */
+.modal-header {
+    background: #222; /* dark */
+    color: #fff;
+    padding: 10px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+        /* Modal background */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+/* Modal box */
+.modal-box {
+    background: #fff;
+    width: 300px;
+    padding: 0px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+ 
+
+/* Phone group */
+.phone-group {
+    display: flex;
+    gap: 5px;
+}
+
+.country-select {
+    width: 40%;
+}
+
+.phone-group input {
+    width: 60%;
+}
+
+ .floating-icon {
+    position: fixed !important;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    background: #007bff; /* keeps your white SVG visible */
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 999999;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* keep SVG clean */
+.floating-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* small hover effect */
+.floating-icon:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.form-group input,
+.form-group textarea,
+.phone-group select,
+.phone-group input {
+    width: 100%;
+    padding: 0px 14px;
+    font-size: 0.85rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+    color: #1a2634;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+.form-message {
+    padding: 8px;
+    margin: 10px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.form-message.success {
+    background: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6cb;
+}
+    </style>
+    <!-- Start Schema -->
+
+    <!-- End Schema -->
+
+    <!-- Start Canonical -->
+    <link rel="canonical" href="https://www.tickerplay.com/blog/financial-ticker-displays-banks-investment-firms/" />
+    <!-- Start Canonical -->
+
+<link rel="shortcut icon" href="/img/icon.png" />
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/zoom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KQTHDPF');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <script>
+        function initApollo(){
+            var n=Math.random().toString(36).substring(7),
+            o=document.createElement("script");
+        
+            o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+            o.async=true;
+            o.defer=true;
+        
+            o.onload=function(){
+                window.trackingFunctions.onLoad({
+                    appId:"6a39b5b2e4809f001439345f"
+                });
+            };
+        
+            document.head.appendChild(o);
+        }
+        initApollo();
+    </script>
+
+<!-- tickerplay-seo-start -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tickerplay","alternateName":"Tickerplay Systems","url":"https://www.tickerplay.com/","logo":"https://www.tickerplay.com/img/logo-dark.png","telephone":"+1-800-966-9329","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-966-9329","contactType":"sales","areaServed":"US","availableLanguage":["English"]}],"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tickerplay.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.tickerplay.com/blog/"},{"@type":"ListItem","position":3,"name":"Financial Ticker Display: Real-Time Data for Finance","item":"https://www.tickerplay.com/blog/financial-ticker-displays-banks-investment-firms/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Financial Ticker Display: Real-Time Data for Finance","description":"Improve financial communication and market visibility with real-time financial ticker displays for banks, brokerages, and investment firms.","mainEntityOfPage":"https://www.tickerplay.com/blog/financial-ticker-displays-banks-investment-firms/","author":{"@type":"Organization","name":"Tickerplay"},"publisher":{"@type":"Organization","name":"Tickerplay","logo":{"@type":"ImageObject","url":"https://www.tickerplay.com/img/logo-dark.png"}},"datePublished":"June","dateModified":"June"}</script>
+<!-- tickerplay-seo-end -->
+</head>
+
+<body>
+<a class="sr-only sr-only-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTHDPF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a id="start"></a><div class="nav-container">
+    <div class="bar bar--sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-2">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                    </a>
+                </div>
+                <div class="col-9 col-md-10 text-right">
+                    <a href="/" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                        <i class="icon icon--sm stack-interface stack-menu"></i>
+                    </a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </div>
+    <!--end bar-->
+    <nav id="menu1" class="bar bar--sm bar-1 hidden-xs" data-scroll-class="500px:pos-fixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 hidden-xs">
+                    <div class="bar__module">
+                        <a href="/">
+                            <img class="logo logo-dark  pt-4" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+                <div class="col-lg-9 col-md-9 text-right text-left-md text-left-lg">
+                    <div class="bar__module mt-4">
+                        <ul class="menu-horizontal text-left">
+                            <li class="dropdown ml--2">
+                                <li>
+                                    <a href="/">
+                                        <i style="font-size: 20px" class="fa fa-home"></i>
+                                    </a>
+                                </li>
+                            </li>
+
+                            <li class="dropdown dropdown__trigger">
+                                <span class="dropdown__tri" style="color:#000000">Tickers</span>
+                                <div class="dropdown__container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 dropdown__content dropdown__content--lg">
+                                                <div class="row justify-content-start">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED TICKER TYPES</h5>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="pl-2">
+                                                            <a href="/led-ticker-tape/">
+                                                                - Led Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/indoor-ticker-tape/">
+                                                                - Indoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/outdoor-ticker-tape/">
+                                                                - Outdoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/flexible-ticker-tape/">
+                                                                - Flexible Ticker Tapes
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/circular-ticker-tape/">
+                                                                - Circular Ticker Tapes
+                                                            </a>
+                                                        </li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">TICKERS (DATA WISE)</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-stock-ticker/">
+                                                                - Stock Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-financial-ticker/">
+                                                                - Financial Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-sports-ticker/">
+                                                                - Sports Ticker
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/led-news-ticker/">
+                                                                - News Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-twitter-ticker/">
+                                                                - Twitter Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-rss-ticker/">
+                                                                - RSS Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-market-ticker/">
+                                                                - Stock Market Ticker
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">APPLICATION WISE</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/university-finance-lab/">
+                                                                - University Finance Lab
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-brokerage-firms/">
+                                                                - Stock Brokerage Firms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/business-school/">
+                                                                - Business School
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/wealth-management-firms/">
+                                                                - Wealth Management Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/investment-firms/">
+                                                                - Investment Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/share-traders/">
+                                                                - Share Traders
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/trading-labs/">
+                                                                - Trading Labs
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/sports-bars/">
+                                                                - Sports Bars
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/corporate-floors/">
+                                                                - Corporate Floors
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-exchange/">
+                                                                - Stock Exchange
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/showrooms/">
+                                                                - Showrooms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/schools/">
+                                                                - Schools
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED SIGN</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/programmable-scrolling-led-sign/">
+                                                                - Scrolling Led Sign
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/multi-time-zone-digital-wall-clock/">
+                                                                - Digital Wall Clock
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Led Ticker Sign
+                                                            </a>
+                                                        </li>  
+                                                    </ul>
+                                                </div>
+                                                
+                                                    
+                                                </div>
+                                                <!--end of row-->
+                                            </div>
+                                            <!--end dropdown content-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end dropdown container-->
+                            </li>
+                            <li class="dropdown">
+                                <a href="/about-us/">
+                                    Company
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/blogs/">
+                                    News & Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end module-->
+                    <div class="bar__module">
+                        <a class="btn btn--sm btn--primary type--uppercase" href="/contact/">
+                            <span class="btn__text">
+                                Get Quote
+                            </span>
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </nav>
+    <!--end bar-->
+</div>
+<main id="main-content" class="main-container" role="main">
+    <section class="cover imagebg height-30 text-center" data-overlay="1" style="margin-top:0">
+        <div class="background-image-holder" style="background: url('img/bn.jpg'); opacity: 1;">
+            <img alt="Radar Speed Signs Banner" src="/img/Radar-Speed-Sign-banner-clouds.jpg" loading="lazy" decoding="async">
+        </div>
+        <div class="container">
+          <div class="row justify-content-around">
+              <div class="col-md-12 text-center">
+                      <h2 class="pt-4"><b>Financial Ticker Displays for Banks &amp; Investment Firms</b></h2>
+              </div>
+          </div>
+          <!--end of row-->
+      </div>
+        <!--end of container-->
+    </section>
+
+
+    <section style="margin-top: 1rem; margin-bottom: 1rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumbs">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blogs">Blog</a>
+                        </li>
+                        <li>Financial Ticker Displays for Banks &amp; Investment Firms
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+    <section class="space--sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <article>
+                        <div class="article__title type--uppercase">
+                            <h1 class="h3"><b>Financial Ticker Displays for Banks &amp; Investment Firms</b></h1>
+                            <span>June 20, 2026 01:48</span>
+                            
+                        </div>
+                        <!--end article title-->
+                        <div class="article__body">
+                           
+                            <img class="img-reponsive" src="/img/featured/ChatGPT Image Jun 20, 2026, 11_15_29 AM.webp" alt="ChatGPT Image Jun 20, 2026, 11_15_29 AM.webp"/ loading="lazy" decoding="async"><h1 data-section-id="y1812m" data-start="1771" data-end="1827">Financial Ticker Displays for Banks &amp; Investment Firms</h1>
+<p data-start="1829" data-end="2243">In today's fast-moving financial world, access to real-time information is essential. Banks, brokerage firms, wealth management companies, and investment institutions depend on accurate and timely market updates to make informed decisions. A <strong data-start="2071" data-end="2099">financial ticker display</strong> plays a crucial role in ensuring that important financial information is visible and accessible to employees, traders, analysts, and customers.</p>
+<p data-start="2245" data-end="2526">Modern financial ticker displays provide live updates on stock prices, indices, currency exchange rates, commodities, and financial news. These displays improve communication, increase market awareness, and create a professional environment that reflects innovation and efficiency.</p>
+<p data-start="2528" data-end="2725">As digital technologies continue to transform the financial industry, ticker displays have become indispensable tools for institutions that require continuous access to critical market information.</p>
+<hr data-start="2727" data-end="2730">
+<h1 data-section-id="14k8ri1" data-start="2732" data-end="2769">What is a Financial Ticker Display?</h1>
+<p data-start="2771" data-end="3065">A <a href="../led-financial-ticker/">financial ticker display </a>is a digital signage solution designed to continuously present financial data in real time. It uses LED or electronic display technology to scroll information across a screen, ensuring that market movements and important updates remain visible throughout the day.</p>
+<p data-start="3067" data-end="3102">Financial ticker displays can show:</p>
+<ul data-start="3104" data-end="3301">
+<li data-section-id="gi2z5i" data-start="3104" data-end="3118">Stock prices</li>
+<li data-section-id="1ne4ftf" data-start="3119" data-end="3135">Market indices</li>
+<li data-section-id="qx2w9x" data-start="3136" data-end="3161">Currency exchange rates</li>
+<li data-section-id="wvkjhx" data-start="3162" data-end="3180">Commodity prices</li>
+<li data-section-id="i9zozf" data-start="3181" data-end="3207">Financial news headlines</li>
+<li data-section-id="ixzaf5" data-start="3208" data-end="3221">Bond yields</li>
+<li data-section-id="1xzi6ot" data-start="3222" data-end="3242">Mutual fund values</li>
+<li data-section-id="1cimu6q" data-start="3243" data-end="3266">Cryptocurrency prices</li>
+<li data-section-id="nawntq" data-start="3267" data-end="3301">Internal corporate announcements</li>
+</ul>
+<p data-start="3303" data-end="3399">These systems provide instant visibility, enabling faster decisions and better market awareness.</p>
+<hr data-start="3401" data-end="3404">
+<h1 data-section-id="15enajz" data-start="3406" data-end="3458">Why Financial Institutions Need Real-Time Displays</h1>
+<p data-start="3460" data-end="3619">The financial industry operates around constantly changing information. Delayed data can impact trading strategies, investment decisions, and customer service.</p>
+<p data-start="3621" data-end="3658">Real-time displays help institutions:</p>
+<ul data-start="3660" data-end="3858">
+<li data-section-id="29he5k" data-start="3660" data-end="3699">Monitor market movements continuously</li>
+<li data-section-id="k3n6s7" data-start="3700" data-end="3724">Improve response times</li>
+<li data-section-id="1dxsh08" data-start="3725" data-end="3750">Enhance decision-making</li>
+<li data-section-id="1h7jxk3" data-start="3751" data-end="3784">Increase operational efficiency</li>
+<li data-section-id="lp8in6" data-start="3785" data-end="3822">Provide better customer experiences</li>
+<li data-section-id="1n0oq75" data-start="3823" data-end="3858">Strengthen internal communication</li>
+</ul>
+<p data-start="3860" data-end="3975">A financial ticker display acts as a centralized source of information that keeps everyone informed simultaneously.</p>
+<hr data-start="3977" data-end="3980">
+<h1 data-section-id="1c8gnct" data-start="3982" data-end="4025">Key Features of Financial Ticker Displays</h1>
+<h2 data-section-id="4j8cmh" data-start="4027" data-end="4056">Real-Time Data Integration</h2>
+<p data-start="4058" data-end="4092">Modern systems can integrate with:</p>
+<ul data-start="4094" data-end="4203">
+<li data-section-id="310leo" data-start="4094" data-end="4111"><a href="../stock-exchange/">Stock exchanges</a></li>
+<li data-section-id="60n7t6" data-start="4112" data-end="4128">Financial APIs</li>
+<li data-section-id="ljy74y" data-start="4129" data-end="4146">Forex platforms</li>
+<li data-section-id="nzq7b0" data-start="4147" data-end="4166">Commodity markets</li>
+<li data-section-id="1aj63rd" data-start="4167" data-end="4182">News services</li>
+<li data-section-id="i5gk9l" data-start="4183" data-end="4203">Internal databases</li>
+</ul>
+<p data-start="4205" data-end="4263">This allows automatic updates without manual intervention.</p>
+<hr data-start="4265" data-end="4268">
+<h2 data-section-id="fsdo6l" data-start="4270" data-end="4288">High Visibility</h2>
+<p data-start="4290" data-end="4333">Financial ticker displays are designed for:</p>
+<ul data-start="4335" data-end="4436">
+<li data-section-id="1r5dk6g" data-start="4335" data-end="4356">Wide viewing angles</li>
+<li data-section-id="94ddh8" data-start="4357" data-end="4384">Long-distance readability</li>
+<li data-section-id="iohuhp" data-start="4385" data-end="4413">Bright indoor environments</li>
+<li data-section-id="vqvao" data-start="4414" data-end="4436">Continuous operation</li>
+</ul>
+<p data-start="4438" data-end="4534">This ensures that important information remains visible across trading floors and banking halls.</p>
+<hr data-start="4536" data-end="4539">
+<h2 data-section-id="45tq1y" data-start="4541" data-end="4564">Customizable Content</h2>
+<p data-start="4566" data-end="4611">Organizations can configure displays to show:</p>
+<ul data-start="4613" data-end="4746">
+<li data-section-id="1uuyzp0" data-start="4613" data-end="4632">Market watchlists</li>
+<li data-section-id="qx2w9x" data-start="4633" data-end="4658">Currency exchange rates</li>
+<li data-section-id="lugahc" data-start="4659" data-end="4678">Portfolio updates</li>
+<li data-section-id="13faj7" data-start="4679" data-end="4699">Corporate messages</li>
+<li data-section-id="k2y3ki" data-start="4700" data-end="4716">News headlines</li>
+<li data-section-id="1529bgg" data-start="4717" data-end="4746">Custom financial indicators</li>
+</ul>
+<p data-start="4748" data-end="4824">Custom layouts help institutions focus on the information that matters most.</p>
+<hr data-start="4826" data-end="4829">
+<h2 data-section-id="sj4702" data-start="4831" data-end="4851">Remote Management</h2>
+<p data-start="4853" data-end="4884">Content can be managed through:</p>
+<ul data-start="4886" data-end="4963">
+<li data-section-id="17bax9w" data-start="4886" data-end="4893">Wi-Fi</li>
+<li data-section-id="kwzhuh" data-start="4894" data-end="4904">Ethernet</li>
+<li data-section-id="h5kpud" data-start="4905" data-end="4922">Cloud platforms</li>
+<li data-section-id="1s32uzh" data-start="4923" data-end="4941">API integrations</li>
+<li data-section-id="8068qp" data-start="4942" data-end="4963">Mobile applications</li>
+</ul>
+<p data-start="4965" data-end="5014">This allows easy updates and centralized control.</p>
+<hr data-start="5016" data-end="5019">
+<h2 data-section-id="1na4fkg" data-start="5021" data-end="5041">Energy Efficiency</h2>
+<p data-start="5043" data-end="5065">LED technology offers:</p>
+<ul data-start="5067" data-end="5157">
+<li data-section-id="jhmxae" data-start="5067" data-end="5090">Low power consumption</li>
+<li data-section-id="1wdzf4p" data-start="5091" data-end="5110">Long service life</li>
+<li data-section-id="xcz106" data-start="5111" data-end="5132">Minimal maintenance</li>
+<li data-section-id="1izag0l" data-start="5133" data-end="5157">Continuous reliability</li>
+</ul>
+<hr data-start="5159" data-end="5162">
+<h1 data-section-id="aywg4" data-start="5164" data-end="5207">Applications of Financial Ticker Displays</h1>
+<h2 data-section-id="xbh8wg" data-start="5209" data-end="5217">Banks</h2>
+<p data-start="5219" data-end="5266">Banks use financial ticker displays to provide:</p>
+<ul data-start="5268" data-end="5366">
+<li data-section-id="qx2w9x" data-start="5268" data-end="5293">Currency exchange rates</li>
+<li data-section-id="6u5hzz" data-start="5294" data-end="5310">Interest rates</li>
+<li data-section-id="1ne4ftf" data-start="5311" data-end="5327">Market indices</li>
+<li data-section-id="vglvl4" data-start="5328" data-end="5343">Economic news</li>
+<li data-section-id="852f34" data-start="5344" data-end="5366">Customer information</li>
+</ul>
+<p data-start="5368" data-end="5451">These displays improve customer engagement and provide valuable financial insights.</p>
+<hr data-start="5453" data-end="5456">
+<h2 data-section-id="1xek4p3" data-start="5458" data-end="5477">Investment Firms</h2>
+<p data-start="5479" data-end="5538">Investment companies rely on financial ticker displays for:</p>
+<ul data-start="5540" data-end="5620">
+<li data-section-id="1stbv4u" data-start="5540" data-end="5562">Portfolio monitoring</li>
+<li data-section-id="474vo6" data-start="5563" data-end="5578">Market trends</li>
+<li data-section-id="1f96hh" data-start="5579" data-end="5600">Economic indicators</li>
+<li data-section-id="dc34lc" data-start="5601" data-end="5620">Live stock prices</li>
+</ul>
+<p data-start="5622" data-end="5703">Real-time visibility helps analysts and portfolio managers make better decisions.</p>
+<hr data-start="5705" data-end="5708">
+<h2 data-section-id="rg3fue" data-start="5710" data-end="5730">Brokerage Offices</h2>
+<p data-start="5732" data-end="5779">Brokerage firms use ticker displays to present:</p>
+<ul data-start="5781" data-end="5854">
+<li data-section-id="154an2h" data-start="5781" data-end="5800">Client watchlists</li>
+<li data-section-id="1pv58eo" data-start="5801" data-end="5818">Trading volumes</li>
+<li data-section-id="1utganl" data-start="5819" data-end="5834">Market alerts</li>
+<li data-section-id="dc34lc" data-start="5835" data-end="5854">Live stock prices</li>
+</ul>
+<p data-start="5856" data-end="5908">This improves efficiency and keeps traders informed.</p>
+<hr data-start="5910" data-end="5913">
+<h2 data-section-id="3i2mhg" data-start="5915" data-end="5945">Wealth Management Companies</h2>
+<p data-start="5947" data-end="5994">Financial advisors and wealth managers monitor:</p>
+<ul data-start="5996" data-end="6083">
+<li data-section-id="qb7uf4" data-start="5996" data-end="6015">Asset performance</li>
+<li data-section-id="109ffp8" data-start="6016" data-end="6032">Global indices</li>
+<li data-section-id="b5xx3w" data-start="6033" data-end="6056">Currency fluctuations</li>
+<li data-section-id="1tzii0m" data-start="6057" data-end="6083">Investment opportunities</li>
+</ul>
+<p data-start="6085" data-end="6153">A ticker display enhances situational awareness and decision-making.</p>
+<hr data-start="6155" data-end="6158">
+<h2 data-section-id="1abn200" data-start="6160" data-end="6185">Financial News Studios</h2>
+<p data-start="6187" data-end="6250">Media organizations use financial ticker displays to broadcast:</p>
+<ul data-start="6252" data-end="6323">
+<li data-section-id="kzy56g" data-start="6252" data-end="6267">Breaking news</li>
+<li data-section-id="1s6o4ga" data-start="6268" data-end="6286">Live market data</li>
+<li data-section-id="181vtie" data-start="6287" data-end="6304">Index movements</li>
+<li data-section-id="19e57lx" data-start="6305" data-end="6323">Economic updates</li>
+</ul>
+<p data-start="6325" data-end="6393">These displays help viewers stay informed about market developments.</p>
+<hr data-start="6395" data-end="6398">
+<h1 data-section-id="8pam5l" data-start="6400" data-end="6439">Benefits of Financial Ticker Displays</h1>
+<h2 data-section-id="maqvjo" data-start="6441" data-end="6469">Improved Market Awareness</h2>
+<p data-start="6471" data-end="6572">Continuous access to financial information allows professionals to respond quickly to market changes.</p>
+<hr data-start="6574" data-end="6577">
+<h2 data-section-id="1v03u0" data-start="6579" data-end="6604">Faster Decision-Making</h2>
+<p data-start="6606" data-end="6669">Real-time data enables timely investment and trading decisions.</p>
+<hr data-start="6671" data-end="6674">
+<h2 data-section-id="pjbape" data-start="6676" data-end="6708">Better Internal Communication</h2>
+<p data-start="6710" data-end="6740">Ticker displays can also show:</p>
+<ul data-start="6742" data-end="6806">
+<li data-section-id="18ywlrx" data-start="6742" data-end="6765">Company announcements</li>
+<li data-section-id="aifxu4" data-start="6766" data-end="6785">Meeting reminders</li>
+<li data-section-id="1hh1ux9" data-start="6786" data-end="6806">Operational alerts</li>
+</ul>
+<p data-start="6808" data-end="6855">This improves collaboration across departments.</p>
+<hr data-start="6857" data-end="6860">
+<h2 data-section-id="1pqjmsx" data-start="6862" data-end="6893">Enhanced Customer Experience</h2>
+<p data-start="6895" data-end="6995">Banks and financial institutions can provide customers with live market information while they wait.</p>
+<hr data-start="6997" data-end="7000">
+<h2 data-section-id="1ecso8g" data-start="7002" data-end="7028">Professional Appearance</h2>
+<p data-start="7030" data-end="7108">Modern digital displays create an innovative and technology-driven atmosphere.</p>
+<hr data-start="7110" data-end="7113">
+<h2 data-section-id="10z6f3c" data-start="7115" data-end="7142">Reduced Information Gaps</h2>
+<p data-start="7144" data-end="7236">Centralized information sharing ensures everyone receives the same updates at the same time.</p>
+<hr data-start="7238" data-end="7241">
+<h1 data-section-id="1a33ej2" data-start="7243" data-end="7301">How Financial Ticker Displays Improve Banking Operations</h1>
+<p data-start="7303" data-end="7417">Banks handle large amounts of information daily. Financial ticker displays streamline communication by presenting:</p>
+<h3 data-section-id="x1urd8" data-start="7419" data-end="7437">Exchange Rates</h3>
+<p data-start="7439" data-end="7492">Customers can instantly view foreign currency prices.</p>
+<h3 data-section-id="iiy5kw" data-start="7494" data-end="7519">Interest Rate Updates</h3>
+<p data-start="7521" data-end="7573">Banks can display current lending and deposit rates.</p>
+<h3 data-section-id="jqhf6u" data-start="7575" data-end="7592">Economic News</h3>
+<p data-start="7594" data-end="7652">Relevant financial headlines help customers stay informed.</p>
+<h3 data-section-id="phq12l" data-start="7654" data-end="7676">Product Promotions</h3>
+<p data-start="7678" data-end="7753">Banks can promote financial products and services through digital messages.</p>
+<h3 data-section-id="1mwdcez" data-start="7755" data-end="7776">Queue Information</h3>
+<p data-start="7778" data-end="7867">Displays can also communicate operational information and customer service announcements.</p>
+<hr data-start="7869" data-end="7872">
+<h1 data-section-id="sm6dvz" data-start="7874" data-end="7936">Factors to Consider Before Buying a Financial Ticker Display</h1>
+<h2 data-section-id="kaa36i" data-start="7938" data-end="7953">Display Size</h2>
+<p data-start="7955" data-end="7978">Choose a size based on:</p>
+<ul data-start="7980" data-end="8034">
+<li data-section-id="13l42lf" data-start="7980" data-end="7999">Installation area</li>
+<li data-section-id="zy79dy" data-start="8000" data-end="8018">Viewing distance</li>
+<li data-section-id="1hjo7p5" data-start="8019" data-end="8034">Audience size</li>
+</ul>
+<hr data-start="8036" data-end="8039">
+<h2 data-section-id="ztos3q" data-start="8041" data-end="8069">Data Source Compatibility</h2>
+<p data-start="8071" data-end="8090">Ensure support for:</p>
+<ul data-start="8092" data-end="8153">
+<li data-section-id="60n7t6" data-start="8092" data-end="8108">Financial APIs</li>
+<li data-section-id="1uij8jh" data-start="8109" data-end="8123">Market feeds</li>
+<li data-section-id="rwoz64" data-start="8124" data-end="8153">Internal software platforms</li>
+</ul>
+<hr data-start="8155" data-end="8158">
+<h2 data-section-id="1tiawpc" data-start="8160" data-end="8183">Connectivity Options</h2>
+<p data-start="8185" data-end="8194">Look for:</p>
+<ul data-start="8196" data-end="8249">
+<li data-section-id="17bax9w" data-start="8196" data-end="8203">Wi-Fi</li>
+<li data-section-id="kwzhuh" data-start="8204" data-end="8214">Ethernet</li>
+<li data-section-id="1jnxa0a" data-start="8215" data-end="8233">Cloud management</li>
+<li data-section-id="1jydgrw" data-start="8234" data-end="8249">Mobile access</li>
+</ul>
+<hr data-start="8251" data-end="8254">
+<h2 data-section-id="7xn6ax" data-start="8256" data-end="8284">Brightness and Resolution</h2>
+<p data-start="8286" data-end="8356">Higher brightness and better resolution provide excellent readability.</p>
+<hr data-start="8358" data-end="8361">
+<h2 data-section-id="tzcevp" data-start="8363" data-end="8377">Reliability</h2>
+<p data-start="8379" data-end="8474">Financial environments require systems capable of operating continuously with minimal downtime.</p>
+<hr data-start="8476" data-end="8479">
+<h2 data-section-id="gqu1ve" data-start="8481" data-end="8495">Scalability</h2>
+<p data-start="8497" data-end="8570">Choose solutions that can support future expansion and multiple displays.</p>
+<hr data-start="8572" data-end="8575">
+<h1 data-section-id="yru7oc" data-start="8577" data-end="8621">Future Trends in Financial Ticker Displays</h1>
+<p data-start="8623" data-end="8685">Digital communication technologies continue to evolve rapidly.</p>
+<p data-start="8687" data-end="8716">Emerging innovations include:</p>
+<h2 data-section-id="68tah3" data-start="8718" data-end="8739">AI-Based Analytics</h2>
+<p data-start="8741" data-end="8809">Artificial intelligence can generate alerts and predictive insights.</p>
+<h2 data-section-id="1d83nom" data-start="8811" data-end="8835">Cloud Synchronization</h2>
+<p data-start="8837" data-end="8908">Cloud platforms enable centralized management across multiple branches.</p>
+<h2 data-section-id="eck9bm" data-start="8910" data-end="8929">IoT Connectivity</h2>
+<p data-start="8931" data-end="9007">Connected systems provide seamless integration with business infrastructure.</p>
+<h2 data-section-id="ghflno" data-start="9009" data-end="9032">Interactive Displays</h2>
+<p data-start="9034" data-end="9105">Future displays may support touch interfaces and customized dashboards.</p>
+<h2 data-section-id="tmv3k2" data-start="9107" data-end="9124">Mobile Control</h2>
+<p data-start="9126" data-end="9199">Administrators can manage displays remotely from smartphones and tablets.</p>
+<p data-start="9201" data-end="9270">These technologies are shaping the future of financial communication.</p>
+<hr data-start="9272" data-end="9275">
+<h1 data-section-id="1lj6dae" data-start="9277" data-end="9328">Why Choose Ticker Play Financial Ticker Displays?</h1>
+<p data-start="9330" data-end="9448">Ticker Play offers advanced financial ticker display solutions designed for modern banks and investment organizations.</p>
+<p data-start="9450" data-end="9470">Our systems provide:</p>
+<ul data-start="9472" data-end="9656">
+<li data-section-id="17lssr4" data-start="9472" data-end="9502">Real-time market integration</li>
+<li data-section-id="1aztc3j" data-start="9503" data-end="9533">Smooth scrolling performance</li>
+<li data-section-id="11dukoy" data-start="9534" data-end="9566">High brightness and visibility</li>
+<li data-section-id="zzuseu" data-start="9567" data-end="9591">Cloud-based management</li>
+<li data-section-id="14yw4mq" data-start="9592" data-end="9608">Custom layouts</li>
+<li data-section-id="jhmxae" data-start="9609" data-end="9632">Low power consumption</li>
+<li data-section-id="1tzx0j5" data-start="9633" data-end="9656">Long-term reliability</li>
+</ul>
+<p data-start="9658" data-end="9786">Whether you operate a bank, brokerage office, or investment firm, our solutions help improve communication and market awareness.</p>
+<hr data-start="9788" data-end="9791">
+<h1 data-section-id="fsb6xx" data-start="9793" data-end="9805">Conclusion</h1>
+<p data-start="9807" data-end="10149">A <strong data-start="9809" data-end="9837">financial ticker display</strong> is an essential communication tool for banks, investment firms, brokerage companies, and wealth management organizations. By providing instant access to market data, enhancing customer experiences, and improving internal communication, these displays contribute to greater efficiency and better decision-making.</p>
+<p data-start="10151" data-end="10353">As the financial industry becomes increasingly digital, investing in a financial ticker display ensures that organizations remain connected, informed, and ready to respond to changing market conditions.</p>
+<hr data-start="10355" data-end="10358">
+<h1 data-section-id="hkd5a4" data-start="10360" data-end="10388">Frequently Asked Questions</h1>
+<h2 data-section-id="1uv388q" data-start="10390" data-end="10428">What is a financial ticker display?</h2>
+<p data-start="10430" data-end="10571">A financial ticker display is a digital signage system that shows real-time stock prices, market indices, exchange rates, and financial news.</p>
+<h2 data-section-id="1uvxpr8" data-start="10573" data-end="10617">Where are financial ticker displays used?</h2>
+<p data-start="10619" data-end="10743">They are widely used in banks, investment firms, brokerage offices, wealth management companies, and financial news studios.</p>
+<h2 data-section-id="1bfb3ud" data-start="10745" data-end="10800">Can financial ticker displays show live market data?</h2>
+<p data-start="10802" data-end="10908">Yes. Modern systems integrate with financial APIs and market feeds to provide automatic real-time updates.</p>
+<h2 data-section-id="1j616no" data-start="10910" data-end="10970">Can banks use ticker displays for customer communication?</h2>
+<p data-start="10972" data-end="11086">Absolutely. Banks often use them to display exchange rates, interest rates, announcements, and product promotions.</p>
+<h2 data-section-id="7j4hcl" data-start="11088" data-end="11138">Are financial ticker displays energy efficient?</h2>
+<p data-start="11140" data-end="11253">Yes. LED-based financial ticker displays consume low power while delivering excellent brightness and reliability.</p>
+
+                        </div>
+                        
+                        <hr>
+
+                        <h5 class="text-center"><b>Tags </b> :</h5>
+                        <h5 class="text-center">Follow Us On : &nbsp;&nbsp;&nbsp;&nbsp; 
+                            <a class="pt-2" target="_blank" href="https://www.facebook.com/sharer.php?t=Financial Ticker Displays for Banks &amp; Investment Firms&u=/blog/financial-ticker-displays-banks-investment-firms/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://www.linkedin.com/shareArticle?title=Financial Ticker Displays for Banks &amp; Investment Firms&url=/blog/financial-ticker-displays-banks-investment-firms/"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://web.whatsapp.com/send?text=/blog/financial-ticker-displays-banks-investment-firms/"><i style="font-size:2rem" class="fa fa-whatsapp" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://pinterest.com/pin/create/button/?description=Financial Ticker Displays for Banks &amp; Investment Firms&media=/img/&url=/blog/financial-ticker-displays-banks-investment-firms/"><i style="font-size:2rem" class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://twitter.com/intent/tweet?text=Financial Ticker Displays for Banks &amp; Investment Firms&url=/blog/financial-ticker-displays-banks-investment-firms/"><i style="font-size:2rem" class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                        </h5>
+                    </article>
+                </div>
+                <div class="col-lg-4 hidden-sm">
+                    <div class="sidebar boxed boxed--border boxed--lg">
+                        <!--end widget-->
+                        <div class="sidebar__widget  bg--secondary py-4 px-2">
+                            <h5 class="text-center">Talk to a Sign Expert</h5>
+                            <p class="text-center">
+                                Get the latest product updates, company news
+                            </p>
+                            <form class="row m-0">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" placeholder="First / Last Name" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" name="email" placeholder="you@something.com" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" placeholder="Message" class="validate-required" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn--primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end widget-->
+                        <div class="sidebar__widget">
+                            <h5>Popular Tags</h5>
+                            <ul class="tag-cloud">
+                                <p>Financial ticker display, financial ticker display board, LED financial ticker display, digital financial ticker, real-time financial display</p>
+                            </ul>
+                        </div>
+                        <!--end widget-->
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    
+    <section class="switchable switchable--switch space--xs">
+        <div class="container">
+            <h3 class="text-center"><b>Related Blogs</b></h3>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 8, 2026, 09_01_09 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Role of LED Displays in Smart Cities</b></h4>
+                                <p>Role of LED Displays in Smart Cities
+As cities continue to grow, the demand for...<b><a href="/blog/led-display-for-smart-city/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                    <div class="row">
+                        <div class="col-5">
+                            <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 7, 2026, 09_04_09 AM.webp" / loading="lazy" decoding="async">
+                        </div>
+                        <div class="col-7 p-4">
+                            <h4><b>How to Install an LED Ticker Display: Step-by...</b></h4>
+                                <p>How to Install an LED Ticker Display: Step-by-Step Guide
+LED ticker displays ha...<b><a href="/blog/how-to-install-led-ticker/">View Post</a></b></p>
+                        </div>
+                    </div>
+                 </div>
+
+                 </div>
+
+                 <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/Jul 6, 2026, 02_23_23 PM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Best LED Ticker Displays for Business in 2026</b></h4>
+                                <p>Best LED Ticker Displays for Business in 2026
+In today&#039;s competitive business e...<b><a href="/blog/best-led-ticker-for-business/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                      <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 4, 2026, 09_23_52 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>LED Ticker vs Digital Signage: Which is Bette...</b></h4>
+                                <p>LED Ticker vs Digital Signage: Which is Better?
+Digital displays have transform...<b><a href="/blog/led-ticker-vs-digital-signage/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+    
+                     </div>
+
+            
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>
+<hr>
+
+<section class="selectable" style="margin: 50px 0px 100px 0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pr-5 mb-2">
+                <h2 class="text pt-5"><b>Why Choose Us? </b></h2>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Advanced Technology.png" alt="advance technology" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Advanced Technology</b>
+                </h4>
+                <p style="padding-left: 35px;">With advanced technology, we provide real-time, accurate, and visually captivating information to enhance your 
+                    investment experience.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Need Icon.png" alt="Need icon" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customization Based on Needs</b>
+                </h4>
+                <p style="padding-left: 35px;">We understand that every business is distinct, and we are committed to thoroughly studying your needs to develop a 
+                    solution that perfectly aligns with your objectives.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/CertificationIconLogo.png" alt="certification logo" style="height: 30px; width: 25px;"/ loading="lazy" decoding="async">
+                    <b>Certified Company</b>
+                </h4>
+                <p style="padding-left: 35px;">Have complete confidence in the durability and integrity of our company, as they are tested and meet the stringent 
+                    requirements set by:
+                    ISO 9001:2015, 
+                    UL-1950, 
+                    ETL & CE.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Customer Support.png" alt="customer support" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customer Support</b>
+                </h4>
+                <p style="padding-left: 35px;">Whether you require advice, troubleshooting, or ongoing support, we remain by your side, offering continuous technical 
+                    assistance and a steadfast commitment to your success.
+                </p>
+            </div>
+            <div class="col-md-7" style="background-color: #036eb10e; padding: 40px 40px 40px 60px; border-radius: 10px">
+                <h2 class="text-center mb-0"><b>Talk to our Ticker Experts</b></h2>
+                <p class="text-center pr-5">Contact our team of expert to suggest you the best product for your ticker project</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                        <form class="text-left row pt-5" method="POST" id="query" novalidate="true">
+                            <div class="col-md-6">
+                                <span>Company Name</span>
+                                <input type="text" name="company" id="company" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Country</span>
+                                <select name="country" id="country" placeholder="Select Country" class="validate-required input-select">
+                                    <option value=""></option>
+                                    <option value="Afganistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Bonaire">Bonaire</option>
+                                    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                    <option value="Brunei">Brunei</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Canary Islands">Canary Islands</option>
+                                    <option value="Cape Verde">Cape Verde</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Channel Islands">Channel Islands</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos Island">Cocos Island</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cote DIvoire">Cote DIvoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Curaco">Curacao</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="East Timor">East Timor</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands">Falkland Islands</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Ter">French Southern Ter</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Great Britain">Great Britain</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Hawaii">Hawaii</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="India">India</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea North">Korea North</option>
+                                    <option value="Korea Sout">Korea South</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Laos">Laos</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macau">Macau</option>
+                                    <option value="Macedonia">Macedonia</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Midway Islands">Midway Islands</option>
+                                    <option value="Moldova">Moldova</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Nambia">Nambia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherland Antilles">Netherland Antilles</option>
+                                    <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                    <option value="Nevis">Nevis</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau Island">Palau Island</option>
+                                    <option value="Palestine">Palestine</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Phillipines">Philippines</option>
+                                    <option value="Pitcairn Island">Pitcairn Island</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                    <option value="Republic of Serbia">Republic of Serbia</option>
+                                    <option value="Reunion">Reunion</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="St Barthelemy">St Barthelemy</option>
+                                    <option value="St Eustatius">St Eustatius</option>
+                                    <option value="St Helena">St Helena</option>
+                                    <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                    <option value="St Lucia">St Lucia</option>
+                                    <option value="St Maarten">St Maarten</option>
+                                    <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                    <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                    <option value="Saipan">Saipan</option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="Samoa American">Samoa American</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="Tahiti">Tahiti</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Erimates">United Arab Emirates</option>
+                                    <option value="United States of America" Selected>United States of America</option>
+                                    <option value="Uraguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Vatican City State">Vatican City State</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                    <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                    <option value="Wake Island">Wake Island</option>
+                                    <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zaire">Zaire</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                 </select>
+                            </div>
+                            <div class="col-md-6">
+                                <span>First Name:</span>
+                                <input type="text" id="fname" name="fname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Last Name:</span>
+                                <input type="text" id="lname" name="lname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Email Address:</span>
+                                <input type="email" id="email" name="email" class="validate-required validate-email">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Phone:</span>
+                                <input type="text" id="phone" name="phone" class="validate-required">
+                            </div>
+                            <div class="col-md-12">
+                                <span>About Project:</span>
+                                <textarea rows="5" id="message" name="message" class="validate-required"></textarea>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                    <div class="g-recaptcha"
+                                        data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <button type="submit" id="ajaxStart" class="btn btn--primary type--uppercase">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<hr>
+
+<section class="space--xs" style="background-color: #036eb10e; padding-top: 50px; margin-top: 100px; margin-bottom: -21px;">
+    <div class="container">
+        <div class="cta cta--horizontal text-center-xs row">
+            <div class="col-md-12 text-center">
+                <h2><b>Request a Demo</b></h2>
+                <p>To understand the product functionality and features, we do provide onsite product
+                    demonstrations, contact us today to get customised assistance
+                    </p>
+                    <br>
+                    <a class="btn type--uppercase" href="/contact/">
+                        <span class="btn__text">
+                            Contact us now
+                        </span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <!--end of container-->
+</section></main>
+<footer class="footer-2 bg--secondary">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/solutions/">- Ticker Solutions</a>
+                  </li>
+                  <li>
+                      <a href="/ticker-models/">- Ticker Models</a>
+                  </li>
+                  <li>
+                      <a href="/gallery/">- Gallery</a>
+                  </li>
+                  <li>
+                    <a href="/about-us/">- About Us</a>
+                </li>
+                <li>
+                      <a href="/returns-policy/">- Returns Policy</a>
+                </li>
+                <li>
+                      <a href="/payment-methods/">- Payment Methods</a>
+                </li>
+                <li>
+                      <a href="/shipping-and-handling/">- Shipping And Handling</a>
+                </li>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/led-stock-ticker/">- Stock Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-financial-ticker/">- Financial Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/sports-bars/">- Sports Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-news-ticker/">- News Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-twitter-ticker/">- Twitter Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-rss-ticker/">- RSS Ticker</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">News & Events</h6>
+              <ul class="list--hover">                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-display-for-smart-city/">Role of LED Displays in Smart ...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/how-to-install-led-ticker/">How to Install an LED Ticker D...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/best-led-ticker-for-business/">Best LED Ticker Displays for B...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-ticker-vs-digital-signage/">LED Ticker vs Digital Signage:...</a>
+                  </li>              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Sales</h6>
+              <ul class="list--hover">
+                  <li>
+                       800.966.9329 (US)
+                  </li>
+                  <li>
+                      <a target="_blank" rel="nofollow" href="https://www.facebook.com/photonplaygroup/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-youtube-play" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  </li>
+                  <li>
+                    <a style="width:100%;" class="btn btn-custom-blue" href="/contact/">
+                        <span class="btn__text">
+                          Get Quote
+                        </span>
+                    </a>
+                  </li>
+                  
+                  <li class="mt-2">
+                    <a style="width:100%;" class="btn btn-custom-yello" href="/contact/">
+                        <span class="btn__text">
+                          Request Info
+                        </span>
+                    </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--end of row-->
+      <hr>
+      <div class="row" style="margin-top:0">
+          <div class="col-md-12">
+              <img style="width:100px; float:left; margin-right: 50px;" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+              <span class="type--fine-print">&copy;
+                  <span class="update-year"></span> Tickerplay Systems</span>
+              <a class="type--fine-print" href="#">All right reserved</a>
+              <a class="type--fine-print" href="/privacy-policy">Privacy Policy</a>
+          </div>
+      </div>
+      <!--end of row-->
+  </div>
+  <!--end of container-->
+</footer>
+
+<a class="back-to-top inner-link active" href="#start" data-scroll-class="100vh:active">
+    <i class="stack-interface stack-up-open-big"></i>
+</a>
+
+    <section class="popup">
+        <div class="pop-close">
+            <h3><b><i class="fa fa-close"></i> Close</b></h3>
+        </div>
+        <div class="popup__content">
+            <div class="content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12"  >
+                                    <h4 class="thin-heading mb-4"><b>Request a Quote</b></h4>
+                                    <form class="mb-5" id="queryForm" novalidate="true">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="fname" id="fname"
+                                                    placeholder="Your First Name" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="lname" id="lname"
+                                                    placeholder="Your Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="phone" id="phone"
+                                                    placeholder="Your Phone Number" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="email" id="email"
+                                                    placeholder="Your Email Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="country" id="country"
+                                                    placeholder="Your Country" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="company" id="company"
+                                                    placeholder="Your Company" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <textarea class="form-control" name="message" id="message" cols="30"
+                                                    rows="2" placeholder="Write your message" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pl-0 mb-3">
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12 p-0">
+                                                <button type="submit" id="customFrombtn"
+                                                    class="btn btn--primary type--uppercase">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="form-message-warning" class="text-danger">
+
+                                    </div>
+                                    <div id="form-message-success" class="text-success">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Trigger Button -->
+
+
+<style>
+    /* 1. Position the button fixed on the screen */
+    .quote-container {
+        position: fixed;
+        bottom: 50%;
+        right: 30px;
+        z-index: 1000;
+        /* Animation: move up/down every 3 seconds */
+        animation: floatAnimation 3s ease-in-out infinite;
+    }
+
+    .quote-bubble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 80px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        background-color: #4A90C2;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+    /* The Tail */
+    .quote-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 22px;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 18px solid #4A90C2;
+        transform: rotate(-15deg);
+        transition: border-top-color 0.3s ease;
+    }
+
+    /* --- ATTENTION ANIMATION --- */
+    @keyframes floatAnimation {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); } /* Moves up 15px */
+        100% { transform: translateY(0px); }
+    }
+
+    /* --- HOVER EFFECTS --- */
+    .quote-bubble:hover {
+        background-color: #357ABD;
+        transform: scale(1.1); /* Grows slightly on hover */
+        box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    .quote-bubble:hover::after {
+        border-top-color: #357ABD; /* Syncs tail color */
+    }
+
+    /* Pulse Effect to grab eye on load */
+    .quote-bubble::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #4A90C2;
+        opacity: 0.5;
+        z-index: -1;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+    
+    
+    /* Mobile view */
+/* Mobile view */
+@media (max-width: 768px) {
+    .quote-bubble {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0; /* hide text */
+    }
+
+    .quote-bubble::after,
+    .quote-bubble::before {
+        display: none; /* remove tail + pulse */
+    }
+
+    .quote-bubble svg {
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.quote-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        display: none;
+    }
+    .quote-icon {
+        display: block;
+    }
+}
+</style>
+
+<div class="quote-container">
+    <button class="quote-bubble" onclick="openContactModal()">
+        
+        <span class="quote-text">
+            Get Instant<br>Quote
+        </span>
+
+        <svg class="quote-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="white"/>
+        </svg>
+
+    </button>
+</div>
+
+
+
+<!-- Modal -->
+<div id="contactModal" class="custom-modal">
+    <div class="modal-box">
+
+        <div class="modal-header">
+            <div class="header-left">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4zM6 8h12v2H6zm0 3h12v2H6zm0 3h12v2H6z" fill="white"/>
+                </svg>
+                <span>Message</span>
+            </div>
+
+            <span class="close-btn" onclick="closeContactModal()">×</span>
+        </div>
+<div id="formMessage" class="form-message" style="display:none;"></div>
+       <form onsubmit="handleFormSubmit(event)" style="padding:10px;"id="form_message_inputs">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile</label>
+                <div class="phone-group">
+                    <select class="country-select" style="max-width:100px;"></select>
+                    <input type="tel" placeholder="Mobile number" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn modal-header" style="border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</div>
+<script>
+// Country data
+const countries = [
+    { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+    { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+    { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+    { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+    { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+    { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+    { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+    { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+    { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+    { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+    { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+    { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+    { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+    { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+    { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+    { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+    { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+    { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+    { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+    { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+    { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+    { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+    { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+    { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+    { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+    { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+    { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+    { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+    { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+    { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+    { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+    { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+    { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+    { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+    { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+    { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+    { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+    { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+    { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+    { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+    { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+    { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+    { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+    { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+    { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+    { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+    { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+    { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+    { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+    { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+    { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+    { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+    { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+    { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+];
+
+ 
+function populateCountrySelect(selectedDialCode = null) {
+    const select = document.querySelector(".country-select");
+    if (!select) return;
+
+    select.innerHTML = "";
+
+    // Step 1: clone array
+    let sortedCountries = [...countries];
+
+    // Step 2: move US to top
+    sortedCountries.sort((a, b) => {
+        if (a.code === "US") return -1;
+        if (b.code === "US") return 1;
+        return a.name.localeCompare(b.name);
+    });
+
+    sortedCountries.forEach(country => {
+        const option = document.createElement("option");
+
+        option.value = country.dial_code;
+        option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+        option.setAttribute("data-country-code", country.code);
+
+        // Selected logic
+        if (selectedDialCode && country.dial_code === selectedDialCode) {
+            option.selected = true;
+        } else if (!selectedDialCode && country.code === "US") {
+            option.selected = true;
+        }
+
+        select.appendChild(option);
+    });
+}
+
+// Fetch user country based on IP
+async function fetchUserCountryByIP() {
+    try {
+        // Using free IP geolocation API
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) throw new Error('IP fetch failed');
+        
+        const data = await response.json();
+        const countryCode = data.country_code;
+        const countryName = data.country_name;
+        
+        console.log(`IP detected: ${countryName} (${countryCode})`);
+        
+        // Find country in our list
+        const matchedCountry = countries.find(c => c.code === countryCode);
+        if (matchedCountry) {
+            return matchedCountry;
+        }
+        return null;
+    } catch (error) {
+        console.warn('IP geolocation failed:', error);
+        return null;
+    }
+}
+
+// Initialize on page load (modal hidden initially)
+async function initializeCountryOnLoad() {
+    // First populate with default US
+    populateCountrySelect(null);
+    
+    // Try to fetch IP-based country
+    const userCountry = await fetchUserCountryByIP();
+    
+    if (userCountry) {
+        // Repopulate with detected country selected
+        populateCountrySelect(userCountry.dial_code);
+        console.log(`Country set to: ${userCountry.name} (${userCountry.dial_code}) based on IP`);
+    } else {
+        console.log('Using default country: United States (+1)');
+    }
+}
+
+// Modal controls
+function openContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "flex";
+    }
+}
+
+function closeContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById("contactModal");
+    if (event.target === modal) {
+        closeContactModal();
+    }
+};
+ 
+        
+        let isSubmitting = false;
+        
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+        
+            if (isSubmitting) return; 
+            isSubmitting = true;
+        
+            const form = e.target;
+            const messageBox = document.getElementById("formMessage");
+            const submitBtn = form.querySelector("button[type='submit']");
+         var form_message_inputs = document.getElementById("form_message_inputs");
+       
+            // disable button
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+        
+            const name = form.querySelector('input[placeholder="Enter name"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const mobile = form.querySelector('input[placeholder="Mobile number"]').value;
+            const message = form.querySelector('textarea').value;
+        
+            const select = document.querySelector(".country-select");
+            const selectedCountry = select.options[select.selectedIndex].textContent;
+        
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        mobile,
+                        country: selectedCountry,
+                        message
+                    })
+                });
+        
+                const data = await res.json();
+        
+                messageBox.style.display = "block";
+                  form_message_inputs.style.display = "none";
+        
+                if (data.status) {
+                    messageBox.className = "form-message success";
+                    messageBox.innerText = "✅ Message sent successfully!";
+        
+                    form.reset();
+        
+                    setTimeout(() => {
+                        closeContactModal();
+                        messageBox.style.display = "none";
+                    }, 5000);
+        
+                } else {
+                    messageBox.className = "form-message error";
+                    messageBox.innerText = "❌ " + data.message;
+                }
+        
+            } catch (err) {
+                messageBox.style.display = "block";
+                messageBox.className = "form-message error";
+                messageBox.innerText = "❌ Something went wrong";
+            }
+        
+            // re-enable button after response
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+            isSubmitting = false;
+        }
+     
+    document.addEventListener("DOMContentLoaded", function() {
+        initializeCountryOnLoad();
+        
+        // Attach form submit handler
+        const form = document.querySelector("#contactModal form");
+        if (form) {
+            form.addEventListener("submit", handleFormSubmit);
+        }
+    });
+</script>
+
+
+    <script>
+// const countries = [
+//     { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+//     { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+//     { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+//     { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+//     { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+//     { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+//     { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+//     { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+//     { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+//     { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+//     { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+//     { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+//     { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+//     { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+//     { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+//     { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+//     { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+//     { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+//     { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+//     { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+//     { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+//     { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+//     { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+//     { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+//     { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+//     { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+//     { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+//     { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+//     { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+//     { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+//     { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+//     { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+//     { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+//     { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+//     { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+//     { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+//     { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+//     { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+//     { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+//     { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+//     { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+//     { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+//     { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+//     { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+//     { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+//     { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+//     { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+//     { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+//     { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+//     { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+//     { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+//     { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+//     { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+//     { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+// ];
+// // Populate dropdown
+// document.addEventListener("DOMContentLoaded", function () {
+//     const select = document.querySelector(".country-select");
+
+//     countries.forEach(country => {
+//         let option = document.createElement("option");
+//         option.value = country.dial_code;
+//         option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+
+//         if (country.code === "IN") option.selected = true;
+
+//         select.appendChild(option);
+//     });
+// });
+
+// Modal controls
+    function openContactModal() {
+        var form_message_inputs = document.getElementById("form_message_inputs");
+         form_message_inputs.style.display = "block";
+        document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeContactModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+</script>
+
+    <!-- Loading Scripts -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/isotope.min.js" defer></script>
+    <script src="/js/granim.min.js" defer></script>
+    <script src="/js/jquery.steps.min.js" defer></script>
+    <script src="/js/smooth-scroll.min.js" defer></script>
+    <script src="/js/zoom.js" defer></script>
+    <script src="/js/owl.carousel.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5da70a23df22d913399f714f/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    
+
+
+    // <script>
+    //     /*
+    //       Reb2b Tracking Script Loader
+    //       --------------------------------
+    //       - Prevents duplicate loading
+    //       - Dynamically loads external tracking script
+    //       - Uses async loading for performance
+    //     */
+        
+    //     !function(key) {
+        
+    //       // Check if script is already loaded to avoid duplication
+    //       if (window.reb2b) return;
+        
+    //       // Initialize global object to mark script as loaded
+    //       window.reb2b = {
+    //         loaded: true
+    //       };
+        
+    //       // Create a new script element
+    //       var s = document.createElement("script");
+        
+    //           // Load script asynchronously (doesn't block page rendering)
+    //           s.async = true;
+            
+    //           // Set script source URL dynamically using the provided key
+    //           s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+            
+    //           // Insert the script before the first existing script tag in the document
+    //           document.getElementsByTagName("script")[0].parentNode.insertBefore(
+    //             s,
+    //             document.getElementsByTagName("script")[0]
+    //           );
+            
+    //         }("E63P0HZQR7OW"); // Unique key for your tracking script
+        
+    // </script>
+    
+    
+    
+    
+    <script>
+    //     $(document).ready(function () {
+    //         $("#query").submit(function (event) {
+    //             $("#ajaxStart").attr("disabled", true);
+    //             event.preventDefault();
+
+    //             $.ajax({
+    //                 url: "/mail/index.php",
+    //                 type: "POST",
+    //                 data: $('#query').serialize(),
+    //                 success: function (response) {
+    //                     console.log(response);
+    //                     if (response == "success") {
+    //                         window.location.href = '/thankyou/';
+    //                         /*$('#query').trigger("reset");
+    //                         alert("Thanks for Quote", "We Will Contact You Shortly!");
+    //                         swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+    //                         $("#ajaxStart").attr("disabled", false);*/
+    //                     }
+    //                     else {
+    //                         $("#ErrorModal").modal('show');
+    //                         console.log("ERROR");
+    //                     }
+    //                 }
+    //             });
+    //             return false;
+    //         });
+
+    //     });
+
+     </script>
+     
+     
+     <script>
+        $(document).ready(function () {
+        
+            $("#query").submit(function (event) {
+        
+                // Prevent page reload
+                event.preventDefault();
+        
+                console.log("Form submit triggered");
+        
+                // Disable button to prevent multiple clicks
+                $("#ajaxStart").attr("disabled", true);
+        
+                // Debug: Show form data
+                var formData = $('#query').serialize();
+                console.log("Form Data:", formData);
+                // alert("Submitting form... Check console");
+        
+                $.ajax({
+        
+                    // ðŸ”— API URL (this handles email sending on server)
+                    url: "/mail/index.php",
+        
+                    type: "POST",
+        
+                    data: formData,
+        
+                    success: function (response) {
+        
+                        console.log("Server Response:", response);
+                        // alert("Response: " + response);
+        
+                        if (response.trim() === "success") {
+        
+                            console.log("Success: Redirecting to thank you page");
+        
+                            // Redirect on success
+                            window.location.href = '/thankyou/';
+        
+                        } else {
+        
+                            console.log("Error: Unexpected response - "+response.trim());
+                            // alert("Something went wrong!");
+        
+                            $("#ErrorModal").modal('show');
+                            $("#ajaxStart").attr("disabled", false);
+                        }
+                    },
+        
+                    error: function (xhr, status, error) {
+        
+                        console.log("AJAX ERROR:");
+                        console.log("Status:", status);
+                        console.log("Error:", error);
+                        console.log("Response Text:", xhr.responseText);
+        
+                        // alert("AJAX Error! Check console.");
+        
+                        $("#ajaxStart").attr("disabled", false);
+                    }
+                });
+        
+                return false;
+            });
+        
+        });
+    </script>
+    
+    
+    
+    
+    
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                merge: true,
+                loop: true,
+                autoplay: true,
+                nav: true,
+                merge: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            }
+            );
+        });
+    </script>
+
+    <script>
+        $("#quotebtn").click(function () {
+            $(".popup").fadeIn(500);
+        });
+
+        $(".pop-close").click(function () {
+            $(".popup").fadeOut(500);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#queryForm").submit(function (event) {
+                $("#customFrombtn").attr("disabled", true);
+                event.preventDefault();
+
+                $.ajax({
+                    url: "/mail/index.php",
+                    type: "POST",
+                    data: $('#queryForm').serialize(),
+                    success: function (response) {
+                        console.log(response);
+                        if (response == "success") {
+                            window.location.href = '/thankyou/';
+                            /*$('#query').trigger("reset");
+                            alert("Thanks for Quote", "We Will Contact You Shortly!");
+                            swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+                            $("#ajaxStart").attr("disabled", false);*/
+                        }
+                        else {
+                            $("#ErrorModal").modal('show');
+                            console.log("ERROR");
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText);
+                    }
+                });
+                return false;
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

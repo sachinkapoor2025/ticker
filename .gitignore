@@ -14,3 +14,4 @@ node_modules/
 .aws-sam/
 website-deploy.zip
 .amplify-app-id
+seo-reports/blog-mirror-progress.json

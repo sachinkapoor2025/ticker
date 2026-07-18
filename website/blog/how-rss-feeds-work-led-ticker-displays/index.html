@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="x2TVSaiGBx9F_unjNk_O1mEB64-JF5s3lmTguSQvstw" />
+    <meta name="description" content="Display live news, announcements, and updates using RSS LED ticker displays with automatic content integration for businesses, schools, and public spaces.">
+    <meta name="keywords" content="RSS LED ticker, RSS LED display, RSS feed display, LED news ticker, live news ticker display, RSS scrolling display">
+    <meta name="author" content="Photonplay">
+    <title>RSS LED Ticker Display: Real-Time News Integration</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/blog/how-rss-feeds-work-led-ticker-displays/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/blog/how-rss-feeds-work-led-ticker-displays/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+
+    <!-- Static -->
+    <meta name="author" content="Tickerplay">
+    <meta name="publisher" content="Tickerplay">
+    <meta property="locale" content="en_US" />
+    <meta property="type" content="website" />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+
+    <style>
+    
+    .modal-box {
+    width: 320px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/* Header */
+.modal-header {
+    background: #222; /* dark */
+    color: #fff;
+    padding: 10px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+        /* Modal background */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+/* Modal box */
+.modal-box {
+    background: #fff;
+    width: 300px;
+    padding: 0px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+ 
+
+/* Phone group */
+.phone-group {
+    display: flex;
+    gap: 5px;
+}
+
+.country-select {
+    width: 40%;
+}
+
+.phone-group input {
+    width: 60%;
+}
+
+ .floating-icon {
+    position: fixed !important;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    background: #007bff; /* keeps your white SVG visible */
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 999999;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* keep SVG clean */
+.floating-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* small hover effect */
+.floating-icon:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.form-group input,
+.form-group textarea,
+.phone-group select,
+.phone-group input {
+    width: 100%;
+    padding: 0px 14px;
+    font-size: 0.85rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+    color: #1a2634;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+.form-message {
+    padding: 8px;
+    margin: 10px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.form-message.success {
+    background: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6cb;
+}
+    </style>
+    <!-- Start Schema -->
+
+    <!-- End Schema -->
+
+    <!-- Start Canonical -->
+    <link rel="canonical" href="https://www.tickerplay.com/blog/how-rss-feeds-work-led-ticker-displays/" />
+    <!-- Start Canonical -->
+
+<link rel="shortcut icon" href="/img/icon.png" />
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/zoom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KQTHDPF');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <script>
+        function initApollo(){
+            var n=Math.random().toString(36).substring(7),
+            o=document.createElement("script");
+        
+            o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+            o.async=true;
+            o.defer=true;
+        
+            o.onload=function(){
+                window.trackingFunctions.onLoad({
+                    appId:"6a39b5b2e4809f001439345f"
+                });
+            };
+        
+            document.head.appendChild(o);
+        }
+        initApollo();
+    </script>
+
+<!-- tickerplay-seo-start -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tickerplay","alternateName":"Tickerplay Systems","url":"https://www.tickerplay.com/","logo":"https://www.tickerplay.com/img/logo-dark.png","telephone":"+1-800-966-9329","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-966-9329","contactType":"sales","areaServed":"US","availableLanguage":["English"]}],"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tickerplay.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.tickerplay.com/blog/"},{"@type":"ListItem","position":3,"name":"RSS LED Ticker Display: Real-Time News Integration","item":"https://www.tickerplay.com/blog/how-rss-feeds-work-led-ticker-displays/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"RSS LED Ticker Display: Real-Time News Integration","description":"Display live news, announcements, and updates using RSS LED ticker displays with automatic content integration for businesses, schools, and public spaces.","mainEntityOfPage":"https://www.tickerplay.com/blog/how-rss-feeds-work-led-ticker-displays/","author":{"@type":"Organization","name":"Tickerplay"},"publisher":{"@type":"Organization","name":"Tickerplay","logo":{"@type":"ImageObject","url":"https://www.tickerplay.com/img/logo-dark.png"}},"datePublished":"July","dateModified":"July"}</script>
+<!-- tickerplay-seo-end -->
+</head>
+
+<body>
+<a class="sr-only sr-only-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTHDPF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a id="start"></a><div class="nav-container">
+    <div class="bar bar--sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-2">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                    </a>
+                </div>
+                <div class="col-9 col-md-10 text-right">
+                    <a href="/" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                        <i class="icon icon--sm stack-interface stack-menu"></i>
+                    </a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </div>
+    <!--end bar-->
+    <nav id="menu1" class="bar bar--sm bar-1 hidden-xs" data-scroll-class="500px:pos-fixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 hidden-xs">
+                    <div class="bar__module">
+                        <a href="/">
+                            <img class="logo logo-dark  pt-4" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+                <div class="col-lg-9 col-md-9 text-right text-left-md text-left-lg">
+                    <div class="bar__module mt-4">
+                        <ul class="menu-horizontal text-left">
+                            <li class="dropdown ml--2">
+                                <li>
+                                    <a href="/">
+                                        <i style="font-size: 20px" class="fa fa-home"></i>
+                                    </a>
+                                </li>
+                            </li>
+
+                            <li class="dropdown dropdown__trigger">
+                                <span class="dropdown__tri" style="color:#000000">Tickers</span>
+                                <div class="dropdown__container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 dropdown__content dropdown__content--lg">
+                                                <div class="row justify-content-start">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED TICKER TYPES</h5>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="pl-2">
+                                                            <a href="/led-ticker-tape/">
+                                                                - Led Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/indoor-ticker-tape/">
+                                                                - Indoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/outdoor-ticker-tape/">
+                                                                - Outdoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/flexible-ticker-tape/">
+                                                                - Flexible Ticker Tapes
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/circular-ticker-tape/">
+                                                                - Circular Ticker Tapes
+                                                            </a>
+                                                        </li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">TICKERS (DATA WISE)</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-stock-ticker/">
+                                                                - Stock Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-financial-ticker/">
+                                                                - Financial Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-sports-ticker/">
+                                                                - Sports Ticker
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/led-news-ticker/">
+                                                                - News Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-twitter-ticker/">
+                                                                - Twitter Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-rss-ticker/">
+                                                                - RSS Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-market-ticker/">
+                                                                - Stock Market Ticker
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">APPLICATION WISE</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/university-finance-lab/">
+                                                                - University Finance Lab
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-brokerage-firms/">
+                                                                - Stock Brokerage Firms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/business-school/">
+                                                                - Business School
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/wealth-management-firms/">
+                                                                - Wealth Management Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/investment-firms/">
+                                                                - Investment Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/share-traders/">
+                                                                - Share Traders
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/trading-labs/">
+                                                                - Trading Labs
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/sports-bars/">
+                                                                - Sports Bars
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/corporate-floors/">
+                                                                - Corporate Floors
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-exchange/">
+                                                                - Stock Exchange
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/showrooms/">
+                                                                - Showrooms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/schools/">
+                                                                - Schools
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED SIGN</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/programmable-scrolling-led-sign/">
+                                                                - Scrolling Led Sign
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/multi-time-zone-digital-wall-clock/">
+                                                                - Digital Wall Clock
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Led Ticker Sign
+                                                            </a>
+                                                        </li>  
+                                                    </ul>
+                                                </div>
+                                                
+                                                    
+                                                </div>
+                                                <!--end of row-->
+                                            </div>
+                                            <!--end dropdown content-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end dropdown container-->
+                            </li>
+                            <li class="dropdown">
+                                <a href="/about-us/">
+                                    Company
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/blogs/">
+                                    News & Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end module-->
+                    <div class="bar__module">
+                        <a class="btn btn--sm btn--primary type--uppercase" href="/contact/">
+                            <span class="btn__text">
+                                Get Quote
+                            </span>
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </nav>
+    <!--end bar-->
+</div>
+<main id="main-content" class="main-container" role="main">
+    <section class="cover imagebg height-30 text-center" data-overlay="1" style="margin-top:0">
+        <div class="background-image-holder" style="background: url('img/bn.jpg'); opacity: 1;">
+            <img alt="Radar Speed Signs Banner" src="/img/Radar-Speed-Sign-banner-clouds.jpg" loading="lazy" decoding="async">
+        </div>
+        <div class="container">
+          <div class="row justify-content-around">
+              <div class="col-md-12 text-center">
+                      <h2 class="pt-4"><b>How RSS Feeds Work on LED Ticker Displays</b></h2>
+              </div>
+          </div>
+          <!--end of row-->
+      </div>
+        <!--end of container-->
+    </section>
+
+
+    <section style="margin-top: 1rem; margin-bottom: 1rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumbs">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blogs">Blog</a>
+                        </li>
+                        <li>How RSS Feeds Work on LED Ticker Displays
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+    <section class="space--sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <article>
+                        <div class="article__title type--uppercase">
+                            <h1 class="h3"><b>How RSS Feeds Work on LED Ticker Displays</b></h1>
+                            <span>July 2, 2026 01:17</span>
+                            
+                        </div>
+                        <!--end article title-->
+                        <div class="article__body">
+                           
+                            <img class="img-reponsive" src="/img/featured/ChatGPT Image Jul 2, 2026, 10_45_30 AM.webp" alt="ChatGPT Image Jul 2, 2026, 10_45_30 AM.webp"/ loading="lazy" decoding="async"><h1 class="PDq2pG_selectionAnchorContainer" data-section-id="f6tq4z" data-start="1651" data-end="1694">How RSS Feeds Work on LED Ticker Displays</h1>
+<p data-start="1696" data-end="2245">Keeping audiences informed with up-to-date information is essential for businesses, educational institutions, healthcare facilities, government organizations, financial companies, and public venues. Whether it's displaying the latest news, company announcements, weather updates, or industry-specific information, organizations need an automated way to deliver fresh content without constantly updating displays manually. An <a href="../led-rss-ticker/">RSS LED ticker</a> provides an efficient solution by automatically displaying content from RSS feeds on LED ticker displays.</p>
+<p data-start="2247" data-end="2507">By integrating RSS (Really Simple Syndication) feeds with LED displays, organizations can stream headlines, announcements, and updates in real time. This eliminates repetitive manual content updates while ensuring viewers always receive the latest information.</p>
+<p data-start="2509" data-end="2733">From corporate offices and schools to transportation hubs, trading floors, media organizations, and digital signage networks, RSS-enabled LED ticker displays have become a valuable communication tool for modern environments.</p>
+<hr data-start="2735" data-end="2738">
+<h1 data-section-id="1pssi63" data-start="2740" data-end="2768">What is an RSS LED Ticker?</h1>
+<p data-start="2770" data-end="2944">An <strong data-start="2773" data-end="2791">RSS LED ticker</strong> is a digital LED display that automatically retrieves information from one or more RSS feeds and presents it as scrolling text or dynamic announcements.</p>
+<p data-start="2946" data-end="3100">Instead of manually entering content, the display continuously checks connected RSS feeds and updates messages whenever new information becomes available.</p>
+<p data-start="3102" data-end="3132">An RSS LED ticker can display:</p>
+<ul data-start="3134" data-end="3345">
+<li data-section-id="16w3uq5" data-start="3134" data-end="3159">Breaking news headlines</li>
+<li data-section-id="18ywlrx" data-start="3160" data-end="3183">Company announcements</li>
+<li data-section-id="1dcjkb4" data-start="3184" data-end="3202">Industry updates</li>
+<li data-section-id="61nqxa" data-start="3203" data-end="3219">Financial news</li>
+<li data-section-id="y3apeh" data-start="3220" data-end="3244">Stock market headlines</li>
+<li data-section-id="65dnkd" data-start="3245" data-end="3261">Weather alerts</li>
+<li data-section-id="bncfpa" data-start="3262" data-end="3275">Sports news</li>
+<li data-section-id="ioipgj" data-start="3276" data-end="3302">Government notifications</li>
+<li data-section-id="1pccxz1" data-start="3303" data-end="3330">Educational announcements</li>
+<li data-section-id="wrq17w" data-start="3331" data-end="3345">Blog updates</li>
+</ul>
+<p data-start="3347" data-end="3442">The result is a fully automated communication system that keeps information fresh and relevant.</p>
+<hr data-start="3444" data-end="3447">
+<h1 data-section-id="qyvh7a" data-start="3449" data-end="3471">What is an RSS Feed?</h1>
+<p data-start="3473" data-end="3596">RSS (Really Simple Syndication) is a standardized web format that allows websites to publish updated content automatically.</p>
+<p data-start="3598" data-end="3704">Whenever a website publishes new content, its RSS feed is updated with the latest headlines and summaries.</p>
+<p data-start="3706" data-end="3862">Instead of visiting multiple websites individually, users&mdash;or in this case, LED display systems&mdash;can subscribe to RSS feeds and receive updates automatically.</p>
+<p data-start="3864" data-end="3900">Many websites provide RSS feeds for:</p>
+<ul data-start="3902" data-end="4010">
+<li data-section-id="1j3yx7r" data-start="3902" data-end="3908">News</li>
+<li data-section-id="16y190d" data-start="3909" data-end="3916">Blogs</li>
+<li data-section-id="t9f2hh" data-start="3917" data-end="3933">Press releases</li>
+<li data-section-id="2pbmg5" data-start="3934" data-end="3944">Podcasts</li>
+<li data-section-id="19fw2im" data-start="3945" data-end="3963">Weather services</li>
+<li data-section-id="1fueu1v" data-start="3964" data-end="3983">Financial updates</li>
+<li data-section-id="1ysto6n" data-start="3984" data-end="4010">Government announcements</li>
+</ul>
+<p data-start="4012" data-end="4090">This makes RSS one of the simplest methods for automated content distribution.</p>
+<hr data-start="4092" data-end="4095">
+<h1 data-section-id="2hrkxz" data-start="4097" data-end="4131">How Does an RSS LED Ticker Work?</h1>
+<p data-start="4133" data-end="4185">The process is straightforward and highly automated.</p>
+<h3 data-section-id="w1rgda" data-start="4187" data-end="4218">Step 1: Connect an RSS Feed</h3>
+<p data-start="4220" data-end="4290">The LED display software is configured with one or more RSS feed URLs.</p>
+<p data-start="4292" data-end="4309">Examples include:</p>
+<ul data-start="4311" data-end="4430">
+<li data-section-id="r87ljl" data-start="4311" data-end="4331">Company news feeds</li>
+<li data-section-id="zvx77z" data-start="4332" data-end="4347">News websites</li>
+<li data-section-id="1rerlcp" data-start="4348" data-end="4374">Internal corporate blogs</li>
+<li data-section-id="1iku3c8" data-start="4375" data-end="4396">Educational portals</li>
+<li data-section-id="14wzsf3" data-start="4397" data-end="4430">Government information services</li>
+</ul>
+<hr data-start="4432" data-end="4435">
+<h3 data-section-id="1w4zcfp" data-start="4437" data-end="4462">Step 2: Read the Feed</h3>
+<p data-start="4464" data-end="4545">The content management system periodically checks the RSS source for new content.</p>
+<hr data-start="4547" data-end="4550">
+<h3 data-section-id="1t95aca" data-start="4552" data-end="4585">Step 3: Process the Headlines</h3>
+<p data-start="4587" data-end="4638">The software extracts relevant information such as:</p>
+<ul data-start="4640" data-end="4690">
+<li data-section-id="1s6uh66" data-start="4640" data-end="4650">Headline</li>
+<li data-section-id="1ks9zl0" data-start="4651" data-end="4660">Summary</li>
+<li data-section-id="s9a4h" data-start="4661" data-end="4679">Publication time</li>
+<li data-section-id="1111ivs" data-start="4680" data-end="4690">Category</li>
+</ul>
+<p data-start="4692" data-end="4741">Some systems also support custom filtering rules.</p>
+<hr data-start="4743" data-end="4746">
+<h3 data-section-id="d9zkif" data-start="4748" data-end="4785">Step 4: Display on the LED Ticker</h3>
+<p data-start="4787" data-end="4873">The processed information is automatically shown as scrolling text on the LED display.</p>
+<p data-start="4875" data-end="4973">As new articles are published, older headlines are replaced without requiring manual intervention.</p>
+<hr data-start="4975" data-end="4978">
+<h1 data-section-id="1dl9sbj" data-start="4980" data-end="5017">Benefits of Using an RSS LED Ticker</h1>
+<h2 data-section-id="dry5v" data-start="5019" data-end="5047">Automatic Content Updates</h2>
+<p data-start="5049" data-end="5093">One of the biggest advantages is automation.</p>
+<p data-start="5095" data-end="5186">Organizations no longer need to manually update scrolling announcements throughout the day.</p>
+<hr data-start="5188" data-end="5191">
+<h2 data-section-id="luvsmj" data-start="5193" data-end="5217">Real-Time Information</h2>
+<p data-start="5219" data-end="5275">RSS feeds deliver updates within minutes of publication.</p>
+<p data-start="5277" data-end="5345">This keeps audiences informed with the latest available information.</p>
+<hr data-start="5347" data-end="5350">
+<h2 data-section-id="1wf5lrw" data-start="5352" data-end="5382">Reduced Administrative Work</h2>
+<p data-start="5384" data-end="5430">Administrators simply configure the feed once.</p>
+<p data-start="5432" data-end="5477">The display continues updating automatically.</p>
+<hr data-start="5479" data-end="5482">
+<h2 data-section-id="1f0yfyq" data-start="5484" data-end="5515">Improved Audience Engagement</h2>
+<p data-start="5517" data-end="5623">Visitors are more likely to pay attention to fresh and continuously changing content than static displays.</p>
+<hr data-start="5625" data-end="5628">
+<h2 data-section-id="10zo7yb" data-start="5630" data-end="5664">Better Information Distribution</h2>
+<p data-start="5666" data-end="5750">Organizations can distribute relevant news across multiple locations simultaneously.</p>
+<hr data-start="5752" data-end="5755">
+<h1 data-section-id="1aye4y3" data-start="5757" data-end="5798">Key Features of RSS LED Ticker Displays</h1>
+<h2 data-section-id="1ky7pe4" data-start="5800" data-end="5821">Multi-Feed Support</h2>
+<p data-start="5823" data-end="5903">Modern RSS LED displays can combine multiple sources into one scrolling display.</p>
+<p data-start="5905" data-end="5917">For example:</p>
+<ul data-start="5919" data-end="5988">
+<li data-section-id="qhhhuo" data-start="5919" data-end="5933">Company news</li>
+<li data-section-id="1fueu1v" data-start="5934" data-end="5953">Financial updates</li>
+<li data-section-id="5k0ckw" data-start="5954" data-end="5963">Weather</li>
+<li data-section-id="6304up" data-start="5964" data-end="5972">Sports</li>
+<li data-section-id="p7ms7x" data-start="5973" data-end="5988">Industry news</li>
+</ul>
+<hr data-start="5990" data-end="5993">
+<h2 data-section-id="sj4702" data-start="5995" data-end="6015">Remote Management</h2>
+<p data-start="6017" data-end="6064">Administrators can configure RSS feeds through:</p>
+<ul data-start="6066" data-end="6122">
+<li data-section-id="h5kpud" data-start="6066" data-end="6083">Cloud platforms</li>
+<li data-section-id="1qjkb1r" data-start="6084" data-end="6100">Web dashboards</li>
+<li data-section-id="8068qp" data-start="6101" data-end="6122">Mobile applications</li>
+</ul>
+<hr data-start="6124" data-end="6127">
+<h2 data-section-id="1utcl3g" data-start="6129" data-end="6150">Content Scheduling</h2>
+<p data-start="6152" data-end="6213">Businesses can decide when different RSS feeds should appear.</p>
+<p data-start="6215" data-end="6223">Example:</p>
+<p data-start="6225" data-end="6233">Morning:</p>
+<ul data-start="6235" data-end="6250">
+<li data-section-id="1ttce81" data-start="6235" data-end="6250">Business news</li>
+</ul>
+<p data-start="6252" data-end="6262">Afternoon:</p>
+<ul data-start="6264" data-end="6287">
+<li data-section-id="18ywlrx" data-start="6264" data-end="6287">Company announcements</li>
+</ul>
+<p data-start="6289" data-end="6297">Evening:</p>
+<ul data-start="6299" data-end="6317">
+<li data-section-id="1dcjkb4" data-start="6299" data-end="6317">Industry updates</li>
+</ul>
+<hr data-start="6319" data-end="6322">
+<h2 data-section-id="amfmak" data-start="6324" data-end="6344">Keyword Filtering</h2>
+<p data-start="6346" data-end="6437">Advanced systems allow administrators to display only content containing selected keywords.</p>
+<p data-start="6439" data-end="6463">This improves relevance.</p>
+<hr data-start="6465" data-end="6468">
+<h2 data-section-id="1lg1qco" data-start="6470" data-end="6494">Custom Display Styles</h2>
+<p data-start="6496" data-end="6524">Organizations can customize:</p>
+<ul data-start="6526" data-end="6584">
+<li data-section-id="1mlktoi" data-start="6526" data-end="6540">Scroll speed</li>
+<li data-section-id="170jmrs" data-start="6541" data-end="6548">Fonts</li>
+<li data-section-id="1uwkdt2" data-start="6549" data-end="6557">Colors</li>
+<li data-section-id="1ksizpb" data-start="6558" data-end="6573">Display zones</li>
+<li data-section-id="1i8bzw3" data-start="6574" data-end="6584">Branding</li>
+</ul>
+<hr data-start="6586" data-end="6589">
+<h2 data-section-id="1b9htq4" data-start="6591" data-end="6616">Multi-Language Support</h2>
+<p data-start="6618" data-end="6719">RSS feeds published in different languages can be displayed depending on organizational requirements.</p>
+<hr data-start="6721" data-end="6724">
+<h1 data-section-id="xin1hk" data-start="6726" data-end="6759">Applications of RSS LED Tickers</h1>
+<h2 data-section-id="1pz2dg5" data-start="6761" data-end="6781">Corporate Offices</h2>
+<p data-start="6783" data-end="6791">Display:</p>
+<ul data-start="6793" data-end="6872">
+<li data-section-id="18ywlrx" data-start="6793" data-end="6816">Company announcements</li>
+<li data-section-id="p7ms7x" data-start="6817" data-end="6832">Industry news</li>
+<li data-section-id="1c9c3m4" data-start="6833" data-end="6851">Business updates</li>
+<li data-section-id="15dq50g" data-start="6852" data-end="6872">Market information</li>
+</ul>
+<hr data-start="6874" data-end="6877">
+<h2 data-section-id="158j57" data-start="6879" data-end="6904">Financial Institutions</h2>
+<p data-start="6906" data-end="6964">Banks and investment firms use RSS LED tickers to display:</p>
+<ul data-start="6966" data-end="7036">
+<li data-section-id="61nqxa" data-start="6966" data-end="6982">Financial news</li>
+<li data-section-id="19e57lx" data-start="6983" data-end="7001">Economic updates</li>
+<li data-section-id="13u08zd" data-start="7002" data-end="7020">Market headlines</li>
+<li data-section-id="yip280" data-start="7021" data-end="7036">Currency news</li>
+</ul>
+<hr data-start="7038" data-end="7041">
+<h2 data-section-id="4judol" data-start="7043" data-end="7070">Educational Institutions</h2>
+<p data-start="7072" data-end="7105">Schools and universities display:</p>
+<ul data-start="7107" data-end="7181">
+<li data-section-id="1fz1efy" data-start="7107" data-end="7120">Campus news</li>
+<li data-section-id="vsbqdf" data-start="7121" data-end="7140">Admission updates</li>
+<li data-section-id="1so1bun" data-start="7141" data-end="7165">Academic announcements</li>
+<li data-section-id="1fxasda" data-start="7166" data-end="7181">Research news</li>
+</ul>
+<hr data-start="7183" data-end="7186">
+<h2 data-section-id="13s1l73" data-start="7188" data-end="7212">Healthcare Facilities</h2>
+<p data-start="7214" data-end="7236">Hospitals communicate:</p>
+<ul data-start="7238" data-end="7302">
+<li data-section-id="mox9kv" data-start="7238" data-end="7257">Health advisories</li>
+<li data-section-id="j17v58" data-start="7258" data-end="7272">Medical news</li>
+<li data-section-id="pvt2nx" data-start="7273" data-end="7302">Patient awareness campaigns</li>
+</ul>
+<hr data-start="7304" data-end="7307">
+<h2 data-section-id="7zxyg3" data-start="7309" data-end="7330">Government Offices</h2>
+<p data-start="7332" data-end="7363">Government departments display:</p>
+<ul data-start="7365" data-end="7427">
+<li data-section-id="36s1j4" data-start="7365" data-end="7381">Public notices</li>
+<li data-section-id="1r89ff0" data-start="7382" data-end="7403">Civic announcements</li>
+<li data-section-id="yyy8kt" data-start="7404" data-end="7427">Emergency information</li>
+</ul>
+<hr data-start="7429" data-end="7432">
+<h2 data-section-id="1w0vd6f" data-start="7434" data-end="7456">Transportation Hubs</h2>
+<p data-start="7458" data-end="7496">Airports and railway stations display:</p>
+<ul data-start="7498" data-end="7558">
+<li data-section-id="1crl2aj" data-start="7498" data-end="7517">Travel advisories</li>
+<li data-section-id="kdzfci" data-start="7518" data-end="7535">Weather updates</li>
+<li data-section-id="8njlwb" data-start="7536" data-end="7558">Public announcements</li>
+</ul>
+<hr data-start="7560" data-end="7563">
+<h2 data-section-id="1dhjtgp" data-start="7565" data-end="7587">Media Organizations</h2>
+<p data-start="7589" data-end="7677">Newsrooms display breaking headlines and live news feeds across production environments.</p>
+<hr data-start="7679" data-end="7682">
+<h1 data-section-id="lef51r" data-start="7684" data-end="7726">RSS LED Ticker vs Manual Content Updates</h1>
+<div class="TyagGW_tableContainer">
+<div class="group TyagGW_tableWrapper flex flex-col-reverse w-fit" tabindex="-1">
+<table class="w-fit min-w-(--thread-content-width)" data-start="7728" data-end="8019">
+<thead data-start="7728" data-end="7773">
+<tr data-start="7728" data-end="7773">
+<th class="last:pe-10" data-start="7728" data-end="7738" data-col-size="sm">Feature</th>
+<th class="last:pe-10" data-start="7738" data-end="7755" data-col-size="sm">RSS LED Ticker</th>
+<th class="last:pe-10" data-start="7755" data-end="7773" data-col-size="sm">Manual Display</th>
+</tr>
+</thead>
+<tbody data-start="7821" data-end="8019">
+<tr data-start="7821" data-end="7850">
+<td data-start="7821" data-end="7841" data-col-size="sm">Automatic Updates</td>
+<td data-start="7841" data-end="7845" data-col-size="sm">✔</td>
+<td data-start="7845" data-end="7850" data-col-size="sm">✘</td>
+</tr>
+<tr data-start="7851" data-end="7890">
+<td data-start="7851" data-end="7875" data-col-size="sm">Real-Time Information</td>
+<td data-start="7875" data-end="7879" data-col-size="sm">✔</td>
+<td data-start="7879" data-end="7890" data-col-size="sm">Limited</td>
+</tr>
+<tr data-start="7891" data-end="7919">
+<td data-start="7891" data-end="7910" data-col-size="sm">Reduced Workload</td>
+<td data-start="7910" data-end="7914" data-col-size="sm">✔</td>
+<td data-start="7914" data-end="7919" data-col-size="sm">✘</td>
+</tr>
+<tr data-start="7920" data-end="7946">
+<td data-start="7920" data-end="7932" data-col-size="sm">Live News</td>
+<td data-start="7932" data-end="7936" data-col-size="sm">✔</td>
+<td data-start="7936" data-end="7946" data-col-size="sm">Manual</td>
+</tr>
+<tr data-start="7947" data-end="7983">
+<td data-start="7947" data-end="7968" data-col-size="sm">Multi-Feed Support</td>
+<td data-start="7968" data-end="7972" data-col-size="sm">✔</td>
+<td data-start="7972" data-end="7983" data-col-size="sm">Limited</td>
+</tr>
+<tr data-start="7984" data-end="8019">
+<td data-start="7984" data-end="8004" data-col-size="sm">Scheduled Content</td>
+<td data-start="8004" data-end="8008" data-col-size="sm">✔</td>
+<td data-start="8008" data-end="8019" data-col-size="sm">Limited</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p data-start="8021" data-end="8164">An RSS-enabled solution offers greater efficiency and scalability, particularly for organizations that rely on frequently changing information.</p>
+<hr data-start="8166" data-end="8169">
+<h1 data-section-id="1xk5cjn" data-start="8171" data-end="8208">Best Practices for RSS LED Displays</h1>
+<h2 data-section-id="3gmgvj" data-start="8210" data-end="8236">Use Trusted RSS Sources</h2>
+<p data-start="8238" data-end="8329">Only integrate feeds from reliable and reputable publishers to ensure information accuracy.</p>
+<hr data-start="8331" data-end="8334">
+<h2 data-section-id="1ij5mqc" data-start="8336" data-end="8365">Avoid Information Overload</h2>
+<p data-start="8367" data-end="8424">Displaying too many feeds at once can reduce readability.</p>
+<p data-start="8426" data-end="8463">Prioritize the most relevant content.</p>
+<hr data-start="8465" data-end="8468">
+<h2 data-section-id="1swdr10" data-start="8470" data-end="8496">Schedule Content Wisely</h2>
+<p data-start="8498" data-end="8568">Show different categories at different times to keep content engaging.</p>
+<hr data-start="8570" data-end="8573">
+<h2 data-section-id="1ynhivu" data-start="8575" data-end="8603">Monitor Feed Availability</h2>
+<p data-start="8605" data-end="8668">Regularly verify that RSS sources remain active and accessible.</p>
+<hr data-start="8670" data-end="8673">
+<h2 data-section-id="f1azqp" data-start="8675" data-end="8701">Maintain Brand Identity</h2>
+<p data-start="8703" data-end="8792">Include your organization's branding alongside RSS content for a professional appearance.</p>
+<hr data-start="8794" data-end="8797">
+<h1 data-section-id="c5r4hn" data-start="8799" data-end="8854">Factors to Consider Before Choosing an RSS LED Ticker</h1>
+<h2 data-section-id="l0r2c" data-start="8856" data-end="8881">Software Compatibility</h2>
+<p data-start="8883" data-end="8963">Ensure the display software supports RSS feed integration and automatic refresh.</p>
+<hr data-start="8965" data-end="8968">
+<h2 data-section-id="1lu1o6s" data-start="8970" data-end="8988">Feed Management</h2>
+<p data-start="8990" data-end="9065">Look for systems that allow multiple feed configuration and prioritization.</p>
+<hr data-start="9067" data-end="9070">
+<h2 data-section-id="1jehnyq" data-start="9072" data-end="9090">Display Quality</h2>
+<p data-start="9092" data-end="9165">High-resolution LED displays improve readability for scrolling headlines.</p>
+<hr data-start="9167" data-end="9170">
+<h2 data-section-id="1yb7ixx" data-start="9172" data-end="9188">Remote Access</h2>
+<p data-start="9190" data-end="9285">Cloud-based management makes it easier to monitor and manage content across multiple locations.</p>
+<hr data-start="9287" data-end="9290">
+<h2 data-section-id="gqu1ve" data-start="9292" data-end="9306">Scalability</h2>
+<p data-start="9308" data-end="9401">Organizations with multiple branches should choose systems capable of centralized management.</p>
+<hr data-start="9403" data-end="9406">
+<h1 data-section-id="v7i0co" data-start="9408" data-end="9443">Future Trends in RSS LED Displays</h1>
+<p data-start="9445" data-end="9498">Digital signage continues to become more intelligent.</p>
+<p data-start="9500" data-end="9529">Emerging innovations include:</p>
+<h2 data-section-id="1lnvg65" data-start="9531" data-end="9565">AI-Based Content Prioritization</h2>
+<p data-start="9567" data-end="9658">Artificial intelligence can automatically identify and display the most relevant headlines.</p>
+<hr data-start="9660" data-end="9663">
+<h2 data-section-id="q0lxux" data-start="9665" data-end="9696">Personalized Content Streams</h2>
+<p data-start="9698" data-end="9780">Different locations may display different RSS feeds based on audience preferences.</p>
+<hr data-start="9782" data-end="9785">
+<h2 data-section-id="1qzamg2" data-start="9787" data-end="9814">Multi-Source Integration</h2>
+<p data-start="9816" data-end="9844">Future systems will combine:</p>
+<ul data-start="9846" data-end="9938">
+<li data-section-id="1o4t7e" data-start="9846" data-end="9851">RSS</li>
+<li data-section-id="1f5ubuf" data-start="9852" data-end="9866">Social media</li>
+<li data-section-id="10ff8vt" data-start="9867" data-end="9880">ERP systems</li>
+<li data-section-id="100s7jt" data-start="9881" data-end="9902">Business dashboards</li>
+<li data-section-id="19fw2im" data-start="9903" data-end="9921">Weather services</li>
+<li data-section-id="2i3wlk" data-start="9922" data-end="9938">Live databases</li>
+</ul>
+<hr data-start="9940" data-end="9943">
+<h2 data-section-id="1hdykdx" data-start="9945" data-end="9971">Smart Content Filtering</h2>
+<p data-start="9973" data-end="10053">Advanced algorithms will automatically remove duplicate or outdated information.</p>
+<hr data-start="10055" data-end="10058">
+<h2 data-section-id="j1yxn4" data-start="10060" data-end="10092">Cloud-Based Global Management</h2>
+<p data-start="10094" data-end="10188">Organizations will manage thousands of displays worldwide through centralized cloud platforms.</p>
+<hr data-start="10190" data-end="10193">
+<h1 data-section-id="1le8zmb" data-start="10195" data-end="10245">Why Choose Ticker Play RSS LED Ticker Solutions?</h1>
+<p data-start="10247" data-end="10389">Ticker Play offers advanced RSS-enabled LED ticker displays designed for organizations that require automated, real-time information delivery.</p>
+<p data-start="10391" data-end="10413">Our solutions include:</p>
+<ul data-start="10415" data-end="10658">
+<li data-section-id="1550p3v" data-start="10415" data-end="10447">Automatic RSS feed integration</li>
+<li data-section-id="7w4akm" data-start="10448" data-end="10478">High-brightness LED displays</li>
+<li data-section-id="6p77a7" data-start="10479" data-end="10511">Cloud-based content management</li>
+<li data-section-id="hqfppc" data-start="10512" data-end="10531">Remote monitoring</li>
+<li data-section-id="12qn316" data-start="10532" data-end="10555">Smooth scrolling text</li>
+<li data-section-id="1tbp5vl" data-start="10556" data-end="10576">Multi-feed support</li>
+<li data-section-id="j9lqvv" data-start="10577" data-end="10596">Custom scheduling</li>
+<li data-section-id="8y7wob" data-start="10597" data-end="10625">Energy-efficient operation</li>
+<li data-section-id="pn4kg1" data-start="10626" data-end="10658">Reliable long-term performance</li>
+</ul>
+<p data-start="10660" data-end="10848">Whether you're displaying company news, financial updates, educational announcements, or public information, Ticker Play provides flexible digital signage solutions tailored to your needs.</p>
+<hr data-start="10850" data-end="10853">
+<h1 data-section-id="fsb6xx" data-start="10855" data-end="10867">Conclusion</h1>
+<p data-start="10869" data-end="11107">An <strong data-start="10872" data-end="10890">RSS LED ticker</strong> transforms digital signage into an intelligent, automated communication platform. By connecting LED displays with RSS feeds, organizations can deliver real-time news, announcements, and updates without manual effort.</p>
+<p data-start="11109" data-end="11526">From corporate offices and educational institutions to healthcare facilities and transportation hubs, RSS-enabled LED displays improve communication efficiency, reduce administrative workload, and keep audiences informed with the latest information. As organizations continue to adopt smarter digital signage solutions, RSS integration remains one of the simplest and most effective ways to automate content delivery.</p>
+<hr data-start="11528" data-end="11531">
+<h1 data-section-id="hkd5a4" data-start="11533" data-end="11561">Frequently Asked Questions</h1>
+<h2 data-section-id="vol4yg" data-start="11563" data-end="11592">What is an RSS LED ticker?</h2>
+<p data-start="11594" data-end="11733">An RSS LED ticker is a digital display that automatically retrieves and displays content from RSS feeds as scrolling text or announcements.</p>
+<h2 data-section-id="8hzlub" data-start="11735" data-end="11792">Can multiple RSS feeds be displayed on one LED ticker?</h2>
+<p data-start="11794" data-end="11907">Yes. Most professional systems support multiple RSS sources and can combine them into a single scrolling display.</p>
+<h2 data-section-id="1g6u9to" data-start="11909" data-end="11944">How often are RSS feeds updated?</h2>
+<p data-start="11946" data-end="12102">The refresh interval depends on the software configuration and the publishing frequency of the RSS source. Many systems check for updates every few minutes.</p>
+<h2 data-section-id="1sjh41c" data-start="12104" data-end="12147">Where are RSS LED tickers commonly used?</h2>
+<p data-start="12149" data-end="12312">They are widely used in corporate offices, banks, schools, hospitals, government offices, transportation hubs, media organizations, and public information centers.</p>
+<h2 data-section-id="jtcvlf" data-start="12314" data-end="12358">Can RSS LED displays be managed remotely?</h2>
+<p data-start="12360" data-end="12517">Yes. Modern RSS LED ticker systems support cloud-based management, allowing administrators to configure feeds, schedules, and display settings from anywhere.</p>
+
+                        </div>
+                        
+                        <hr>
+
+                        <h5 class="text-center"><b>Tags </b> :</h5>
+                        <h5 class="text-center">Follow Us On : &nbsp;&nbsp;&nbsp;&nbsp; 
+                            <a class="pt-2" target="_blank" href="https://www.facebook.com/sharer.php?t=How RSS Feeds Work on LED Ticker Displays&u=/blog/how-rss-feeds-work-led-ticker-displays/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://www.linkedin.com/shareArticle?title=How RSS Feeds Work on LED Ticker Displays&url=/blog/how-rss-feeds-work-led-ticker-displays/"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://web.whatsapp.com/send?text=/blog/how-rss-feeds-work-led-ticker-displays/"><i style="font-size:2rem" class="fa fa-whatsapp" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://pinterest.com/pin/create/button/?description=How RSS Feeds Work on LED Ticker Displays&media=/img/&url=/blog/how-rss-feeds-work-led-ticker-displays/"><i style="font-size:2rem" class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://twitter.com/intent/tweet?text=How RSS Feeds Work on LED Ticker Displays&url=/blog/how-rss-feeds-work-led-ticker-displays/"><i style="font-size:2rem" class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                        </h5>
+                    </article>
+                </div>
+                <div class="col-lg-4 hidden-sm">
+                    <div class="sidebar boxed boxed--border boxed--lg">
+                        <!--end widget-->
+                        <div class="sidebar__widget  bg--secondary py-4 px-2">
+                            <h5 class="text-center">Talk to a Sign Expert</h5>
+                            <p class="text-center">
+                                Get the latest product updates, company news
+                            </p>
+                            <form class="row m-0">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" placeholder="First / Last Name" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" name="email" placeholder="you@something.com" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" placeholder="Message" class="validate-required" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn--primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end widget-->
+                        <div class="sidebar__widget">
+                            <h5>Popular Tags</h5>
+                            <ul class="tag-cloud">
+                                <p>RSS LED ticker, RSS LED display, RSS feed display, LED news ticker, live news ticker display, RSS scrolling display</p>
+                            </ul>
+                        </div>
+                        <!--end widget-->
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    
+    <section class="switchable switchable--switch space--xs">
+        <div class="container">
+            <h3 class="text-center"><b>Related Blogs</b></h3>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 8, 2026, 09_01_09 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Role of LED Displays in Smart Cities</b></h4>
+                                <p>Role of LED Displays in Smart Cities
+As cities continue to grow, the demand for...<b><a href="/blog/led-display-for-smart-city/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                    <div class="row">
+                        <div class="col-5">
+                            <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 7, 2026, 09_04_09 AM.webp" / loading="lazy" decoding="async">
+                        </div>
+                        <div class="col-7 p-4">
+                            <h4><b>How to Install an LED Ticker Display: Step-by...</b></h4>
+                                <p>How to Install an LED Ticker Display: Step-by-Step Guide
+LED ticker displays ha...<b><a href="/blog/how-to-install-led-ticker/">View Post</a></b></p>
+                        </div>
+                    </div>
+                 </div>
+
+                 </div>
+
+                 <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/Jul 6, 2026, 02_23_23 PM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Best LED Ticker Displays for Business in 2026</b></h4>
+                                <p>Best LED Ticker Displays for Business in 2026
+In today&#039;s competitive business e...<b><a href="/blog/best-led-ticker-for-business/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                      <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 4, 2026, 09_23_52 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>LED Ticker vs Digital Signage: Which is Bette...</b></h4>
+                                <p>LED Ticker vs Digital Signage: Which is Better?
+Digital displays have transform...<b><a href="/blog/led-ticker-vs-digital-signage/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+    
+                     </div>
+
+            
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>
+<hr>
+
+<section class="selectable" style="margin: 50px 0px 100px 0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pr-5 mb-2">
+                <h2 class="text pt-5"><b>Why Choose Us? </b></h2>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Advanced Technology.png" alt="advance technology" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Advanced Technology</b>
+                </h4>
+                <p style="padding-left: 35px;">With advanced technology, we provide real-time, accurate, and visually captivating information to enhance your 
+                    investment experience.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Need Icon.png" alt="Need icon" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customization Based on Needs</b>
+                </h4>
+                <p style="padding-left: 35px;">We understand that every business is distinct, and we are committed to thoroughly studying your needs to develop a 
+                    solution that perfectly aligns with your objectives.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/CertificationIconLogo.png" alt="certification logo" style="height: 30px; width: 25px;"/ loading="lazy" decoding="async">
+                    <b>Certified Company</b>
+                </h4>
+                <p style="padding-left: 35px;">Have complete confidence in the durability and integrity of our company, as they are tested and meet the stringent 
+                    requirements set by:
+                    ISO 9001:2015, 
+                    UL-1950, 
+                    ETL & CE.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Customer Support.png" alt="customer support" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customer Support</b>
+                </h4>
+                <p style="padding-left: 35px;">Whether you require advice, troubleshooting, or ongoing support, we remain by your side, offering continuous technical 
+                    assistance and a steadfast commitment to your success.
+                </p>
+            </div>
+            <div class="col-md-7" style="background-color: #036eb10e; padding: 40px 40px 40px 60px; border-radius: 10px">
+                <h2 class="text-center mb-0"><b>Talk to our Ticker Experts</b></h2>
+                <p class="text-center pr-5">Contact our team of expert to suggest you the best product for your ticker project</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                        <form class="text-left row pt-5" method="POST" id="query" novalidate="true">
+                            <div class="col-md-6">
+                                <span>Company Name</span>
+                                <input type="text" name="company" id="company" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Country</span>
+                                <select name="country" id="country" placeholder="Select Country" class="validate-required input-select">
+                                    <option value=""></option>
+                                    <option value="Afganistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Bonaire">Bonaire</option>
+                                    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                    <option value="Brunei">Brunei</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Canary Islands">Canary Islands</option>
+                                    <option value="Cape Verde">Cape Verde</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Channel Islands">Channel Islands</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos Island">Cocos Island</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cote DIvoire">Cote DIvoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Curaco">Curacao</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="East Timor">East Timor</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands">Falkland Islands</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Ter">French Southern Ter</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Great Britain">Great Britain</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Hawaii">Hawaii</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="India">India</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea North">Korea North</option>
+                                    <option value="Korea Sout">Korea South</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Laos">Laos</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macau">Macau</option>
+                                    <option value="Macedonia">Macedonia</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Midway Islands">Midway Islands</option>
+                                    <option value="Moldova">Moldova</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Nambia">Nambia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherland Antilles">Netherland Antilles</option>
+                                    <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                    <option value="Nevis">Nevis</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau Island">Palau Island</option>
+                                    <option value="Palestine">Palestine</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Phillipines">Philippines</option>
+                                    <option value="Pitcairn Island">Pitcairn Island</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                    <option value="Republic of Serbia">Republic of Serbia</option>
+                                    <option value="Reunion">Reunion</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="St Barthelemy">St Barthelemy</option>
+                                    <option value="St Eustatius">St Eustatius</option>
+                                    <option value="St Helena">St Helena</option>
+                                    <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                    <option value="St Lucia">St Lucia</option>
+                                    <option value="St Maarten">St Maarten</option>
+                                    <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                    <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                    <option value="Saipan">Saipan</option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="Samoa American">Samoa American</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="Tahiti">Tahiti</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Erimates">United Arab Emirates</option>
+                                    <option value="United States of America" Selected>United States of America</option>
+                                    <option value="Uraguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Vatican City State">Vatican City State</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                    <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                    <option value="Wake Island">Wake Island</option>
+                                    <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zaire">Zaire</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                 </select>
+                            </div>
+                            <div class="col-md-6">
+                                <span>First Name:</span>
+                                <input type="text" id="fname" name="fname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Last Name:</span>
+                                <input type="text" id="lname" name="lname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Email Address:</span>
+                                <input type="email" id="email" name="email" class="validate-required validate-email">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Phone:</span>
+                                <input type="text" id="phone" name="phone" class="validate-required">
+                            </div>
+                            <div class="col-md-12">
+                                <span>About Project:</span>
+                                <textarea rows="5" id="message" name="message" class="validate-required"></textarea>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                    <div class="g-recaptcha"
+                                        data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <button type="submit" id="ajaxStart" class="btn btn--primary type--uppercase">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<hr>
+
+<section class="space--xs" style="background-color: #036eb10e; padding-top: 50px; margin-top: 100px; margin-bottom: -21px;">
+    <div class="container">
+        <div class="cta cta--horizontal text-center-xs row">
+            <div class="col-md-12 text-center">
+                <h2><b>Request a Demo</b></h2>
+                <p>To understand the product functionality and features, we do provide onsite product
+                    demonstrations, contact us today to get customised assistance
+                    </p>
+                    <br>
+                    <a class="btn type--uppercase" href="/contact/">
+                        <span class="btn__text">
+                            Contact us now
+                        </span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <!--end of container-->
+</section></main>
+<footer class="footer-2 bg--secondary">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/solutions/">- Ticker Solutions</a>
+                  </li>
+                  <li>
+                      <a href="/ticker-models/">- Ticker Models</a>
+                  </li>
+                  <li>
+                      <a href="/gallery/">- Gallery</a>
+                  </li>
+                  <li>
+                    <a href="/about-us/">- About Us</a>
+                </li>
+                <li>
+                      <a href="/returns-policy/">- Returns Policy</a>
+                </li>
+                <li>
+                      <a href="/payment-methods/">- Payment Methods</a>
+                </li>
+                <li>
+                      <a href="/shipping-and-handling/">- Shipping And Handling</a>
+                </li>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/led-stock-ticker/">- Stock Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-financial-ticker/">- Financial Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/sports-bars/">- Sports Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-news-ticker/">- News Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-twitter-ticker/">- Twitter Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-rss-ticker/">- RSS Ticker</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">News & Events</h6>
+              <ul class="list--hover">                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-display-for-smart-city/">Role of LED Displays in Smart ...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/how-to-install-led-ticker/">How to Install an LED Ticker D...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/best-led-ticker-for-business/">Best LED Ticker Displays for B...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-ticker-vs-digital-signage/">LED Ticker vs Digital Signage:...</a>
+                  </li>              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Sales</h6>
+              <ul class="list--hover">
+                  <li>
+                       800.966.9329 (US)
+                  </li>
+                  <li>
+                      <a target="_blank" rel="nofollow" href="https://www.facebook.com/photonplaygroup/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-youtube-play" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  </li>
+                  <li>
+                    <a style="width:100%;" class="btn btn-custom-blue" href="/contact/">
+                        <span class="btn__text">
+                          Get Quote
+                        </span>
+                    </a>
+                  </li>
+                  
+                  <li class="mt-2">
+                    <a style="width:100%;" class="btn btn-custom-yello" href="/contact/">
+                        <span class="btn__text">
+                          Request Info
+                        </span>
+                    </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--end of row-->
+      <hr>
+      <div class="row" style="margin-top:0">
+          <div class="col-md-12">
+              <img style="width:100px; float:left; margin-right: 50px;" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+              <span class="type--fine-print">&copy;
+                  <span class="update-year"></span> Tickerplay Systems</span>
+              <a class="type--fine-print" href="#">All right reserved</a>
+              <a class="type--fine-print" href="/privacy-policy">Privacy Policy</a>
+          </div>
+      </div>
+      <!--end of row-->
+  </div>
+  <!--end of container-->
+</footer>
+
+<a class="back-to-top inner-link active" href="#start" data-scroll-class="100vh:active">
+    <i class="stack-interface stack-up-open-big"></i>
+</a>
+
+    <section class="popup">
+        <div class="pop-close">
+            <h3><b><i class="fa fa-close"></i> Close</b></h3>
+        </div>
+        <div class="popup__content">
+            <div class="content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12"  >
+                                    <h4 class="thin-heading mb-4"><b>Request a Quote</b></h4>
+                                    <form class="mb-5" id="queryForm" novalidate="true">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="fname" id="fname"
+                                                    placeholder="Your First Name" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="lname" id="lname"
+                                                    placeholder="Your Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="phone" id="phone"
+                                                    placeholder="Your Phone Number" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="email" id="email"
+                                                    placeholder="Your Email Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="country" id="country"
+                                                    placeholder="Your Country" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="company" id="company"
+                                                    placeholder="Your Company" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <textarea class="form-control" name="message" id="message" cols="30"
+                                                    rows="2" placeholder="Write your message" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pl-0 mb-3">
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12 p-0">
+                                                <button type="submit" id="customFrombtn"
+                                                    class="btn btn--primary type--uppercase">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="form-message-warning" class="text-danger">
+
+                                    </div>
+                                    <div id="form-message-success" class="text-success">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Trigger Button -->
+
+
+<style>
+    /* 1. Position the button fixed on the screen */
+    .quote-container {
+        position: fixed;
+        bottom: 50%;
+        right: 30px;
+        z-index: 1000;
+        /* Animation: move up/down every 3 seconds */
+        animation: floatAnimation 3s ease-in-out infinite;
+    }
+
+    .quote-bubble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 80px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        background-color: #4A90C2;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+    /* The Tail */
+    .quote-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 22px;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 18px solid #4A90C2;
+        transform: rotate(-15deg);
+        transition: border-top-color 0.3s ease;
+    }
+
+    /* --- ATTENTION ANIMATION --- */
+    @keyframes floatAnimation {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); } /* Moves up 15px */
+        100% { transform: translateY(0px); }
+    }
+
+    /* --- HOVER EFFECTS --- */
+    .quote-bubble:hover {
+        background-color: #357ABD;
+        transform: scale(1.1); /* Grows slightly on hover */
+        box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    .quote-bubble:hover::after {
+        border-top-color: #357ABD; /* Syncs tail color */
+    }
+
+    /* Pulse Effect to grab eye on load */
+    .quote-bubble::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #4A90C2;
+        opacity: 0.5;
+        z-index: -1;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+    
+    
+    /* Mobile view */
+/* Mobile view */
+@media (max-width: 768px) {
+    .quote-bubble {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0; /* hide text */
+    }
+
+    .quote-bubble::after,
+    .quote-bubble::before {
+        display: none; /* remove tail + pulse */
+    }
+
+    .quote-bubble svg {
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.quote-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        display: none;
+    }
+    .quote-icon {
+        display: block;
+    }
+}
+</style>
+
+<div class="quote-container">
+    <button class="quote-bubble" onclick="openContactModal()">
+        
+        <span class="quote-text">
+            Get Instant<br>Quote
+        </span>
+
+        <svg class="quote-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="white"/>
+        </svg>
+
+    </button>
+</div>
+
+
+
+<!-- Modal -->
+<div id="contactModal" class="custom-modal">
+    <div class="modal-box">
+
+        <div class="modal-header">
+            <div class="header-left">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4zM6 8h12v2H6zm0 3h12v2H6zm0 3h12v2H6z" fill="white"/>
+                </svg>
+                <span>Message</span>
+            </div>
+
+            <span class="close-btn" onclick="closeContactModal()">×</span>
+        </div>
+<div id="formMessage" class="form-message" style="display:none;"></div>
+       <form onsubmit="handleFormSubmit(event)" style="padding:10px;"id="form_message_inputs">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile</label>
+                <div class="phone-group">
+                    <select class="country-select" style="max-width:100px;"></select>
+                    <input type="tel" placeholder="Mobile number" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn modal-header" style="border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</div>
+<script>
+// Country data
+const countries = [
+    { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+    { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+    { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+    { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+    { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+    { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+    { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+    { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+    { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+    { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+    { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+    { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+    { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+    { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+    { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+    { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+    { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+    { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+    { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+    { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+    { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+    { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+    { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+    { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+    { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+    { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+    { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+    { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+    { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+    { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+    { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+    { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+    { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+    { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+    { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+    { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+    { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+    { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+    { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+    { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+    { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+    { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+    { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+    { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+    { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+    { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+    { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+    { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+    { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+    { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+    { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+    { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+    { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+    { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+];
+
+ 
+function populateCountrySelect(selectedDialCode = null) {
+    const select = document.querySelector(".country-select");
+    if (!select) return;
+
+    select.innerHTML = "";
+
+    // Step 1: clone array
+    let sortedCountries = [...countries];
+
+    // Step 2: move US to top
+    sortedCountries.sort((a, b) => {
+        if (a.code === "US") return -1;
+        if (b.code === "US") return 1;
+        return a.name.localeCompare(b.name);
+    });
+
+    sortedCountries.forEach(country => {
+        const option = document.createElement("option");
+
+        option.value = country.dial_code;
+        option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+        option.setAttribute("data-country-code", country.code);
+
+        // Selected logic
+        if (selectedDialCode && country.dial_code === selectedDialCode) {
+            option.selected = true;
+        } else if (!selectedDialCode && country.code === "US") {
+            option.selected = true;
+        }
+
+        select.appendChild(option);
+    });
+}
+
+// Fetch user country based on IP
+async function fetchUserCountryByIP() {
+    try {
+        // Using free IP geolocation API
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) throw new Error('IP fetch failed');
+        
+        const data = await response.json();
+        const countryCode = data.country_code;
+        const countryName = data.country_name;
+        
+        console.log(`IP detected: ${countryName} (${countryCode})`);
+        
+        // Find country in our list
+        const matchedCountry = countries.find(c => c.code === countryCode);
+        if (matchedCountry) {
+            return matchedCountry;
+        }
+        return null;
+    } catch (error) {
+        console.warn('IP geolocation failed:', error);
+        return null;
+    }
+}
+
+// Initialize on page load (modal hidden initially)
+async function initializeCountryOnLoad() {
+    // First populate with default US
+    populateCountrySelect(null);
+    
+    // Try to fetch IP-based country
+    const userCountry = await fetchUserCountryByIP();
+    
+    if (userCountry) {
+        // Repopulate with detected country selected
+        populateCountrySelect(userCountry.dial_code);
+        console.log(`Country set to: ${userCountry.name} (${userCountry.dial_code}) based on IP`);
+    } else {
+        console.log('Using default country: United States (+1)');
+    }
+}
+
+// Modal controls
+function openContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "flex";
+    }
+}
+
+function closeContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById("contactModal");
+    if (event.target === modal) {
+        closeContactModal();
+    }
+};
+ 
+        
+        let isSubmitting = false;
+        
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+        
+            if (isSubmitting) return; 
+            isSubmitting = true;
+        
+            const form = e.target;
+            const messageBox = document.getElementById("formMessage");
+            const submitBtn = form.querySelector("button[type='submit']");
+         var form_message_inputs = document.getElementById("form_message_inputs");
+       
+            // disable button
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+        
+            const name = form.querySelector('input[placeholder="Enter name"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const mobile = form.querySelector('input[placeholder="Mobile number"]').value;
+            const message = form.querySelector('textarea').value;
+        
+            const select = document.querySelector(".country-select");
+            const selectedCountry = select.options[select.selectedIndex].textContent;
+        
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        mobile,
+                        country: selectedCountry,
+                        message
+                    })
+                });
+        
+                const data = await res.json();
+        
+                messageBox.style.display = "block";
+                  form_message_inputs.style.display = "none";
+        
+                if (data.status) {
+                    messageBox.className = "form-message success";
+                    messageBox.innerText = "✅ Message sent successfully!";
+        
+                    form.reset();
+        
+                    setTimeout(() => {
+                        closeContactModal();
+                        messageBox.style.display = "none";
+                    }, 5000);
+        
+                } else {
+                    messageBox.className = "form-message error";
+                    messageBox.innerText = "❌ " + data.message;
+                }
+        
+            } catch (err) {
+                messageBox.style.display = "block";
+                messageBox.className = "form-message error";
+                messageBox.innerText = "❌ Something went wrong";
+            }
+        
+            // re-enable button after response
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+            isSubmitting = false;
+        }
+     
+    document.addEventListener("DOMContentLoaded", function() {
+        initializeCountryOnLoad();
+        
+        // Attach form submit handler
+        const form = document.querySelector("#contactModal form");
+        if (form) {
+            form.addEventListener("submit", handleFormSubmit);
+        }
+    });
+</script>
+
+
+    <script>
+// const countries = [
+//     { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+//     { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+//     { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+//     { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+//     { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+//     { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+//     { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+//     { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+//     { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+//     { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+//     { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+//     { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+//     { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+//     { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+//     { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+//     { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+//     { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+//     { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+//     { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+//     { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+//     { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+//     { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+//     { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+//     { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+//     { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+//     { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+//     { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+//     { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+//     { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+//     { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+//     { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+//     { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+//     { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+//     { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+//     { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+//     { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+//     { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+//     { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+//     { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+//     { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+//     { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+//     { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+//     { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+//     { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+//     { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+//     { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+//     { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+//     { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+//     { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+//     { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+//     { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+//     { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+//     { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+//     { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+// ];
+// // Populate dropdown
+// document.addEventListener("DOMContentLoaded", function () {
+//     const select = document.querySelector(".country-select");
+
+//     countries.forEach(country => {
+//         let option = document.createElement("option");
+//         option.value = country.dial_code;
+//         option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+
+//         if (country.code === "IN") option.selected = true;
+
+//         select.appendChild(option);
+//     });
+// });
+
+// Modal controls
+    function openContactModal() {
+        var form_message_inputs = document.getElementById("form_message_inputs");
+         form_message_inputs.style.display = "block";
+        document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeContactModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+</script>
+
+    <!-- Loading Scripts -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/isotope.min.js" defer></script>
+    <script src="/js/granim.min.js" defer></script>
+    <script src="/js/jquery.steps.min.js" defer></script>
+    <script src="/js/smooth-scroll.min.js" defer></script>
+    <script src="/js/zoom.js" defer></script>
+    <script src="/js/owl.carousel.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5da70a23df22d913399f714f/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    
+
+
+    // <script>
+    //     /*
+    //       Reb2b Tracking Script Loader
+    //       --------------------------------
+    //       - Prevents duplicate loading
+    //       - Dynamically loads external tracking script
+    //       - Uses async loading for performance
+    //     */
+        
+    //     !function(key) {
+        
+    //       // Check if script is already loaded to avoid duplication
+    //       if (window.reb2b) return;
+        
+    //       // Initialize global object to mark script as loaded
+    //       window.reb2b = {
+    //         loaded: true
+    //       };
+        
+    //       // Create a new script element
+    //       var s = document.createElement("script");
+        
+    //           // Load script asynchronously (doesn't block page rendering)
+    //           s.async = true;
+            
+    //           // Set script source URL dynamically using the provided key
+    //           s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+            
+    //           // Insert the script before the first existing script tag in the document
+    //           document.getElementsByTagName("script")[0].parentNode.insertBefore(
+    //             s,
+    //             document.getElementsByTagName("script")[0]
+    //           );
+            
+    //         }("E63P0HZQR7OW"); // Unique key for your tracking script
+        
+    // </script>
+    
+    
+    
+    
+    <script>
+    //     $(document).ready(function () {
+    //         $("#query").submit(function (event) {
+    //             $("#ajaxStart").attr("disabled", true);
+    //             event.preventDefault();
+
+    //             $.ajax({
+    //                 url: "/mail/index.php",
+    //                 type: "POST",
+    //                 data: $('#query').serialize(),
+    //                 success: function (response) {
+    //                     console.log(response);
+    //                     if (response == "success") {
+    //                         window.location.href = '/thankyou/';
+    //                         /*$('#query').trigger("reset");
+    //                         alert("Thanks for Quote", "We Will Contact You Shortly!");
+    //                         swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+    //                         $("#ajaxStart").attr("disabled", false);*/
+    //                     }
+    //                     else {
+    //                         $("#ErrorModal").modal('show');
+    //                         console.log("ERROR");
+    //                     }
+    //                 }
+    //             });
+    //             return false;
+    //         });
+
+    //     });
+
+     </script>
+     
+     
+     <script>
+        $(document).ready(function () {
+        
+            $("#query").submit(function (event) {
+        
+                // Prevent page reload
+                event.preventDefault();
+        
+                console.log("Form submit triggered");
+        
+                // Disable button to prevent multiple clicks
+                $("#ajaxStart").attr("disabled", true);
+        
+                // Debug: Show form data
+                var formData = $('#query').serialize();
+                console.log("Form Data:", formData);
+                // alert("Submitting form... Check console");
+        
+                $.ajax({
+        
+                    // ðŸ”— API URL (this handles email sending on server)
+                    url: "/mail/index.php",
+        
+                    type: "POST",
+        
+                    data: formData,
+        
+                    success: function (response) {
+        
+                        console.log("Server Response:", response);
+                        // alert("Response: " + response);
+        
+                        if (response.trim() === "success") {
+        
+                            console.log("Success: Redirecting to thank you page");
+        
+                            // Redirect on success
+                            window.location.href = '/thankyou/';
+        
+                        } else {
+        
+                            console.log("Error: Unexpected response - "+response.trim());
+                            // alert("Something went wrong!");
+        
+                            $("#ErrorModal").modal('show');
+                            $("#ajaxStart").attr("disabled", false);
+                        }
+                    },
+        
+                    error: function (xhr, status, error) {
+        
+                        console.log("AJAX ERROR:");
+                        console.log("Status:", status);
+                        console.log("Error:", error);
+                        console.log("Response Text:", xhr.responseText);
+        
+                        // alert("AJAX Error! Check console.");
+        
+                        $("#ajaxStart").attr("disabled", false);
+                    }
+                });
+        
+                return false;
+            });
+        
+        });
+    </script>
+    
+    
+    
+    
+    
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                merge: true,
+                loop: true,
+                autoplay: true,
+                nav: true,
+                merge: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            }
+            );
+        });
+    </script>
+
+    <script>
+        $("#quotebtn").click(function () {
+            $(".popup").fadeIn(500);
+        });
+
+        $(".pop-close").click(function () {
+            $(".popup").fadeOut(500);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#queryForm").submit(function (event) {
+                $("#customFrombtn").attr("disabled", true);
+                event.preventDefault();
+
+                $.ajax({
+                    url: "/mail/index.php",
+                    type: "POST",
+                    data: $('#queryForm').serialize(),
+                    success: function (response) {
+                        console.log(response);
+                        if (response == "success") {
+                            window.location.href = '/thankyou/';
+                            /*$('#query').trigger("reset");
+                            alert("Thanks for Quote", "We Will Contact You Shortly!");
+                            swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+                            $("#ajaxStart").attr("disabled", false);*/
+                        }
+                        else {
+                            $("#ErrorModal").modal('show');
+                            console.log("ERROR");
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText);
+                    }
+                });
+                return false;
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

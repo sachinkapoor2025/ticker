@@ -1,8 +1,10 @@
 {
-  "appId": "d299j6vzg4qbwh",
-  "defaultDomain": "d299j6vzg4qbwh.amplifyapp.com",
-  "branch": "main",
+  "appId": "d3b6br5rr6wbn2",
+  "name": "ticker",
+  "defaultDomain": "d3b6br5rr6wbn2.amplifyapp.com",
+  "branch": "dev",
   "region": "us-east-1",
-  "url": "https://main.d299j6vzg4qbwh.amplifyapp.com",
-  "contactApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact"
+  "url": "https://dev.d3b6br5rr6wbn2.amplifyapp.com",
+  "contactApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact",
+  "note": "Amplify managed in console. GitHub Actions deploys API only. Set IS_PRODUCTION=true only on the production Amplify app/branch."
 }

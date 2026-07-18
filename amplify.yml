@@ -1,9 +1,15 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        # Staging Amplify apps: leave IS_PRODUCTION unset/false → robots disallow + X-Robots-Tag
+        # Production Amplify app: set env IS_PRODUCTION=true in Amplify console
+        - echo "IS_PRODUCTION=${IS_PRODUCTION:-false}"
+        - python3 scripts/seo_build.py
     build:
       commands:
-        - echo "Static mirror of tickerplay.com — no build step"
+        - echo "Static site ready (SEO assets generated)"
   artifacts:
     baseDirectory: website
     files:

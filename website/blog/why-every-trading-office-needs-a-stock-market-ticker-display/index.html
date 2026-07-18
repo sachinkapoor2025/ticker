@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="x2TVSaiGBx9F_unjNk_O1mEB64-JF5s3lmTguSQvstw" />
+    <meta name="description" content="Enhance trading decisions and office productivity with stock market ticker displays that provide real-time financial data and market updates.">
+    <meta name="keywords" content="Stock market ticker, stock market ticker display, real-time stock ticker digital, stock ticker display, stock ticker board, stock exchange ticker display">
+    <meta name="author" content="Photonplay">
+    <title>Stock Market Ticker Display: Real-Time Trading Advantage</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/blog/why-every-trading-office-needs-a-stock-market-ticker-display/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/blog/why-every-trading-office-needs-a-stock-market-ticker-display/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+
+    <!-- Static -->
+    <meta name="author" content="Tickerplay">
+    <meta name="publisher" content="Tickerplay">
+    <meta property="locale" content="en_US" />
+    <meta property="type" content="website" />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+
+    <style>
+    
+    .modal-box {
+    width: 320px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/* Header */
+.modal-header {
+    background: #222; /* dark */
+    color: #fff;
+    padding: 10px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+        /* Modal background */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+/* Modal box */
+.modal-box {
+    background: #fff;
+    width: 300px;
+    padding: 0px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+ 
+
+/* Phone group */
+.phone-group {
+    display: flex;
+    gap: 5px;
+}
+
+.country-select {
+    width: 40%;
+}
+
+.phone-group input {
+    width: 60%;
+}
+
+ .floating-icon {
+    position: fixed !important;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    background: #007bff; /* keeps your white SVG visible */
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 999999;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* keep SVG clean */
+.floating-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* small hover effect */
+.floating-icon:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.form-group input,
+.form-group textarea,
+.phone-group select,
+.phone-group input {
+    width: 100%;
+    padding: 0px 14px;
+    font-size: 0.85rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+    color: #1a2634;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+.form-message {
+    padding: 8px;
+    margin: 10px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.form-message.success {
+    background: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6cb;
+}
+    </style>
+    <!-- Start Schema -->
+
+    <!-- End Schema -->
+
+    <!-- Start Canonical -->
+    <link rel="canonical" href="https://www.tickerplay.com/blog/why-every-trading-office-needs-a-stock-market-ticker-display/" />
+    <!-- Start Canonical -->
+
+<link rel="shortcut icon" href="/img/icon.png" />
+
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/zoom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KQTHDPF');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <script>
+        function initApollo(){
+            var n=Math.random().toString(36).substring(7),
+            o=document.createElement("script");
+        
+            o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+            o.async=true;
+            o.defer=true;
+        
+            o.onload=function(){
+                window.trackingFunctions.onLoad({
+                    appId:"6a39b5b2e4809f001439345f"
+                });
+            };
+        
+            document.head.appendChild(o);
+        }
+        initApollo();
+    </script>
+
+<!-- tickerplay-seo-start -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tickerplay","alternateName":"Tickerplay Systems","url":"https://www.tickerplay.com/","logo":"https://www.tickerplay.com/img/logo-dark.png","telephone":"+1-800-966-9329","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-966-9329","contactType":"sales","areaServed":"US","availableLanguage":["English"]}],"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tickerplay.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.tickerplay.com/blog/"},{"@type":"ListItem","position":3,"name":"Stock Market Ticker Display: Real-Time Trading Advantage","item":"https://www.tickerplay.com/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Stock Market Ticker Display: Real-Time Trading Advantage","description":"Enhance trading decisions and office productivity with stock market ticker displays that provide real-time financial data and market updates.","mainEntityOfPage":"https://www.tickerplay.com/blog/why-every-trading-office-needs-a-stock-market-ticker-display/","author":{"@type":"Organization","name":"Tickerplay"},"publisher":{"@type":"Organization","name":"Tickerplay","logo":{"@type":"ImageObject","url":"https://www.tickerplay.com/img/logo-dark.png"}},"datePublished":"June","dateModified":"June"}</script>
+<!-- tickerplay-seo-end -->
+</head>
+
+<body>
+<a class="sr-only sr-only-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTHDPF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a id="start"></a><div class="nav-container">
+    <div class="bar bar--sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-2">
+                    <a href="/">
+                        <img class="logo logo-dark" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                    </a>
+                </div>
+                <div class="col-9 col-md-10 text-right">
+                    <a href="/" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                        <i class="icon icon--sm stack-interface stack-menu"></i>
+                    </a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </div>
+    <!--end bar-->
+    <nav id="menu1" class="bar bar--sm bar-1 hidden-xs" data-scroll-class="500px:pos-fixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 hidden-xs">
+                    <div class="bar__module">
+                        <a href="/">
+                            <img class="logo logo-dark  pt-4" alt="Tickerplay logo" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+                <div class="col-lg-9 col-md-9 text-right text-left-md text-left-lg">
+                    <div class="bar__module mt-4">
+                        <ul class="menu-horizontal text-left">
+                            <li class="dropdown ml--2">
+                                <li>
+                                    <a href="/">
+                                        <i style="font-size: 20px" class="fa fa-home"></i>
+                                    </a>
+                                </li>
+                            </li>
+
+                            <li class="dropdown dropdown__trigger">
+                                <span class="dropdown__tri" style="color:#000000">Tickers</span>
+                                <div class="dropdown__container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 dropdown__content dropdown__content--lg">
+                                                <div class="row justify-content-start">
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED TICKER TYPES</h5>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="pl-2">
+                                                            <a href="/led-ticker-tape/">
+                                                                - Led Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/indoor-ticker-tape/">
+                                                                - Indoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/outdoor-ticker-tape/">
+                                                                - Outdoor Ticker Tapes
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/flexible-ticker-tape/">
+                                                                - Flexible Ticker Tapes
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/circular-ticker-tape/">
+                                                                - Circular Ticker Tapes
+                                                            </a>
+                                                        </li> 
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">TICKERS (DATA WISE)</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-stock-ticker/">
+                                                                - Stock Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-financial-ticker/">
+                                                                - Financial Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/led-sports-ticker/">
+                                                                - Sports Ticker
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/led-news-ticker/">
+                                                                - News Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-twitter-ticker/">
+                                                                - Twitter Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/led-rss-ticker/">
+                                                                - RSS Ticker
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Ticker
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-market-ticker/">
+                                                                - Stock Market Ticker
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">APPLICATION WISE</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/university-finance-lab/">
+                                                                - University Finance Lab
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-brokerage-firms/">
+                                                                - Stock Brokerage Firms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/business-school/">
+                                                                - Business School
+                                                            </a>
+                                                        </li>  
+                                                        <li class="pl-2">
+                                                            <a href="/wealth-management-firms/">
+                                                                - Wealth Management Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/investment-firms/">
+                                                                - Investment Firms
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/share-traders/">
+                                                                - Share Traders
+                                                            </a>
+                                                        </li> 
+                                                        <li class="pl-2">
+                                                            <a href="/trading-labs/">
+                                                                - Trading Labs
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/sports-bars/">
+                                                                - Sports Bars
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/corporate-floors/">
+                                                                - Corporate Floors
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/stock-exchange/">
+                                                                - Stock Exchange
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/showrooms/">
+                                                                - Showrooms
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/schools/">
+                                                                - Schools
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-sm-6">
+                                                    <ul class="menu-vertical">
+                                                        <li>
+                                                            <a href="#">
+                                                                <h5 class="text---primary">LED SIGN</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/programmable-scrolling-led-sign/">
+                                                                - Scrolling Led Sign
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/multi-time-zone-digital-wall-clock/">
+                                                                - Digital Wall Clock
+                                                            </a>
+                                                        </li>
+                                                        <li class="pl-2">
+                                                            <a href="/custom-led-ticker-tape/">
+                                                                - Custom Led Ticker Sign
+                                                            </a>
+                                                        </li>  
+                                                    </ul>
+                                                </div>
+                                                
+                                                    
+                                                </div>
+                                                <!--end of row-->
+                                            </div>
+                                            <!--end dropdown content-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end dropdown container-->
+                            </li>
+                            <li class="dropdown">
+                                <a href="/about-us/">
+                                    Company
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/blogs/">
+                                    News & Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end module-->
+                    <div class="bar__module">
+                        <a class="btn btn--sm btn--primary type--uppercase" href="/contact/">
+                            <span class="btn__text">
+                                Get Quote
+                            </span>
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </nav>
+    <!--end bar-->
+</div>
+<main id="main-content" class="main-container" role="main">
+    <section class="cover imagebg height-30 text-center" data-overlay="1" style="margin-top:0">
+        <div class="background-image-holder" style="background: url('img/bn.jpg'); opacity: 1;">
+            <img alt="Radar Speed Signs Banner" src="/img/Radar-Speed-Sign-banner-clouds.jpg" loading="lazy" decoding="async">
+        </div>
+        <div class="container">
+          <div class="row justify-content-around">
+              <div class="col-md-12 text-center">
+                      <h2 class="pt-4"><b>Why Every Trading Office Needs a Stock Market Ticker Display</b></h2>
+              </div>
+          </div>
+          <!--end of row-->
+      </div>
+        <!--end of container-->
+    </section>
+
+
+    <section style="margin-top: 1rem; margin-bottom: 1rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumbs">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/blogs">Blog</a>
+                        </li>
+                        <li>Why Every Trading Office Needs a Stock Market Ticker Display
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+    <section class="space--sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <article>
+                        <div class="article__title type--uppercase">
+                            <h1 class="h3"><b>Why Every Trading Office Needs a Stock Market Ticker Display</b></h1>
+                            <span>June 19, 2026 01:30</span>
+                            
+                        </div>
+                        <!--end article title-->
+                        <div class="article__body">
+                           
+                            <img class="img-reponsive" src="/img/featured/ChatGPT Image Jun 19, 2026, 10_58_56 AM.webp" alt="ChatGPT Image Jun 19, 2026, 10_58_56 AM.webp"/ loading="lazy" decoding="async"><h1 data-section-id="1tpcbbu" data-start="1802" data-end="1864">Why Every Trading Office Needs a Stock Market Ticker Display</h1>
+<p data-start="1866" data-end="2262">The modern financial industry runs on information. Traders, brokers, portfolio managers, and analysts constantly monitor stock prices, market indices, and breaking financial news to make informed decisions. In such a fast-moving environment, having immediate access to market information is no longer optional&mdash;it's essential. This is where a <a href="../led-stock-ticker/">stock market ticker</a> becomes an indispensable tool.</p>
+<p data-start="2264" data-end="2633">A stock market ticker display delivers real-time financial information across trading floors, brokerage firms, investment offices, and banking institutions. It helps teams stay informed, improves collaboration, and enables faster decision-making. As markets continue to become more dynamic, organizations that rely on outdated communication methods risk falling behind.</p>
+<p data-start="2635" data-end="2804">This guide explains why every trading office can benefit from a stock market ticker display and how it contributes to operational efficiency and better market awareness.</p>
+<hr data-start="2806" data-end="2809">
+<h1 data-section-id="10xm59w" data-start="2811" data-end="2851">What is a Stock Market Ticker Display?</h1>
+<p data-start="2853" data-end="3077">A <strong data-start="2855" data-end="2878">stock market ticker</strong> is a digital display system designed to present continuously updating financial information in a scrolling format. These displays are connected to live market feeds and provide real-time updates on:</p>
+<ul data-start="3079" data-end="3233">
+<li data-section-id="gi2z5i" data-start="3079" data-end="3093">Stock prices</li>
+<li data-section-id="1ne4ftf" data-start="3094" data-end="3110">Market indices</li>
+<li data-section-id="eom32l" data-start="3111" data-end="3124">Commodities</li>
+<li data-section-id="qx2w9x" data-start="3125" data-end="3150">Currency exchange rates</li>
+<li data-section-id="1pv58eo" data-start="3151" data-end="3168">Trading volumes</li>
+<li data-section-id="61nqxa" data-start="3169" data-end="3185">Financial news</li>
+<li data-section-id="18ywlrx" data-start="3186" data-end="3209">Company announcements</li>
+<li data-section-id="1iwj641" data-start="3210" data-end="3233">Customized watchlists</li>
+</ul>
+<p data-start="3235" data-end="3364">Unlike individual computer screens, stock market ticker displays make information visible to everyone in the room simultaneously.</p>
+<hr data-start="3366" data-end="3369">
+<h1 data-section-id="s8jzv" data-start="3371" data-end="3421">Why Real-Time Information is Critical in Trading</h1>
+<p data-start="3423" data-end="3535">Financial markets are highly volatile. Even small price movements can create significant opportunities or risks.</p>
+<p data-start="3537" data-end="3579">Real-time information helps professionals:</p>
+<ul data-start="3581" data-end="3753">
+<li data-section-id="r7f437" data-start="3581" data-end="3614">React quickly to market changes</li>
+<li data-section-id="klkuee" data-start="3615" data-end="3644">Monitor trends continuously</li>
+<li data-section-id="1713h8b" data-start="3645" data-end="3675">Improve portfolio management</li>
+<li data-section-id="1ydr9vi" data-start="3676" data-end="3700">Reduce decision delays</li>
+<li data-section-id="10n0z1i" data-start="3701" data-end="3723">Enhance risk control</li>
+<li data-section-id="wp96mw" data-start="3724" data-end="3753">Increase trading efficiency</li>
+</ul>
+<p data-start="3755" data-end="3888">A stock market ticker display acts as a central information hub, ensuring that everyone has access to the same data at the same time.</p>
+<hr data-start="3890" data-end="3893">
+<h1 data-section-id="r1ox80" data-start="3895" data-end="3941">Key Features of Stock Market Ticker Displays</h1>
+<h2 data-section-id="1r80dix" data-start="3943" data-end="3974">Live Market Data Integration</h2>
+<p data-start="3976" data-end="4016">Modern ticker displays can connect with:</p>
+<ul data-start="4018" data-end="4100">
+<li data-section-id="1o4d74" data-start="4018" data-end="4023">NSE</li>
+<li data-section-id="1o4gkc" data-start="4024" data-end="4029">BSE</li>
+<li data-section-id="1tnow9s" data-start="4030" data-end="4038">NASDAQ</li>
+<li data-section-id="1j408cp" data-start="4039" data-end="4045">NYSE</li>
+<li data-section-id="35kglf" data-start="4046" data-end="4067">Commodity exchanges</li>
+<li data-section-id="hgetdl" data-start="4068" data-end="4083">Forex markets</li>
+<li data-section-id="60n7t6" data-start="4084" data-end="4100">Financial APIs</li>
+</ul>
+<p data-start="4102" data-end="4161">This enables automatic updates without manual intervention.</p>
+<hr data-start="4163" data-end="4166">
+<h2 data-section-id="fsdo6l" data-start="4168" data-end="4186">High Visibility</h2>
+<p data-start="4188" data-end="4234"><a href="../stock-exchange/">Stock market ticker displays</a> are designed for:</p>
+<ul data-start="4236" data-end="4330">
+<li data-section-id="1d3l76n" data-start="4236" data-end="4260">Long viewing distances</li>
+<li data-section-id="1r5dk6g" data-start="4261" data-end="4282">Wide viewing angles</li>
+<li data-section-id="2ev0" data-start="4283" data-end="4307">Clear text readability</li>
+<li data-section-id="vqvao" data-start="4308" data-end="4330">Continuous operation</li>
+</ul>
+<p data-start="4332" data-end="4417">This ensures important market information remains visible across large trading rooms.</p>
+<hr data-start="4419" data-end="4422">
+<h2 data-section-id="45tq1y" data-start="4424" data-end="4447">Customizable Content</h2>
+<p data-start="4449" data-end="4486">Users can configure displays to show:</p>
+<ul data-start="4488" data-end="4601">
+<li data-section-id="1pr0bbm" data-start="4488" data-end="4505">Selected stocks</li>
+<li data-section-id="1hmz4rv" data-start="4506" data-end="4522">Sector indices</li>
+<li data-section-id="wvkjhx" data-start="4523" data-end="4541">Commodity prices</li>
+<li data-section-id="qx2w9x" data-start="4542" data-end="4567">Currency exchange rates</li>
+<li data-section-id="nj9u6b" data-start="4568" data-end="4581">Market news</li>
+<li data-section-id="1dlj2qf" data-start="4582" data-end="4601">Internal messages</li>
+</ul>
+<p data-start="4603" data-end="4677">Custom layouts allow businesses to focus on information that matters most.</p>
+<hr data-start="4679" data-end="4682">
+<h2 data-section-id="sj4702" data-start="4684" data-end="4704">Remote Management</h2>
+<p data-start="4706" data-end="4740">Content can be controlled through:</p>
+<ul data-start="4742" data-end="4818">
+<li data-section-id="kwzhuh" data-start="4742" data-end="4752">Ethernet</li>
+<li data-section-id="17bax9w" data-start="4753" data-end="4760">Wi-Fi</li>
+<li data-section-id="h5kpud" data-start="4761" data-end="4778">Cloud platforms</li>
+<li data-section-id="1o23ejy" data-start="4779" data-end="4796">API integration</li>
+<li data-section-id="8068qp" data-start="4797" data-end="4818">Mobile applications</li>
+</ul>
+<p data-start="4820" data-end="4884">This provides flexibility and simplifies information management.</p>
+<hr data-start="4886" data-end="4889">
+<h2 data-section-id="1poo49y" data-start="4891" data-end="4920">Energy-Efficient Operation</h2>
+<p data-start="4922" data-end="5043">LED-based stock market ticker displays consume low power while delivering excellent brightness and long operational life.</p>
+<hr data-start="5045" data-end="5048">
+<h1 data-section-id="1tpcbbu" data-start="5050" data-end="5112">Why Every Trading Office Needs a Stock Market Ticker Display</h1>
+<h2 data-section-id="1v03u0" data-start="5114" data-end="5139">Faster Decision-Making</h2>
+<p data-start="5141" data-end="5305">Traders depend on immediate access to data. A stock market ticker helps professionals react faster to changing market conditions and identify opportunities quickly.</p>
+<hr data-start="5307" data-end="5310">
+<h2 data-section-id="maqvjo" data-start="5312" data-end="5340">Improved Market Awareness</h2>
+<p data-start="5342" data-end="5397">Continuous scrolling updates keep teams informed about:</p>
+<ul data-start="5399" data-end="5472">
+<li data-section-id="1tk7ho5" data-start="5399" data-end="5416">Price movements</li>
+<li data-section-id="1fu8krf" data-start="5417" data-end="5435">Market sentiment</li>
+<li data-section-id="2469ho" data-start="5436" data-end="5456">Sector performance</li>
+<li data-section-id="kzy56g" data-start="5457" data-end="5472">Breaking news</li>
+</ul>
+<p data-start="5474" data-end="5521">This helps traders remain alert and responsive.</p>
+<hr data-start="5523" data-end="5526">
+<h2 data-section-id="tsd2vb" data-start="5528" data-end="5555">Better Team Coordination</h2>
+<p data-start="5557" data-end="5665">A centrally placed stock market ticker display ensures everyone receives identical information in real time.</p>
+<p data-start="5667" data-end="5681">This improves:</p>
+<ul data-start="5683" data-end="5738">
+<li data-section-id="1hr6uw7" data-start="5683" data-end="5698">Collaboration</li>
+<li data-section-id="tg03oo" data-start="5699" data-end="5714">Communication</li>
+<li data-section-id="1wj99k8" data-start="5715" data-end="5738">Situational awareness</li>
+</ul>
+<hr data-start="5740" data-end="5743">
+<h2 data-section-id="4v4ntu" data-start="5745" data-end="5773">Reduced Screen Dependency</h2>
+<p data-start="5775" data-end="5880">Instead of monitoring multiple devices constantly, professionals can view key market updates at a glance.</p>
+<p data-start="5882" data-end="5936">This minimizes distractions and improves productivity.</p>
+<hr data-start="5938" data-end="5941">
+<h2 data-section-id="ywyf14" data-start="5943" data-end="5978">Professional Trading Environment</h2>
+<p data-start="5980" data-end="6115">Modern ticker displays enhance office aesthetics and create a technology-driven workspace that reflects professionalism and innovation.</p>
+<hr data-start="6117" data-end="6120">
+<h1 data-section-id="qdat2h" data-start="6122" data-end="6168">Applications of Stock Market Ticker Displays</h1>
+<h2 data-section-id="1b0df1i" data-start="6170" data-end="6188">Brokerage Firms</h2>
+<p data-start="6190" data-end="6252">Brokerage offices use stock market ticker displays to provide:</p>
+<ul data-start="6254" data-end="6332">
+<li data-section-id="1brypys" data-start="6254" data-end="6278">Real-time stock prices</li>
+<li data-section-id="1ne4ftf" data-start="6279" data-end="6295">Market indices</li>
+<li data-section-id="154an2h" data-start="6296" data-end="6315">Client watchlists</li>
+<li data-section-id="ks0l12" data-start="6316" data-end="6332">Trading alerts</li>
+</ul>
+<hr data-start="6334" data-end="6337">
+<h2 data-section-id="p5a32d" data-start="6339" data-end="6362">Investment Companies</h2>
+<p data-start="6364" data-end="6409">Investment firms rely on ticker displays for:</p>
+<ul data-start="6411" data-end="6492">
+<li data-section-id="5trddp" data-start="6411" data-end="6431">Portfolio tracking</li>
+<li data-section-id="a3qxfi" data-start="6432" data-end="6449">Market analysis</li>
+<li data-section-id="5fy3gn" data-start="6450" data-end="6467">Risk monitoring</li>
+<li data-section-id="1yctuto" data-start="6468" data-end="6492">Financial news updates</li>
+</ul>
+<hr data-start="6494" data-end="6497">
+<h2 data-section-id="1164v2t" data-start="6499" data-end="6534">Banks and Financial Institutions</h2>
+<p data-start="6536" data-end="6590">Banks use stock market ticker displays to communicate:</p>
+<ul data-start="6592" data-end="6684">
+<li data-section-id="qx2w9x" data-start="6592" data-end="6617">Currency exchange rates</li>
+<li data-section-id="1f96hh" data-start="6618" data-end="6639">Economic indicators</li>
+<li data-section-id="do89to" data-start="6640" data-end="6658">Market movements</li>
+<li data-section-id="1ppyj2r" data-start="6659" data-end="6684">Financial announcements</li>
+</ul>
+<hr data-start="6686" data-end="6689">
+<h2 data-section-id="8plast" data-start="6691" data-end="6708">Trading Floors</h2>
+<p data-start="6710" data-end="6770">Professional trading centers use ticker displays to monitor:</p>
+<ul data-start="6772" data-end="6842">
+<li data-section-id="1up2f6i" data-start="6772" data-end="6788">Equity markets</li>
+<li data-section-id="wvkjhx" data-start="6789" data-end="6807">Commodity prices</li>
+<li data-section-id="1kh9vbd" data-start="6808" data-end="6825">Futures markets</li>
+<li data-section-id="109ffp8" data-start="6826" data-end="6842">Global indices</li>
+</ul>
+<hr data-start="6844" data-end="6847">
+<h2 data-section-id="1abn200" data-start="6849" data-end="6874">Financial News Studios</h2>
+<p data-start="6876" data-end="6998">Television channels and financial media organizations use ticker displays to provide viewers with live market information.</p>
+<hr data-start="7000" data-end="7003">
+<h1 data-section-id="ty7k84" data-start="7005" data-end="7047">Benefits of Stock Market Ticker Displays</h1>
+<h2 data-section-id="1g5jhh7" data-start="7049" data-end="7073">Enhanced Productivity</h2>
+<p data-start="7075" data-end="7165">Employees spend less time searching for information and more time analyzing opportunities.</p>
+<hr data-start="7167" data-end="7170">
+<h2 data-section-id="ml03wn" data-start="7172" data-end="7198">Real-Time Communication</h2>
+<p data-start="7200" data-end="7249">Important information reaches everyone instantly.</p>
+<hr data-start="7251" data-end="7254">
+<h2 data-section-id="up6r67" data-start="7256" data-end="7285">Better Customer Experience</h2>
+<p data-start="7287" data-end="7373">Banks and brokerage firms can display live market updates for customers and investors.</p>
+<hr data-start="7375" data-end="7378">
+<h2 data-section-id="1084jmh" data-start="7380" data-end="7395">Cost Savings</h2>
+<p data-start="7397" data-end="7489">Digital ticker displays reduce reliance on printed reports and manual communication methods.</p>
+<hr data-start="7491" data-end="7494">
+<h2 data-section-id="gqu1ve" data-start="7496" data-end="7510">Scalability</h2>
+<p data-start="7512" data-end="7596">Modern systems can support multiple displays and integrate with future technologies.</p>
+<hr data-start="7598" data-end="7601">
+<h1 data-section-id="1gwg1oi" data-start="7603" data-end="7668">Factors to Consider Before Buying a Stock Market Ticker Display</h1>
+<h2 data-section-id="kaa36i" data-start="7670" data-end="7685">Display Size</h2>
+<p data-start="7687" data-end="7720">Choose the display size based on:</p>
+<ul data-start="7722" data-end="7778">
+<li data-section-id="zy79dy" data-start="7722" data-end="7740">Viewing distance</li>
+<li data-section-id="1c3e8tn" data-start="7741" data-end="7760">Office dimensions</li>
+<li data-section-id="1cprqdc" data-start="7761" data-end="7778">Number of users</li>
+</ul>
+<hr data-start="7780" data-end="7783">
+<h2 data-section-id="ztos3q" data-start="7785" data-end="7813">Data Source Compatibility</h2>
+<p data-start="7815" data-end="7834">Ensure support for:</p>
+<ul data-start="7836" data-end="7891">
+<li data-section-id="60n7t6" data-start="7836" data-end="7852">Financial APIs</li>
+<li data-section-id="1uij8jh" data-start="7853" data-end="7867">Market feeds</li>
+<li data-section-id="aq1skk" data-start="7868" data-end="7891">Third-party platforms</li>
+</ul>
+<hr data-start="7893" data-end="7896">
+<h2 data-section-id="1c4ecr2" data-start="7898" data-end="7927">Resolution and Pixel Pitch</h2>
+<p data-start="7929" data-end="7956">Higher resolution provides:</p>
+<ul data-start="7958" data-end="8023">
+<li data-section-id="7sc020" data-start="7958" data-end="7978">Better readability</li>
+<li data-section-id="106yevu" data-start="7979" data-end="7993">Sharper text</li>
+<li data-section-id="a2z6et" data-start="7994" data-end="8023">Enhanced viewing experience</li>
+</ul>
+<hr data-start="8025" data-end="8028">
+<h2 data-section-id="1tiawpc" data-start="8030" data-end="8053">Connectivity Options</h2>
+<p data-start="8055" data-end="8064">Look for:</p>
+<ul data-start="8066" data-end="8117">
+<li data-section-id="kwzhuh" data-start="8066" data-end="8076">Ethernet</li>
+<li data-section-id="17bax9w" data-start="8077" data-end="8084">Wi-Fi</li>
+<li data-section-id="zeo0c6" data-start="8085" data-end="8100">Cloud support</li>
+<li data-section-id="pov23z" data-start="8101" data-end="8117">Mobile control</li>
+</ul>
+<hr data-start="8119" data-end="8122">
+<h2 data-section-id="tzcevp" data-start="8124" data-end="8138">Reliability</h2>
+<p data-start="8140" data-end="8210">Trading environments demand continuous operation and minimal downtime.</p>
+<p data-start="8212" data-end="8275">Choose high-quality systems designed for long-term performance.</p>
+<hr data-start="8277" data-end="8280">
+<h1 data-section-id="1b2fxo1" data-start="8282" data-end="8329">Future Trends in Stock Market Ticker Displays</h1>
+<p data-start="8331" data-end="8408">Financial display technologies are evolving rapidly with innovations such as:</p>
+<h2 data-section-id="nzja20" data-start="8410" data-end="8433">AI-Powered Analytics</h2>
+<p data-start="8435" data-end="8514">Artificial intelligence can deliver intelligent alerts and predictive insights.</p>
+<h2 data-section-id="1x3b82j" data-start="8516" data-end="8541">Cloud-Based Management</h2>
+<p data-start="8543" data-end="8612">Cloud connectivity enables centralized control and remote monitoring.</p>
+<h2 data-section-id="prcp61" data-start="8614" data-end="8632">IoT Integration</h2>
+<p data-start="8634" data-end="8713">Connected devices allow seamless information sharing across multiple platforms.</p>
+<h2 data-section-id="1ssl2yo" data-start="8715" data-end="8739">Multi-Screen Networks</h2>
+<p data-start="8741" data-end="8824">Organizations can synchronize several displays for comprehensive market visibility.</p>
+<h2 data-section-id="1stwqna" data-start="8826" data-end="8853">Mobile Dashboard Control</h2>
+<p data-start="8855" data-end="8927">Administrators can manage content directly from smartphones and tablets.</p>
+<hr data-start="8929" data-end="8932">
+<h1 data-section-id="162o919" data-start="8934" data-end="8993">Why Choose Stock Market Ticker Displays from Ticker Play?</h1>
+<p data-start="8995" data-end="9109">Ticker Play offers advanced stock market ticker solutions tailored for financial institutions and trading offices.</p>
+<p data-start="9111" data-end="9131">Our systems provide:</p>
+<ul data-start="9133" data-end="9315">
+<li data-section-id="17lssr4" data-start="9133" data-end="9163">Real-time market integration</li>
+<li data-section-id="1aztc3j" data-start="9164" data-end="9194">Smooth scrolling performance</li>
+<li data-section-id="2rjapy" data-start="9195" data-end="9221">High brightness displays</li>
+<li data-section-id="1nxxt0i" data-start="9222" data-end="9243">Cloud-based control</li>
+<li data-section-id="14yw4mq" data-start="9244" data-end="9260">Custom layouts</li>
+<li data-section-id="jhmxae" data-start="9261" data-end="9284">Low power consumption</li>
+<li data-section-id="j09sy4" data-start="9285" data-end="9315">Reliable long-term operation</li>
+</ul>
+<p data-start="9317" data-end="9420">These solutions help organizations improve communication, market awareness, and operational efficiency.</p>
+<hr data-start="9422" data-end="9425">
+<h1 data-section-id="fsb6xx" data-start="9427" data-end="9439">Conclusion</h1>
+<p data-start="9441" data-end="9729">A <strong data-start="9443" data-end="9466">stock market ticker</strong> is an essential tool for modern trading offices, brokerage firms, and financial institutions. By delivering real-time information, improving collaboration, and enhancing decision-making, ticker displays create a more efficient and responsive trading environment.</p>
+<p data-start="9731" data-end="10022">As financial markets continue to move faster, organizations need solutions that provide instant visibility and reliable communication. Investing in a stock market ticker display ensures that traders, analysts, and investors remain informed and prepared to act on opportunities as they arise.</p>
+<hr data-start="10024" data-end="10027">
+<h1 data-section-id="hkd5a4" data-start="10029" data-end="10057">Frequently Asked Questions</h1>
+<h2 data-section-id="1717trr" data-start="10059" data-end="10100">What is a stock market ticker display?</h2>
+<p data-start="10102" data-end="10243">A <a href="../stock-market-ticker/">stock market ticker display</a> is a digital system that shows real-time stock prices, market indices, financial news, and trading information.</p>
+<h2 data-section-id="cbj14b" data-start="10245" data-end="10304">Why do trading offices use stock market ticker displays?</h2>
+<p data-start="10306" data-end="10409">They provide instant access to live market data, improve collaboration, and enhance trading efficiency.</p>
+<h2 data-section-id="1a0mcsx" data-start="10411" data-end="10470">Can stock market ticker displays show custom watchlists?</h2>
+<p data-start="10472" data-end="10583">Yes. Modern systems allow users to display selected stocks, indices, currencies, and personalized market feeds.</p>
+<h2 data-section-id="1cjxh0c" data-start="10585" data-end="10640">Are stock market ticker displays suitable for banks?</h2>
+<p data-start="10642" data-end="10743">Absolutely. Banks use these displays for currency rates, market updates, and financial communication.</p>
+<h2 data-section-id="1smaiy" data-start="10745" data-end="10811">Can stock market ticker displays integrate with financial APIs?</h2>
+<p data-start="10813" data-end="10906">Yes. Most modern systems support API integration and live market feeds for automatic updates.</p>
+
+                        </div>
+                        
+                        <hr>
+
+                        <h5 class="text-center"><b>Tags </b> :</h5>
+                        <h5 class="text-center">Follow Us On : &nbsp;&nbsp;&nbsp;&nbsp; 
+                            <a class="pt-2" target="_blank" href="https://www.facebook.com/sharer.php?t=Why Every Trading Office Needs a Stock Market Ticker Display&u=/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://www.linkedin.com/shareArticle?title=Why Every Trading Office Needs a Stock Market Ticker Display&url=/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://web.whatsapp.com/send?text=/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"><i style="font-size:2rem" class="fa fa-whatsapp" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://pinterest.com/pin/create/button/?description=Why Every Trading Office Needs a Stock Market Ticker Display&media=/img/&url=/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"><i style="font-size:2rem" class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a class="pt-2" target="_blank" href="https://twitter.com/intent/tweet?text=Why Every Trading Office Needs a Stock Market Ticker Display&url=/blog/why-every-trading-office-needs-a-stock-market-ticker-display/"><i style="font-size:2rem" class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                        </h5>
+                    </article>
+                </div>
+                <div class="col-lg-4 hidden-sm">
+                    <div class="sidebar boxed boxed--border boxed--lg">
+                        <!--end widget-->
+                        <div class="sidebar__widget  bg--secondary py-4 px-2">
+                            <h5 class="text-center">Talk to a Sign Expert</h5>
+                            <p class="text-center">
+                                Get the latest product updates, company news
+                            </p>
+                            <form class="row m-0">
+                                <div class="col-md-12">
+                                    <input type="text" name="name" placeholder="First / Last Name" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" name="email" placeholder="you@something.com" class="validate-required">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" placeholder="Message" class="validate-required" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn--primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end widget-->
+                        <div class="sidebar__widget">
+                            <h5>Popular Tags</h5>
+                            <ul class="tag-cloud">
+                                <p>Stock market ticker, stock market ticker display, real-time stock ticker digital, stock ticker display, stock ticker board, stock exchange ticker display</p>
+                            </ul>
+                        </div>
+                        <!--end widget-->
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+    
+    <section class="switchable switchable--switch space--xs">
+        <div class="container">
+            <h3 class="text-center"><b>Related Blogs</b></h3>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 8, 2026, 09_01_09 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Role of LED Displays in Smart Cities</b></h4>
+                                <p>Role of LED Displays in Smart Cities
+As cities continue to grow, the demand for...<b><a href="/blog/led-display-for-smart-city/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                    <div class="row">
+                        <div class="col-5">
+                            <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 7, 2026, 09_04_09 AM.webp" / loading="lazy" decoding="async">
+                        </div>
+                        <div class="col-7 p-4">
+                            <h4><b>How to Install an LED Ticker Display: Step-by...</b></h4>
+                                <p>How to Install an LED Ticker Display: Step-by-Step Guide
+LED ticker displays ha...<b><a href="/blog/how-to-install-led-ticker/">View Post</a></b></p>
+                        </div>
+                    </div>
+                 </div>
+
+                 </div>
+
+                 <div class="col-md-6">
+
+                    <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/Jul 6, 2026, 02_23_23 PM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>Best LED Ticker Displays for Business in 2026</b></h4>
+                                <p>Best LED Ticker Displays for Business in 2026
+In today&#039;s competitive business e...<b><a href="/blog/best-led-ticker-for-business/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+
+                      <div class="blogg mt-4" style="border:1px solid #cecece; border-radius: 10px">
+                        <div class="row">
+                            <div class="col-5">
+                                <img style="border-radius:10px 0px 0 10px; height:200px; object-fit:cover" src="/img/featured/ChatGPT Image Jul 4, 2026, 09_23_52 AM.webp" / loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-7 p-4">
+                                <h4><b>LED Ticker vs Digital Signage: Which is Bette...</b></h4>
+                                <p>LED Ticker vs Digital Signage: Which is Better?
+Digital displays have transform...<b><a href="/blog/led-ticker-vs-digital-signage/">View Post</a></b></p>
+                            </div>
+                        </div>
+                     </div>
+    
+                     </div>
+
+            
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>
+<hr>
+
+<section class="selectable" style="margin: 50px 0px 100px 0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pr-5 mb-2">
+                <h2 class="text pt-5"><b>Why Choose Us? </b></h2>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Advanced Technology.png" alt="advance technology" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Advanced Technology</b>
+                </h4>
+                <p style="padding-left: 35px;">With advanced technology, we provide real-time, accurate, and visually captivating information to enhance your 
+                    investment experience.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Need Icon.png" alt="Need icon" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customization Based on Needs</b>
+                </h4>
+                <p style="padding-left: 35px;">We understand that every business is distinct, and we are committed to thoroughly studying your needs to develop a 
+                    solution that perfectly aligns with your objectives.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/CertificationIconLogo.png" alt="certification logo" style="height: 30px; width: 25px;"/ loading="lazy" decoding="async">
+                    <b>Certified Company</b>
+                </h4>
+                <p style="padding-left: 35px;">Have complete confidence in the durability and integrity of our company, as they are tested and meet the stringent 
+                    requirements set by:
+                    ISO 9001:2015, 
+                    UL-1950, 
+                    ETL & CE.
+                </p>
+                <h4 class="mb-0 mt-5">
+                    <img src="/img/icon/Customer Support.png" alt="customer support" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
+                    <b>Customer Support</b>
+                </h4>
+                <p style="padding-left: 35px;">Whether you require advice, troubleshooting, or ongoing support, we remain by your side, offering continuous technical 
+                    assistance and a steadfast commitment to your success.
+                </p>
+            </div>
+            <div class="col-md-7" style="background-color: #036eb10e; padding: 40px 40px 40px 60px; border-radius: 10px">
+                <h2 class="text-center mb-0"><b>Talk to our Ticker Experts</b></h2>
+                <p class="text-center pr-5">Contact our team of expert to suggest you the best product for your ticker project</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                        <form class="text-left row pt-5" method="POST" id="query" novalidate="true">
+                            <div class="col-md-6">
+                                <span>Company Name</span>
+                                <input type="text" name="company" id="company" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Country</span>
+                                <select name="country" id="country" placeholder="Select Country" class="validate-required input-select">
+                                    <option value=""></option>
+                                    <option value="Afganistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Bonaire">Bonaire</option>
+                                    <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                    <option value="Brunei">Brunei</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Canary Islands">Canary Islands</option>
+                                    <option value="Cape Verde">Cape Verde</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Channel Islands">Channel Islands</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos Island">Cocos Island</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cote DIvoire">Cote DIvoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Curaco">Curacao</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="East Timor">East Timor</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands">Falkland Islands</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Ter">French Southern Ter</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Great Britain">Great Britain</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Hawaii">Hawaii</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="India">India</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea North">Korea North</option>
+                                    <option value="Korea Sout">Korea South</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Laos">Laos</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macau">Macau</option>
+                                    <option value="Macedonia">Macedonia</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Midway Islands">Midway Islands</option>
+                                    <option value="Moldova">Moldova</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Nambia">Nambia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherland Antilles">Netherland Antilles</option>
+                                    <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                    <option value="Nevis">Nevis</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau Island">Palau Island</option>
+                                    <option value="Palestine">Palestine</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Phillipines">Philippines</option>
+                                    <option value="Pitcairn Island">Pitcairn Island</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                    <option value="Republic of Serbia">Republic of Serbia</option>
+                                    <option value="Reunion">Reunion</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="St Barthelemy">St Barthelemy</option>
+                                    <option value="St Eustatius">St Eustatius</option>
+                                    <option value="St Helena">St Helena</option>
+                                    <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                    <option value="St Lucia">St Lucia</option>
+                                    <option value="St Maarten">St Maarten</option>
+                                    <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                    <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                    <option value="Saipan">Saipan</option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="Samoa American">Samoa American</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="Tahiti">Tahiti</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Erimates">United Arab Emirates</option>
+                                    <option value="United States of America" Selected>United States of America</option>
+                                    <option value="Uraguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Vatican City State">Vatican City State</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                    <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                    <option value="Wake Island">Wake Island</option>
+                                    <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zaire">Zaire</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                 </select>
+                            </div>
+                            <div class="col-md-6">
+                                <span>First Name:</span>
+                                <input type="text" id="fname" name="fname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Last Name:</span>
+                                <input type="text" id="lname" name="lname" class="validate-required">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Email Address:</span>
+                                <input type="email" id="email" name="email" class="validate-required validate-email">
+                            </div>
+                            <div class="col-md-6">
+                                <span>Phone:</span>
+                                <input type="text" id="phone" name="phone" class="validate-required">
+                            </div>
+                            <div class="col-md-12">
+                                <span>About Project:</span>
+                                <textarea rows="5" id="message" name="message" class="validate-required"></textarea>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                    <div class="g-recaptcha"
+                                        data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <button type="submit" id="ajaxStart" class="btn btn--primary type--uppercase">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<hr>
+
+<section class="space--xs" style="background-color: #036eb10e; padding-top: 50px; margin-top: 100px; margin-bottom: -21px;">
+    <div class="container">
+        <div class="cta cta--horizontal text-center-xs row">
+            <div class="col-md-12 text-center">
+                <h2><b>Request a Demo</b></h2>
+                <p>To understand the product functionality and features, we do provide onsite product
+                    demonstrations, contact us today to get customised assistance
+                    </p>
+                    <br>
+                    <a class="btn type--uppercase" href="/contact/">
+                        <span class="btn__text">
+                            Contact us now
+                        </span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <!--end of container-->
+</section></main>
+<footer class="footer-2 bg--secondary">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/solutions/">- Ticker Solutions</a>
+                  </li>
+                  <li>
+                      <a href="/ticker-models/">- Ticker Models</a>
+                  </li>
+                  <li>
+                      <a href="/gallery/">- Gallery</a>
+                  </li>
+                  <li>
+                    <a href="/about-us/">- About Us</a>
+                </li>
+                <li>
+                      <a href="/returns-policy/">- Returns Policy</a>
+                </li>
+                <li>
+                      <a href="/payment-methods/">- Payment Methods</a>
+                </li>
+                <li>
+                      <a href="/shipping-and-handling/">- Shipping And Handling</a>
+                </li>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Knowledge Base</h6>
+              <ul class="list--hover">
+                  <li>
+                      <a href="/led-stock-ticker/">- Stock Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-financial-ticker/">- Financial Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/sports-bars/">- Sports Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-news-ticker/">- News Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-twitter-ticker/">- Twitter Ticker</a>
+                  </li>
+                  <li>
+                      <a href="/led-rss-ticker/">- RSS Ticker</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">News & Events</h6>
+              <ul class="list--hover">                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-display-for-smart-city/">Role of LED Displays in Smart ...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/how-to-install-led-ticker/">How to Install an LED Ticker D...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/best-led-ticker-for-business/">Best LED Ticker Displays for B...</a>
+                  </li>                  <li style="clear:both; display: inline-block; align-items: center">
+                      <a href="/blog/led-ticker-vs-digital-signage/">LED Ticker vs Digital Signage:...</a>
+                  </li>              </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 col-6">
+              <h6 class="type--uppercase text---primary">Sales</h6>
+              <ul class="list--hover">
+                  <li>
+                       800.966.9329 (US)
+                  </li>
+                  <li>
+                      <a target="_blank" rel="nofollow" href="https://www.facebook.com/photonplaygroup/"><i style="font-size:2rem" class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                      <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/photonplay-systems"><i style="font-size:2rem" class="fa fa-youtube-play" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                  </li>
+                  <li>
+                    <a style="width:100%;" class="btn btn-custom-blue" href="/contact/">
+                        <span class="btn__text">
+                          Get Quote
+                        </span>
+                    </a>
+                  </li>
+                  
+                  <li class="mt-2">
+                    <a style="width:100%;" class="btn btn-custom-yello" href="/contact/">
+                        <span class="btn__text">
+                          Request Info
+                        </span>
+                    </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--end of row-->
+      <hr>
+      <div class="row" style="margin-top:0">
+          <div class="col-md-12">
+              <img style="width:100px; float:left; margin-right: 50px;" src="/img/logo-dark.png" alt="Tickerplay Logo" />
+              <span class="type--fine-print">&copy;
+                  <span class="update-year"></span> Tickerplay Systems</span>
+              <a class="type--fine-print" href="#">All right reserved</a>
+              <a class="type--fine-print" href="/privacy-policy">Privacy Policy</a>
+          </div>
+      </div>
+      <!--end of row-->
+  </div>
+  <!--end of container-->
+</footer>
+
+<a class="back-to-top inner-link active" href="#start" data-scroll-class="100vh:active">
+    <i class="stack-interface stack-up-open-big"></i>
+</a>
+
+    <section class="popup">
+        <div class="pop-close">
+            <h3><b><i class="fa fa-close"></i> Close</b></h3>
+        </div>
+        <div class="popup__content">
+            <div class="content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12"  >
+                                    <h4 class="thin-heading mb-4"><b>Request a Quote</b></h4>
+                                    <form class="mb-5" id="queryForm" novalidate="true">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="fname" id="fname"
+                                                    placeholder="Your First Name" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="lname" id="lname"
+                                                    placeholder="Your Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="phone" id="phone"
+                                                    placeholder="Your Phone Number" required>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="email" id="email"
+                                                    placeholder="Your Email Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="country" id="country"
+                                                    placeholder="Your Country" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <input type="text" class="form-control" name="company" id="company"
+                                                    placeholder="Your Company" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 p-0 form-group">
+                                                <textarea class="form-control" name="message" id="message" cols="30"
+                                                    rows="2" placeholder="Write your message" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pl-0 mb-3">
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LdbDUokAAAAAGOPCM6VmlDkX9X0OVxsJ9f2_DfV"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12 p-0">
+                                                <button type="submit" id="customFrombtn"
+                                                    class="btn btn--primary type--uppercase">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="form-message-warning" class="text-danger">
+
+                                    </div>
+                                    <div id="form-message-success" class="text-success">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Trigger Button -->
+
+
+<style>
+    /* 1. Position the button fixed on the screen */
+    .quote-container {
+        position: fixed;
+        bottom: 50%;
+        right: 30px;
+        z-index: 1000;
+        /* Animation: move up/down every 3 seconds */
+        animation: floatAnimation 3s ease-in-out infinite;
+    }
+
+    .quote-bubble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 80px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+        background-color: #4A90C2;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+    /* The Tail */
+    .quote-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 22px;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 18px solid #4A90C2;
+        transform: rotate(-15deg);
+        transition: border-top-color 0.3s ease;
+    }
+
+    /* --- ATTENTION ANIMATION --- */
+    @keyframes floatAnimation {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); } /* Moves up 15px */
+        100% { transform: translateY(0px); }
+    }
+
+    /* --- HOVER EFFECTS --- */
+    .quote-bubble:hover {
+        background-color: #357ABD;
+        transform: scale(1.1); /* Grows slightly on hover */
+        box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    .quote-bubble:hover::after {
+        border-top-color: #357ABD; /* Syncs tail color */
+    }
+
+    /* Pulse Effect to grab eye on load */
+    .quote-bubble::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #4A90C2;
+        opacity: 0.5;
+        z-index: -1;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+    
+    
+    /* Mobile view */
+/* Mobile view */
+@media (max-width: 768px) {
+    .quote-bubble {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0; /* hide text */
+    }
+
+    .quote-bubble::after,
+    .quote-bubble::before {
+        display: none; /* remove tail + pulse */
+    }
+
+    .quote-bubble svg {
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.quote-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        display: none;
+    }
+    .quote-icon {
+        display: block;
+    }
+}
+</style>
+
+<div class="quote-container">
+    <button class="quote-bubble" onclick="openContactModal()">
+        
+        <span class="quote-text">
+            Get Instant<br>Quote
+        </span>
+
+        <svg class="quote-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="white"/>
+        </svg>
+
+    </button>
+</div>
+
+
+
+<!-- Modal -->
+<div id="contactModal" class="custom-modal">
+    <div class="modal-box">
+
+        <div class="modal-header">
+            <div class="header-left">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4zM6 8h12v2H6zm0 3h12v2H6zm0 3h12v2H6z" fill="white"/>
+                </svg>
+                <span>Message</span>
+            </div>
+
+            <span class="close-btn" onclick="closeContactModal()">×</span>
+        </div>
+<div id="formMessage" class="form-message" style="display:none;"></div>
+       <form onsubmit="handleFormSubmit(event)" style="padding:10px;"id="form_message_inputs">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile</label>
+                <div class="phone-group">
+                    <select class="country-select" style="max-width:100px;"></select>
+                    <input type="tel" placeholder="Mobile number" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn modal-header" style="border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</div>
+<script>
+// Country data
+const countries = [
+    { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+    { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+    { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+    { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+    { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+    { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+    { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+    { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+    { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+    { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+    { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+    { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+    { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+    { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+    { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+    { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+    { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+    { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+    { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+    { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+    { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+    { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+    { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+    { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+    { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+    { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+    { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+    { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+    { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+    { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+    { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+    { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+    { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+    { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+    { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+    { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+    { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+    { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+    { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+    { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+    { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+    { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+    { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+    { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+    { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+    { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+    { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+    { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+    { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+    { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+    { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+    { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+    { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+    { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+];
+
+ 
+function populateCountrySelect(selectedDialCode = null) {
+    const select = document.querySelector(".country-select");
+    if (!select) return;
+
+    select.innerHTML = "";
+
+    // Step 1: clone array
+    let sortedCountries = [...countries];
+
+    // Step 2: move US to top
+    sortedCountries.sort((a, b) => {
+        if (a.code === "US") return -1;
+        if (b.code === "US") return 1;
+        return a.name.localeCompare(b.name);
+    });
+
+    sortedCountries.forEach(country => {
+        const option = document.createElement("option");
+
+        option.value = country.dial_code;
+        option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+        option.setAttribute("data-country-code", country.code);
+
+        // Selected logic
+        if (selectedDialCode && country.dial_code === selectedDialCode) {
+            option.selected = true;
+        } else if (!selectedDialCode && country.code === "US") {
+            option.selected = true;
+        }
+
+        select.appendChild(option);
+    });
+}
+
+// Fetch user country based on IP
+async function fetchUserCountryByIP() {
+    try {
+        // Using free IP geolocation API
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) throw new Error('IP fetch failed');
+        
+        const data = await response.json();
+        const countryCode = data.country_code;
+        const countryName = data.country_name;
+        
+        console.log(`IP detected: ${countryName} (${countryCode})`);
+        
+        // Find country in our list
+        const matchedCountry = countries.find(c => c.code === countryCode);
+        if (matchedCountry) {
+            return matchedCountry;
+        }
+        return null;
+    } catch (error) {
+        console.warn('IP geolocation failed:', error);
+        return null;
+    }
+}
+
+// Initialize on page load (modal hidden initially)
+async function initializeCountryOnLoad() {
+    // First populate with default US
+    populateCountrySelect(null);
+    
+    // Try to fetch IP-based country
+    const userCountry = await fetchUserCountryByIP();
+    
+    if (userCountry) {
+        // Repopulate with detected country selected
+        populateCountrySelect(userCountry.dial_code);
+        console.log(`Country set to: ${userCountry.name} (${userCountry.dial_code}) based on IP`);
+    } else {
+        console.log('Using default country: United States (+1)');
+    }
+}
+
+// Modal controls
+function openContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "flex";
+    }
+}
+
+function closeContactModal() {
+    const modal = document.getElementById("contactModal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById("contactModal");
+    if (event.target === modal) {
+        closeContactModal();
+    }
+};
+ 
+        
+        let isSubmitting = false;
+        
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+        
+            if (isSubmitting) return; 
+            isSubmitting = true;
+        
+            const form = e.target;
+            const messageBox = document.getElementById("formMessage");
+            const submitBtn = form.querySelector("button[type='submit']");
+         var form_message_inputs = document.getElementById("form_message_inputs");
+       
+            // disable button
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+        
+            const name = form.querySelector('input[placeholder="Enter name"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const mobile = form.querySelector('input[placeholder="Mobile number"]').value;
+            const message = form.querySelector('textarea').value;
+        
+            const select = document.querySelector(".country-select");
+            const selectedCountry = select.options[select.selectedIndex].textContent;
+        
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        mobile,
+                        country: selectedCountry,
+                        message
+                    })
+                });
+        
+                const data = await res.json();
+        
+                messageBox.style.display = "block";
+                  form_message_inputs.style.display = "none";
+        
+                if (data.status) {
+                    messageBox.className = "form-message success";
+                    messageBox.innerText = "✅ Message sent successfully!";
+        
+                    form.reset();
+        
+                    setTimeout(() => {
+                        closeContactModal();
+                        messageBox.style.display = "none";
+                    }, 5000);
+        
+                } else {
+                    messageBox.className = "form-message error";
+                    messageBox.innerText = "❌ " + data.message;
+                }
+        
+            } catch (err) {
+                messageBox.style.display = "block";
+                messageBox.className = "form-message error";
+                messageBox.innerText = "❌ Something went wrong";
+            }
+        
+            // re-enable button after response
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+            isSubmitting = false;
+        }
+     
+    document.addEventListener("DOMContentLoaded", function() {
+        initializeCountryOnLoad();
+        
+        // Attach form submit handler
+        const form = document.querySelector("#contactModal form");
+        if (form) {
+            form.addEventListener("submit", handleFormSubmit);
+        }
+    });
+</script>
+
+
+    <script>
+// const countries = [
+//     { name: "India", dial_code: "+91", code: "IN", flag: "🇮🇳" },
+//     { name: "United States", dial_code: "+1", code: "US", flag: "🇺🇸" },
+//     { name: "United Kingdom", dial_code: "+44", code: "GB", flag: "🇬🇧" },
+//     { name: "Australia", dial_code: "+61", code: "AU", flag: "🇦🇺" },
+//     { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+//     { name: "Germany", dial_code: "+49", code: "DE", flag: "🇩🇪" },
+//     { name: "France", dial_code: "+33", code: "FR", flag: "🇫🇷" },
+//     { name: "Nepal", dial_code: "+977", code: "NP", flag: "🇳🇵" },
+//     { name: "UAE", dial_code: "+971", code: "AE", flag: "🇦🇪" },
+//     { name: "Argentina", dial_code: "+54", code: "AR", flag: "🇦🇷" },
+//     { name: "Austria", dial_code: "+43", code: "AT", flag: "🇦🇹" },
+//     { name: "Bahrain", dial_code: "+973", code: "BH", flag: "🇧🇭" },
+//     { name: "Bangladesh", dial_code: "+880", code: "BD", flag: "🇧🇩" },
+//     { name: "Belgium", dial_code: "+32", code: "BE", flag: "🇧🇪" },
+//     { name: "Brazil", dial_code: "+55", code: "BR", flag: "🇧🇷" },
+//     { name: "Chile", dial_code: "+56", code: "CL", flag: "🇨🇱" },
+//     { name: "China", dial_code: "+86", code: "CN", flag: "🇨🇳" },
+//     { name: "Colombia", dial_code: "+57", code: "CO", flag: "🇨🇴" },
+//     { name: "Denmark", dial_code: "+45", code: "DK", flag: "🇩🇰" },
+//     { name: "Egypt", dial_code: "+20", code: "EG", flag: "🇪🇬" },
+//     { name: "Finland", dial_code: "+358", code: "FI", flag: "🇫🇮" },
+//     { name: "Greece", dial_code: "+30", code: "GR", flag: "🇬🇷" },
+//     { name: "Indonesia", dial_code: "+62", code: "ID", flag: "🇮🇩" },
+//     { name: "Ireland", dial_code: "+353", code: "IE", flag: "🇮🇪" },
+//     { name: "Israel", dial_code: "+972", code: "IL", flag: "🇮🇱" },
+//     { name: "Italy", dial_code: "+39", code: "IT", flag: "🇮🇹" },
+//     { name: "Japan", dial_code: "+81", code: "JP", flag: "🇯🇵" },
+//     { name: "Kenya", dial_code: "+254", code: "KE", flag: "🇰🇪" },
+//     { name: "Kuwait", dial_code: "+965", code: "KW", flag: "🇰🇼" },
+//     { name: "Malaysia", dial_code: "+60", code: "MY", flag: "🇲🇾" },
+//     { name: "Mexico", dial_code: "+52", code: "MX", flag: "🇲🇽" },
+//     { name: "Netherlands", dial_code: "+31", code: "NL", flag: "🇳🇱" },
+//     { name: "New Zealand", dial_code: "+64", code: "NZ", flag: "🇳🇿" },
+//     { name: "Nigeria", dial_code: "+234", code: "NG", flag: "🇳🇬" },
+//     { name: "Norway", dial_code: "+47", code: "NO", flag: "🇳🇴" },
+//     { name: "Oman", dial_code: "+968", code: "OM", flag: "🇴🇲" },
+//     { name: "Pakistan", dial_code: "+92", code: "PK", flag: "🇵🇰" },
+//     { name: "Peru", dial_code: "+51", code: "PE", flag: "🇵🇪" },
+//     { name: "Philippines", dial_code: "+63", code: "PH", flag: "🇵🇭" },
+//     { name: "Poland", dial_code: "+48", code: "PL", flag: "🇵🇱" },
+//     { name: "Portugal", dial_code: "+351", code: "PT", flag: "🇵🇹" },
+//     { name: "Qatar", dial_code: "+974", code: "QA", flag: "🇶🇦" },
+//     { name: "Russia", dial_code: "+7", code: "RU", flag: "🇷🇺" },
+//     { name: "Saudi Arabia", dial_code: "+966", code: "SA", flag: "🇸🇦" },
+//     { name: "Singapore", dial_code: "+65", code: "SG", flag: "🇸🇬" },
+//     { name: "South Africa", dial_code: "+27", code: "ZA", flag: "🇿🇦" },
+//     { name: "South Korea", dial_code: "+82", code: "KR", flag: "🇰🇷" },
+//     { name: "Spain", dial_code: "+34", code: "ES", flag: "🇪🇸" },
+//     { name: "Sri Lanka", dial_code: "+94", code: "LK", flag: "🇱🇰" },
+//     { name: "Sweden", dial_code: "+46", code: "SE", flag: "🇸🇪" },
+//     { name: "Switzerland", dial_code: "+41", code: "CH", flag: "🇨🇭" },
+//     { name: "Thailand", dial_code: "+66", code: "TH", flag: "🇹🇭" },
+//     { name: "Turkey", dial_code: "+90", code: "TR", flag: "🇹🇷" },
+//     { name: "Vietnam", dial_code: "+84", code: "VN", flag: "🇻🇳" }
+// ];
+// // Populate dropdown
+// document.addEventListener("DOMContentLoaded", function () {
+//     const select = document.querySelector(".country-select");
+
+//     countries.forEach(country => {
+//         let option = document.createElement("option");
+//         option.value = country.dial_code;
+//         option.textContent = `${country.flag} ${country.name} (${country.dial_code})`;
+
+//         if (country.code === "IN") option.selected = true;
+
+//         select.appendChild(option);
+//     });
+// });
+
+// Modal controls
+    function openContactModal() {
+        var form_message_inputs = document.getElementById("form_message_inputs");
+         form_message_inputs.style.display = "block";
+        document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeContactModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+</script>
+
+    <!-- Loading Scripts -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/isotope.min.js" defer></script>
+    <script src="/js/granim.min.js" defer></script>
+    <script src="/js/jquery.steps.min.js" defer></script>
+    <script src="/js/smooth-scroll.min.js" defer></script>
+    <script src="/js/zoom.js" defer></script>
+    <script src="/js/owl.carousel.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5da70a23df22d913399f714f/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    
+
+
+    // <script>
+    //     /*
+    //       Reb2b Tracking Script Loader
+    //       --------------------------------
+    //       - Prevents duplicate loading
+    //       - Dynamically loads external tracking script
+    //       - Uses async loading for performance
+    //     */
+        
+    //     !function(key) {
+        
+    //       // Check if script is already loaded to avoid duplication
+    //       if (window.reb2b) return;
+        
+    //       // Initialize global object to mark script as loaded
+    //       window.reb2b = {
+    //         loaded: true
+    //       };
+        
+    //       // Create a new script element
+    //       var s = document.createElement("script");
+        
+    //           // Load script asynchronously (doesn't block page rendering)
+    //           s.async = true;
+            
+    //           // Set script source URL dynamically using the provided key
+    //           s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+            
+    //           // Insert the script before the first existing script tag in the document
+    //           document.getElementsByTagName("script")[0].parentNode.insertBefore(
+    //             s,
+    //             document.getElementsByTagName("script")[0]
+    //           );
+            
+    //         }("E63P0HZQR7OW"); // Unique key for your tracking script
+        
+    // </script>
+    
+    
+    
+    
+    <script>
+    //     $(document).ready(function () {
+    //         $("#query").submit(function (event) {
+    //             $("#ajaxStart").attr("disabled", true);
+    //             event.preventDefault();
+
+    //             $.ajax({
+    //                 url: "/mail/index.php",
+    //                 type: "POST",
+    //                 data: $('#query').serialize(),
+    //                 success: function (response) {
+    //                     console.log(response);
+    //                     if (response == "success") {
+    //                         window.location.href = '/thankyou/';
+    //                         /*$('#query').trigger("reset");
+    //                         alert("Thanks for Quote", "We Will Contact You Shortly!");
+    //                         swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+    //                         $("#ajaxStart").attr("disabled", false);*/
+    //                     }
+    //                     else {
+    //                         $("#ErrorModal").modal('show');
+    //                         console.log("ERROR");
+    //                     }
+    //                 }
+    //             });
+    //             return false;
+    //         });
+
+    //     });
+
+     </script>
+     
+     
+     <script>
+        $(document).ready(function () {
+        
+            $("#query").submit(function (event) {
+        
+                // Prevent page reload
+                event.preventDefault();
+        
+                console.log("Form submit triggered");
+        
+                // Disable button to prevent multiple clicks
+                $("#ajaxStart").attr("disabled", true);
+        
+                // Debug: Show form data
+                var formData = $('#query').serialize();
+                console.log("Form Data:", formData);
+                // alert("Submitting form... Check console");
+        
+                $.ajax({
+        
+                    // ðŸ”— API URL (this handles email sending on server)
+                    url: "/mail/index.php",
+        
+                    type: "POST",
+        
+                    data: formData,
+        
+                    success: function (response) {
+        
+                        console.log("Server Response:", response);
+                        // alert("Response: " + response);
+        
+                        if (response.trim() === "success") {
+        
+                            console.log("Success: Redirecting to thank you page");
+        
+                            // Redirect on success
+                            window.location.href = '/thankyou/';
+        
+                        } else {
+        
+                            console.log("Error: Unexpected response - "+response.trim());
+                            // alert("Something went wrong!");
+        
+                            $("#ErrorModal").modal('show');
+                            $("#ajaxStart").attr("disabled", false);
+                        }
+                    },
+        
+                    error: function (xhr, status, error) {
+        
+                        console.log("AJAX ERROR:");
+                        console.log("Status:", status);
+                        console.log("Error:", error);
+                        console.log("Response Text:", xhr.responseText);
+        
+                        // alert("AJAX Error! Check console.");
+        
+                        $("#ajaxStart").attr("disabled", false);
+                    }
+                });
+        
+                return false;
+            });
+        
+        });
+    </script>
+    
+    
+    
+    
+    
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                merge: true,
+                loop: true,
+                autoplay: true,
+                nav: true,
+                merge: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            }
+            );
+        });
+    </script>
+
+    <script>
+        $("#quotebtn").click(function () {
+            $(".popup").fadeIn(500);
+        });
+
+        $(".pop-close").click(function () {
+            $(".popup").fadeOut(500);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#queryForm").submit(function (event) {
+                $("#customFrombtn").attr("disabled", true);
+                event.preventDefault();
+
+                $.ajax({
+                    url: "/mail/index.php",
+                    type: "POST",
+                    data: $('#queryForm').serialize(),
+                    success: function (response) {
+                        console.log(response);
+                        if (response == "success") {
+                            window.location.href = '/thankyou/';
+                            /*$('#query').trigger("reset");
+                            alert("Thanks for Quote", "We Will Contact You Shortly!");
+                            swal("Thanks for Quote", "We Will Contact You Shortly!", "success");
+                            $("#ajaxStart").attr("disabled", false);*/
+                        }
+                        else {
+                            $("#ErrorModal").modal('show');
+                            console.log("ERROR");
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data.responseText);
+                    }
+                });
+                return false;
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
