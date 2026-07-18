@@ -53,3 +53,11 @@
 - Step 4 deeper: WebP/srcset pipeline, unused CSS purge, font-display
 - Step 6 fuller keyboard/contrast audit
 - Step 8: after-Lighthouse + production cutover checklist
+
+## Step 8 — Lighthouse after + pre-launch checklist (DONE)
+
+- After reports: `seo-reports/lighthouse-after/`
+- Comparison: `seo-reports/LIGHTHOUSE-COMPARE.md`
+- Checklist: `seo-reports/PRE-LAUNCH-CHECKLIST.md`
+- Staging SEO score drop is expected (`is-crawlable` fails due to intentional noindex)
+- Mobile homepage performance improved significantly (+26); desktop still constrained by hero video/LCP — WebP/srcset next if needed
