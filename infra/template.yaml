@@ -19,8 +19,8 @@ Parameters:
 Globals:
   Function:
     Runtime: nodejs24.x
-    Timeout: 20
-    MemorySize: 256
+    Timeout: 29
+    MemorySize: 512
     Architectures:
       - arm64
 
@@ -48,6 +48,9 @@ Resources:
       KeySchema:
         - AttributeName: id
           KeyType: HASH
+      TimeToLiveSpecification:
+        AttributeName: expiresAt
+        Enabled: true
 
   UserPool:
     Type: AWS::Cognito::UserPool
@@ -180,6 +183,18 @@ Resources:
             ApiId: !Ref HttpApi
             Path: /api/analytics
             Method: OPTIONS
+        GeoGet:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/geo
+            Method: GET
+        GeoOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/geo
+            Method: OPTIONS
 
   AdminFunction:
     Type: AWS::Serverless::Function
@@ -200,6 +215,19 @@ Resources:
         - DynamoDBCrudPolicy:
             TableName: !Ref AnalyticsTable
       Events:
+        AdminProxy:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/{proxy+}
+            Method: ANY
+        AdminRoot:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin
+            Method: ANY
+        # Keep explicit routes for existing Amplify / clients
         AdminOverview:
           Type: HttpApi
           Properties:
@@ -211,6 +239,66 @@ Resources:
           Properties:
             ApiId: !Ref HttpApi
             Path: /api/admin/overview
+            Method: OPTIONS
+        AdminAnalytics:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/analytics
+            Method: GET
+        AdminAnalyticsOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/analytics
+            Method: OPTIONS
+        AdminSearches:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/searches
+            Method: GET
+        AdminSearchesOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/searches
+            Method: OPTIONS
+        AdminSessions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/sessions
+            Method: GET
+        AdminSessionsOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/sessions
+            Method: OPTIONS
+        AdminSessionDetail:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/sessions/{id}
+            Method: GET
+        AdminSessionDetailOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/sessions/{id}
+            Method: OPTIONS
+        AdminLive:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/live
+            Method: GET
+        AdminLiveOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/live
             Method: OPTIONS
         AdminLeads:
           Type: HttpApi

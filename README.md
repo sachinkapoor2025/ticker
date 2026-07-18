@@ -50,7 +50,7 @@ npm run serve
 
 - **URL:** `/ticker-admin/` — type it manually; there is **no** login link on the public site.
 - **Auth:** Cognito email + password; user must be in group **`admin`**.
-- Tracks: visitors, enquiries/leads, pipeline status, conversion, top pages.
+- **Modules:** Dashboard, Live users, Analytics (devices / geo / sources), Search keywords, Visitor journeys, Enquiries CRM.
 - Details: `seo-reports/ADMIN-PLAN.md`.
 
 ## Deploy API (local)
@@ -76,6 +76,7 @@ python3 scripts/sync_cognito_config.py
 | --- | --- |
 | `/api/contact` | `…/prod/api/contact` |
 | `/api/analytics` | `…/prod/api/analytics` |
+| `/api/geo` | `…/prod/api/geo` |
 | `/api/admin/<*>` | `…/prod/api/admin/<*>` |
 
 Generated bundle: `seo-reports/amplify-custom-rules.json`.

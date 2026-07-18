@@ -521,10 +521,15 @@ def enhance_html_files(routes: list[str]) -> None:
         if "ticker-admin" not in str(index) and "/admin/" not in str(index) and "analytics-beacon.js" not in text:
             text = re.sub(
                 r"</body>",
-                '<script src="/js/analytics-beacon.js" defer></script>\n</body>',
+                '<script src="/js/analytics-beacon.js?v=2" defer></script>\n</body>',
                 text,
                 count=1,
                 flags=re.I,
+            )
+        elif 'src="/js/analytics-beacon.js"' in text:
+            text = text.replace(
+                'src="/js/analytics-beacon.js"',
+                'src="/js/analytics-beacon.js?v=2"',
             )
 
         if text != original:
@@ -625,6 +630,7 @@ def write_amplify_redirects_bundle() -> None:
     """Merge API proxies + blog 301s for Amplify customRules."""
     contact = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact"
     analytics = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/analytics"
+    geo = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/geo"
     admin = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/admin"
     app_json = ROOT / "amplify-app.json"
     if app_json.exists():
@@ -632,6 +638,7 @@ def write_amplify_redirects_bundle() -> None:
             data = json.loads(app_json.read_text())
             contact = data.get("contactApi", contact)
             analytics = data.get("analyticsApi", analytics)
+            geo = data.get("geoApi", geo)
             admin = data.get("adminApi", admin)
         except Exception:
             pass
@@ -639,6 +646,7 @@ def write_amplify_redirects_bundle() -> None:
     rules = [
         {"source": "/api/contact", "target": contact, "status": "200"},
         {"source": "/api/analytics", "target": analytics, "status": "200"},
+        {"source": "/api/geo", "target": geo, "status": "200"},
         {"source": "/api/admin/<*>", "target": f"{admin}/<*>", "status": "200"},
     ]
     rules.extend(load_stub_redirects())

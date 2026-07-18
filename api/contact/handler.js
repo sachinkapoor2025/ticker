@@ -47,8 +47,11 @@ function parseBody(event) {
 }
 
 function normalizeLead(data) {
+  const first = String(data.fname || data.first_name || data.firstName || "").trim();
+  const last = String(data.lname || data.last_name || data.lastName || "").trim();
+  const combined = [first, last].filter(Boolean).join(" ");
   return {
-    name: String(data.name || data.Name || data.first_name || "").trim(),
+    name: String(data.name || data.Name || combined || "").trim(),
     email: String(data.email || data.Email || data.email_address || "").trim(),
     mobile: String(data.mobile || data.phone || data.Phone || "").trim(),
     country: String(data.country || data.Country || "").trim(),
@@ -56,7 +59,13 @@ function normalizeLead(data) {
     message: String(
       data.message || data.Message || data.about_project || data.comments || ""
     ).trim(),
-    source: String(data.source || "website").trim(),
+    source: String(data.source || "contact").trim(),
+    page: String(data.page || data.path || "").trim().slice(0, 300),
+    sessionId: String(data.sessionId || data.session_id || "").trim().slice(0, 80),
+    utmSource: String(data.utm_source || data.utmSource || "").trim().slice(0, 80),
+    utmMedium: String(data.utm_medium || data.utmMedium || "").trim().slice(0, 80),
+    utmCampaign: String(data.utm_campaign || data.utmCampaign || "").trim().slice(0, 120),
+    utmTerm: String(data.utm_term || data.utmTerm || "").trim().slice(0, 120),
   };
 }
 
@@ -92,10 +101,18 @@ exports.handler = async (event) => {
     const createdAt = new Date().toISOString();
 
     if (TABLE_NAME) {
+      const item = { id, createdAt, status: "new", ...lead };
+      // Drop empty optional fields to keep items clean
+      Object.keys(item).forEach((k) => {
+        if (item[k] === "" || item[k] == null) delete item[k];
+      });
+      item.id = id;
+      item.createdAt = createdAt;
+      item.status = "new";
       await ddb.send(
         new PutCommand({
           TableName: TABLE_NAME,
-          Item: { id, createdAt, status: "new", ...lead },
+          Item: item,
         })
       );
     }

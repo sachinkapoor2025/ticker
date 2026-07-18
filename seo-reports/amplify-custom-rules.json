@@ -10,6 +10,11 @@
     "status": "200"
   },
   {
+    "source": "/api/geo",
+    "target": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/geo",
+    "status": "200"
+  },
+  {
     "source": "/api/admin/<*>",
     "target": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/admin/<*>",
     "status": "200"
