@@ -180,7 +180,9 @@ def write_custom_http() -> None:
         },
     ]
     if not IS_PRODUCTION:
-        common.insert(0, {"key": "X-Robots-Tag", "value": "noindex, nofollow"})
+        # TEMP: omit X-Robots-Tag on staging during audit (pair with robots Allow).
+        # Restore noindex,nofollow before production cutover.
+        pass
 
     # Amplify customHttp.yml format
     lines = ["customHeaders:", "  - pattern: '**'", "    headers:"]
