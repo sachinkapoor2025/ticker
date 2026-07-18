@@ -150,9 +150,9 @@ Disallow: /ticker-admin
 Sitemap: {SITE_ORIGIN}/sitemap.xml
 """
     else:
-        # Staging / Amplify preview — keep fully closed to crawlers
+        # TEMP: allow staging crawl for SEO/UX audit — revert to Disallow: / before production cutover
         body = """User-agent: *
-Disallow: /
+Allow: /
 """
     (WEBSITE / "robots.txt").write_text(body, encoding="utf-8")
     print(f"robots.txt written (IS_PRODUCTION={IS_PRODUCTION})")
