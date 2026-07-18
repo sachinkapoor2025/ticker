@@ -89,3 +89,5 @@ html,body{overflow-x: hidden;}.switchable__text ul{list-style: disc !important;}
             padding: 10px;
         }
         
+/* CWV: ensure web fonts swap quickly */
+@font-face { font-display: swap; }

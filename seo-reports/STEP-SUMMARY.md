@@ -61,3 +61,9 @@
 - Checklist: `seo-reports/PRE-LAUNCH-CHECKLIST.md`
 - Staging SEO score drop is expected (`is-crawlable` fails due to intentional noindex)
 - Mobile homepage performance improved significantly (+26); desktop still constrained by hero video/LCP — WebP/srcset next if needed
+
+## CWV follow-up
+
+- GitHub Actions now triggers on `main` and `dev`
+- WebP + `<picture>` fallbacks via `scripts/optimize_images.py`
+- `font-display: swap` on local @font-face CSS
