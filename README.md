@@ -6,72 +6,77 @@ Local copy of [tickerplay.com](https://tickerplay.com) prepared for serverless h
 
 | Layer | Service |
 | --- | --- |
-| Static website | **AWS Amplify Hosting** (CloudFront CDN under the hood) |
-| Contact API | **API Gateway HTTP API** + **Lambda** |
-| Lead storage | **DynamoDB** |
+| Static website | **AWS Amplify Hosting** |
+| Contact / Analytics / Admin APIs | **API Gateway HTTP API** + **Lambda** |
+| Leads + page views | **DynamoDB** |
 | Email notify (optional) | **SES** |
-| Website CI/CD | **Amplify** (connected to GitHub — managed in AWS console) |
-| API CI/CD | **GitHub Actions** → SAM / Lambda only |
+| Website CI/CD | **Amplify** (GitHub → Amplify console) |
+| API CI/CD | **GitHub Actions** → SAM |
 
 ```
-Browser → Amplify (CloudFront) → website/*
-         ↘ rewrite /api/contact → API Gateway → Lambda → DynamoDB (+ SES)
+Browser → Amplify → website/*
+         ↘ /api/contact    → Lambda → DynamoDB (+ SES)
+         ↘ /api/analytics  → Lambda → DynamoDB
+         ↘ /api/admin/*    → Lambda → DynamoDB (JWT)
+Admin UI → /admin/ (static, noindex)
 ```
 
 ## Repo layout
 
 ```
-website/          # Mirrored public site (HTML/CSS/JS/images)
-api/contact/      # Lambda handler for lead forms
+website/              # Public site + /admin dashboard
+api/contact|analytics|admin/
 infra/template.yaml
-scripts/setup-aws.sh
-.github/workflows/deploy.yml
-amplify.yml
+scripts/              # SEO, keywords, image optimize
+seo-reports/          # Keyword plans, Amplify rules, checklists
+Seo.xlsx              # Source keyword list (501)
 ```
 
 ## Local preview
 
 ```bash
 npm run serve
-# open http://localhost:4173
+# site: http://localhost:4173
+# admin: http://localhost:4173/admin/
 ```
 
-## One-time AWS bootstrap
+## SEO keywords
 
-Requires AWS CLI credentials (already configured on this machine as user `AI`).
+- Curated from `Seo.xlsx`: **481 included**, **20 excluded** (broad digital-signage noise).
+- See `seo-reports/KEYWORDS-PLAN.md`.
+- Applied on Amplify build via `scripts/apply_keywords.py`.
+
+## Admin dashboard
+
+- URL: `/admin/` (password-gated API).
+- Tracks: visitors (page views), enquiries/leads, status pipeline, conversion rate, top pages.
+- Default SAM password: `TickerplayAdmin!2026` — **change** via parameter `AdminPassword` or GitHub secret `ADMIN_PASSWORD`.
+- Plan: `seo-reports/ADMIN-PLAN.md`.
+
+## Deploy API (local)
 
 ```bash
-export AWS_REGION=us-east-1
-# optional once SES identities are verified:
-# export CONTACT_TO_EMAIL=you@example.com
-# export CONTACT_FROM_EMAIL=noreply@yourdomain.com
-
-npm run deploy:aws
+npm run api:install
+sam build -t infra/template.yaml
+sam deploy --stack-name tickerplay-api-prod --capabilities CAPABILITY_IAM --resolve-s3 \
+  --no-confirm-changeset --no-fail-on-empty-changeset \
+  --parameter-overrides EnvironmentName=prod AllowedOrigin=* AdminPassword='YOUR_STRONG_PASSWORD'
 ```
 
-`npm run deploy:aws` can still bootstrap the API stack locally. Amplify itself is created/managed in the AWS console (GitHub → Amplify).
+## GitHub Actions secrets
 
-## GitHub Actions (API only)
-
-On push to `main`, Actions deploys the contact API (SAM / Lambda). The website is built/hosted by Amplify from the same repo.
-
-Repo secrets needed:
-
-- `AWS_ACCESS_KEY_ID`
-- `AWS_SECRET_ACCESS_KEY`
+- `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`
 - `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL` (optional)
+- `ADMIN_PASSWORD` / `ADMIN_TOKEN_SECRET` (recommended)
 
-In Amplify console, add a rewrite so forms keep working:
+## Amplify rewrites (status 200)
 
-| Source | Target | Status |
-| --- | --- | --- |
-| `/api/contact` | your ContactEndpoint from stack outputs | `200` |
+| Source | Target |
+| --- | --- |
+| `/api/contact` | `…/prod/api/contact` |
+| `/api/analytics` | `…/prod/api/analytics` |
+| `/api/admin/<*>` | `…/prod/api/admin/<*>` |
 
-Example target: `https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact`
+Generated bundle: `seo-reports/amplify-custom-rules.json`.
 
-## Notes
-
-- **Core marketing pages** (38) + assets are mirrored now.
-- **~300 blog posts** are still on the live server; we can pull them next (or use Monday’s server files for a complete PHP→static migration).
-- Live PHP backend (`/mail/index.php`) is replaced by `/api/contact` Lambda.
-- When Monday’s server dump arrives, we can merge missing assets, blogs, and CMS content into this repo.
+Staging app: `https://dev.d3b6br5rr6wbn2.amplifyapp.com` (`IS_PRODUCTION` unset → noindex).

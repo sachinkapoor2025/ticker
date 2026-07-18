@@ -1,0 +1,5630 @@
+{
+  "count": 481,
+  "keywords": [
+    {
+      "keyword": "tickerplay",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "tickerplay.com",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "tickerplay led ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker tape",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker tapes",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker display",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker sign",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led stock ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led stock ticker display",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led stock ticker tape",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led news ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led news ticker tape",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led sports ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led financial ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "scrolling led ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "scrolling led sign",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led message board",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led scrolling display",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "programmable led sign",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "custom led ticker",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker manufacturer",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker company",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker supplier",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "led display board",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "real time ticker display",
+      "priority": "Must-Have",
+      "category": "Brand & Core Product",
+      "intent": "Navigational",
+      "excelPage": "Homepage",
+      "targets": [
+        "/"
+      ]
+    },
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have",
+      "category": "Tickerplay Product Lines",
+      "intent": "Navigational",
+      "excelPage": "Product pages",
+      "targets": [
+        "/led-ticker-tape/",
+        "/led-stock-ticker/",
+        "/led-sports-ticker/",
+        "/led-news-ticker/",
+        "/led-financial-ticker/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/",
+        "/custom-led-ticker-tape/",
+        "/led-twitter-ticker/",
+        "/led-rss-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have",
+      "category": "Financial / Trading Vertical",
+      "intent": "Commercial",
+      "excelPage": "/stock-exchange/, /led-stock-ticker/",
+      "targets": [
+        "/stock-exchange/",
+        "/led-stock-ticker/",
+        "/trading-labs/",
+        "/university-finance-lab/",
+        "/stock-market-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports ticker display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports bar ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports score ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "live sports ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports bar led display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "stadium ticker display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "arena led ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "casino sports ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sportsbook display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports betting odds display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "gym ticker display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "fitness center led sign",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports lounge display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "game day ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "live scores display board",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports scores led sign",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "college sports ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "athletic department display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports ticker for bars",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports ticker for restaurants",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "esports display board",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "fantasy football ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "live odds display",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "sports news ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "stadium scoreboard ticker",
+      "priority": "Must-Have",
+      "category": "Sports Vertical",
+      "intent": "Commercial",
+      "excelPage": "/sports-bars/",
+      "targets": [
+        "/sports-bars/",
+        "/led-sports-ticker/"
+      ]
+    },
+    {
+      "keyword": "school led ticker",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "school ticker display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "college led ticker",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "university led ticker",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "campus ticker display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "campus digital signage",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "classroom ticker display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "student engagement display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "school announcement display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "k-12 digital signage",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "high school led sign",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "college campus led sign",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "university finance lab",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "business school ticker display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "academic ticker display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "trading lab for students",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "finance classroom display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "school lobby display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "university lobby ticker",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "campus news ticker",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "student center display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "alumni engagement display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "education digital signage",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "school led display board",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "dorm lobby display",
+      "priority": "Must-Have",
+      "category": "Education Vertical",
+      "intent": "Commercial",
+      "excelPage": "/schools/",
+      "targets": [
+        "/schools/",
+        "/business-school/",
+        "/university-finance-lab/"
+      ]
+    },
+    {
+      "keyword": "corporate office ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "office lobby display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "corporate lobby ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "business news ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "office news ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "corporate led display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "workplace digital signage",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "employee engagement display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "corporate communication display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "retail ticker display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "retail store led sign",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "in store digital signage",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "storefront led display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "retail promotions display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "showroom led ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "showroom display board",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "retail led ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "mall directory display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "shopping center display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "boutique store led sign",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "restaurant led ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "hospitality digital signage",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "hotel lobby display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "casino floor display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "cruise ship led ticker",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "cruise ship digital signage",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "government office display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "courthouse display board",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "airport ticker display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "transit information display",
+      "priority": "Must-Have",
+      "category": "Corporate & Retail Vertical",
+      "intent": "Commercial",
+      "excelPage": "/corporate-floors/, /showrooms/",
+      "targets": [
+        "/corporate-floors/",
+        "/showrooms/",
+        "/investment-firms/",
+        "/wealth-management-firms/"
+      ]
+    },
+    {
+      "keyword": "led ticker price",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker cost",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "how much does a led ticker cost",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "buy led ticker",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker for sale",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker quote",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "request led ticker quote",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led sign company near me",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker installation company",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led display manufacturer usa",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "custom led sign company",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker supplier usa",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "commercial led sign company",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker dealer",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker distributor",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led sign rfp",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "ticker specification for rfp",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker bid spec",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led display warranty",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker lease",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led sign financing",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker maintenance",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led display repair",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker replacement",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led sign installation service",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker consultation",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "get a quote led ticker",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker for business",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "enterprise led ticker solution",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "led ticker turnkey solution",
+      "priority": "Must-Have",
+      "category": "Buyer Intent / Commercial",
+      "intent": "Transactional",
+      "excelPage": "/request-a-quote/",
+      "targets": [
+        "/contact/"
+      ]
+    },
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have",
+      "category": "Technical Specs & Formats",
+      "intent": "Informational",
+      "excelPage": "/ticker-models/",
+      "targets": [
+        "/ticker-models/",
+        "/indoor-ticker-tape/",
+        "/outdoor-ticker-tape/",
+        "/flexible-ticker-tape/",
+        "/circular-ticker-tape/"
+      ]
+    },
+    {
+      "keyword": "led ticker software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "ticker content management software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "led sign software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "ticker app",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "led ticker app",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "remote led sign control",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "cloud based ticker software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "led display content management",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "ticker programming software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "rss feed led ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "twitter feed led ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "social media led display",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "custom message led sign",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "ticker content app",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "led sign remote management",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "digital signage cms",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "ticker scheduling software",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "multi zone led clock",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "world clock led display",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "time and temperature display",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "led ticker api",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "licensed data feed ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "real time data integration ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "stock data feed for ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "sports data feed for ticker",
+      "priority": "Good-to-Have",
+      "category": "Software & Content Management",
+      "intent": "Informational",
+      "excelPage": "/ticker-content-app/",
+      "targets": [
+        "/solutions/"
+      ]
+    },
+    {
+      "keyword": "best led ticker company",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "top led ticker companies",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker company reviews",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "tickerplay vs rise display",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "rise display alternative",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led stock ticker",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led sports ticker",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker brands compared",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led display company comparison",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "digital signage company comparison",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best digital signage companies",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker manufacturer reviews",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "most reliable led ticker",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker company usa",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "top led sign companies 2026",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led ticker for trading floor",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led ticker for schools",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led ticker for sports bars",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best led ticker for offices",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker vs competitors",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "alternative to rise display",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "rise display competitor",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "rise display pricing",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "companies like rise display",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "led ticker company vs risedisplay",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "photonplay led ticker",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "photonplay systems",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "best alternative to risedisplay.com",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "tickerplay reviews",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "tickerplay led ticker reviews",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "is tickerplay a good company",
+      "priority": "Good-to-Have",
+      "category": "Comparison & Competitor",
+      "intent": "Commercial",
+      "excelPage": "/why-tickerplay/",
+      "targets": [
+        "/why-tickerplay/"
+      ]
+    },
+    {
+      "keyword": "what is an led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is a stock ticker display",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how does an led ticker work",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how much does an led ticker cost",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to install an led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to choose an led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what size led ticker do i need",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the best pixel pitch for a ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to program an led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to display stock prices on led sign",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "why do trading floors use led tickers",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "why do schools use led tickers",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "why install a sports ticker in a bar",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what data feeds can a led ticker display",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led tickers show real time stock prices",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led tickers show sports scores",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "are led tickers weatherproof",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "are led tickers energy efficient",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how long do led tickers last",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to maintain an led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the difference between led ticker and led sign",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the difference between 4mm and 6mm pixel pitch",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to write an rfp for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is a finance lab ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to engage students with led tickers",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to get free stock data for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "is licensed data required for stock ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to choose an led ticker company",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what makes a good led ticker company",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to get a quote for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is digital signage",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the difference between digital signage and led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how ai is changing digital signage",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is fine pitch led technology",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to reduce led display power consumption",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is a curved led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led tickers be customized",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to add custom messages to led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the warranty on led tickers",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to finance an led ticker purchase",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is a dealer program for led signs",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to become an led ticker reseller",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what certifications should an led ticker have",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "is ul certification important for led signs",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is etl certification led display",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to choose indoor vs outdoor led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the best led ticker for a casino",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the best led ticker for a hotel lobby",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to set up multi zone world clock display",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is a programmable scrolling sign",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to sync led ticker with twitter feed",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is the average cost per foot for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how many characters can an led ticker display",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what font sizes work best on led tickers",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led tickers display video",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led tickers show images and logos",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how bright are led ticker displays",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what is nit brightness for led signs",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to control led ticker brightness for daylight",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "does an led ticker need internet connection",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can led ticker work offline",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "what happens if led ticker loses power",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how often should led ticker content be updated",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "can multiple led tickers sync together",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "how to connect led ticker to office network",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "is led ticker installation covered by warranty",
+      "priority": "Good-to-Have",
+      "category": "Long-tail Questions (AEO)",
+      "intent": "Informational",
+      "excelPage": "Blog / FAQ",
+      "targets": [
+        "/blogs/",
+        "/"
+      ]
+    },
+    {
+      "keyword": "led ticker for casinos",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for airports",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for government buildings",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for churches",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for gyms",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for car dealerships",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for museums",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for convention centers",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for trade shows",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for restaurants",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for banks",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for auto dealerships",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for medical offices",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for pharmacies",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for gas stations",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for warehouses",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for manufacturing plants",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for call centers",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for co-working spaces",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led ticker for real estate offices",
+      "priority": "Good-to-Have",
+      "category": "Additional Verticals",
+      "intent": "Commercial",
+      "excelPage": "New industry pages",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "government led ticker rfp",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "school district led ticker bid",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "university procurement led display",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker request for proposal template",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led sign public bid",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker vendor qualification",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led display capital expenditure",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker budget planning",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led sign purchasing guide",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker procurement checklist",
+      "priority": "Good-to-Have",
+      "category": "RFP & Procurement (B2B)",
+      "intent": "Commercial",
+      "excelPage": "Blog / new resource page",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led world clock display",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "multi time zone clock",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "digital world clock for office",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "time zone display board",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "international time display",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "world clock led sign",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "trading floor world clock",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "airport world clock display",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "world clock for lobby",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "digital time zone clock wall",
+      "priority": "Good-to-Have",
+      "category": "World Clock Niche",
+      "intent": "Commercial",
+      "excelPage": "/world-clock/",
+      "targets": [
+        "/multi-time-zone-digital-wall-clock/"
+      ]
+    },
+    {
+      "keyword": "stock quotes for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "weather data for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "traffic data for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "flight information display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "news headlines for led sign",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "social media feed for led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "custom logo on led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "company kpi dashboard led display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "sales leaderboard led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "call center metrics led display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "warehouse kpi led ticker",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "manufacturing line status display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "safety metrics led display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "attendance tracker led sign",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "donation thermometer led display",
+      "priority": "Good-to-Have",
+      "category": "Content / Data Feed Ideas",
+      "intent": "Informational",
+      "excelPage": "Blog",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "cruise ship led display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "cruise ship ticker",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "hotel led ticker",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "resort digital signage",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "casino resort led display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "luxury hotel lobby display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "cruise line entertainment display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "onboard ship digital signage",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "maritime led display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "yacht led display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "hospitality guest information display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "resort news ticker",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "hotel event board display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "luxury retail led display",
+      "priority": "Optional",
+      "category": "Hospitality / Cruise (blue ocean)",
+      "intent": "Commercial",
+      "excelPage": "New page \u2014 open opportunity",
+      "targets": [
+        "/industries/"
+      ]
+    },
+    {
+      "keyword": "led sign manufacturer usa",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led ticker installation nationwide",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led display company new york",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led ticker company los angeles",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led sign company chicago",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led ticker company texas",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led display installer near me",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "custom led sign shop near me",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "commercial led sign installer",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led ticker manufacturer united states",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "made in usa led ticker",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "us based led sign company",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "nationwide led ticker installation",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "led ticker company for universities usa",
+      "priority": "Optional",
+      "category": "Local / Geo",
+      "intent": "Commercial",
+      "excelPage": "Location/service-area pages",
+      "targets": [
+        "/service-areas/"
+      ]
+    },
+    {
+      "keyword": "benefits of led ticker displays",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "benefits of digital signage",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker case studies",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker success stories",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker for employee engagement",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker for customer engagement",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "future of digital signage",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "history of stock tickers",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "evolution of led display technology",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker design ideas",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "creative led ticker graphics",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker best practices",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led sign content ideas",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "how led tickers boost sales",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "how led tickers improve communication",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker roi",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "digital signage roi",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker for emergency alerts",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "emergency alert led sign",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker for internal communications",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker for external advertising",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "sustainability in led signage",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "energy efficient digital signage",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "smart building led displays",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker accessibility",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker readability tips",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "choosing ticker content",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker analytics",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "digital signage analytics",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    },
+    {
+      "keyword": "led ticker vendor checklist",
+      "priority": "Optional",
+      "category": "Content / Blog Themes",
+      "intent": "Informational",
+      "excelPage": "Blog editorial calendar",
+      "targets": [
+        "/blogs/"
+      ]
+    }
+  ]
+}

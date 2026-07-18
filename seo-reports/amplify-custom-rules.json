@@ -5,6 +5,16 @@
     "status": "200"
   },
   {
+    "source": "/api/analytics",
+    "target": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/analytics",
+    "status": "200"
+  },
+  {
+    "source": "/api/admin/<*>",
+    "target": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/admin/<*>",
+    "status": "200"
+  },
+  {
     "source": "/blog/10-points-to-ponder-to-become-a-successful-investor/",
     "status": "301",
     "target": "/blogs/"

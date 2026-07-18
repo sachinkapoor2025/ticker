@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Tickerplay serverless API (contact form) + supporting resources
+Description: Tickerplay API — contact, analytics, admin dashboard
 
 Parameters:
   EnvironmentName:
@@ -9,19 +9,25 @@ Parameters:
   FromEmail:
     Type: String
     Default: ""
-    Description: Verified SES sender (optional until SES is configured)
   ToEmail:
     Type: String
     Default: ""
-    Description: Inbox for lead notifications (optional)
   AllowedOrigin:
     Type: String
     Default: "*"
+  AdminPassword:
+    Type: String
+    Default: "TickerplayAdmin!2026"
+    NoEcho: true
+  AdminTokenSecret:
+    Type: String
+    Default: "tickerplay-admin-secret-change-me"
+    NoEcho: true
 
 Globals:
   Function:
     Runtime: nodejs24.x
-    Timeout: 15
+    Timeout: 20
     MemorySize: 256
     Architectures:
       - arm64
@@ -38,6 +44,34 @@ Resources:
       KeySchema:
         - AttributeName: id
           KeyType: HASH
+
+  AnalyticsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub tickerplay-analytics-${EnvironmentName}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: !Ref EnvironmentName
+      CorsConfiguration:
+        AllowOrigins:
+          - !Ref AllowedOrigin
+        AllowHeaders:
+          - Content-Type
+          - Authorization
+        AllowMethods:
+          - GET
+          - POST
+          - PATCH
+          - OPTIONS
 
   ContactFunction:
     Type: AWS::Serverless::Function
@@ -74,27 +108,124 @@ Resources:
             Path: /api/contact
             Method: OPTIONS
 
-  HttpApi:
-    Type: AWS::Serverless::HttpApi
+  AnalyticsFunction:
+    Type: AWS::Serverless::Function
     Properties:
-      StageName: !Ref EnvironmentName
-      CorsConfiguration:
-        AllowOrigins:
-          - !Ref AllowedOrigin
-        AllowHeaders:
-          - Content-Type
-        AllowMethods:
-          - POST
-          - OPTIONS
+      FunctionName: !Sub tickerplay-analytics-${EnvironmentName}
+      CodeUri: ../api/analytics/
+      Handler: handler.handler
+      Environment:
+        Variables:
+          ANALYTICS_TABLE: !Ref AnalyticsTable
+          ALLOWED_ORIGIN: !Ref AllowedOrigin
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref AnalyticsTable
+      Events:
+        AnalyticsPost:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/analytics
+            Method: POST
+        AnalyticsOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/analytics
+            Method: OPTIONS
+
+  AdminFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub tickerplay-admin-${EnvironmentName}
+      CodeUri: ../api/admin/
+      Handler: handler.handler
+      Environment:
+        Variables:
+          LEADS_TABLE: !Ref LeadsTable
+          ANALYTICS_TABLE: !Ref AnalyticsTable
+          ADMIN_PASSWORD: !Ref AdminPassword
+          ADMIN_TOKEN_SECRET: !Ref AdminTokenSecret
+          ALLOWED_ORIGIN: !Ref AllowedOrigin
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref LeadsTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref AnalyticsTable
+      Events:
+        AdminLogin:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/login
+            Method: POST
+        AdminLoginOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/login
+            Method: OPTIONS
+        AdminOverview:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/overview
+            Method: GET
+        AdminOverviewOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/overview
+            Method: OPTIONS
+        AdminLeads:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/leads
+            Method: GET
+        AdminLeadsOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/leads
+            Method: OPTIONS
+        AdminLeadPatch:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/leads/{id}
+            Method: PATCH
+        AdminLeadPatchOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/leads/{id}
+            Method: OPTIONS
+        AdminVisitors:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/visitors
+            Method: GET
+        AdminVisitorsOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/visitors
+            Method: OPTIONS
 
 Outputs:
   ApiUrl:
     Description: HTTP API base URL
     Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}
   ContactEndpoint:
-    Description: Contact form endpoint
     Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/contact
+  AnalyticsEndpoint:
+    Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/analytics
+  AdminApiBase:
+    Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/admin
   LeadsTableName:
     Value: !Ref LeadsTable
-  ContactFunctionName:
-    Value: !Ref ContactFunction
+  AnalyticsTableName:
+    Value: !Ref AnalyticsTable

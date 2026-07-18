@@ -36,3 +36,6 @@ Canonical site: https://www.tickerplay.com/
 
 - [/privacy-policy/](https://www.tickerplay.com/privacy-policy/)
 - [/shipping-and-handling/](https://www.tickerplay.com/shipping-and-handling/)
+- [/why-tickerplay/](https://www.tickerplay.com/why-tickerplay/): Why Tickerplay / brand comparisons
+- [/industries/](https://www.tickerplay.com/industries/): Industry applications
+- [/service-areas/](https://www.tickerplay.com/service-areas/): Nationwide installation coverage

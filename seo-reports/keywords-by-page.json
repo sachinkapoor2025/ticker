@@ -1,0 +1,5250 @@
+{
+  "/": [
+    {
+      "keyword": "tickerplay",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay.com",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker tapes",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led stock ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led stock ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led news ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "scrolling led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "scrolling led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led message board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led scrolling display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "programmable led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "custom led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker manufacturer",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker company",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker supplier",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "what is an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a stock ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how does an led ticker work",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how much does an led ticker cost",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to install an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what size led ticker do i need",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best pixel pitch for a ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to program an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to display stock prices on led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why do trading floors use led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why do schools use led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why install a sports ticker in a bar",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what data feeds can a led ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show real time stock prices",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show sports scores",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "are led tickers weatherproof",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "are led tickers energy efficient",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how long do led tickers last",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to maintain an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between led ticker and led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between 4mm and 6mm pixel pitch",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to write an rfp for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a finance lab ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to engage students with led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to get free stock data for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is licensed data required for stock ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose an led ticker company",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what makes a good led ticker company",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to get a quote for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between digital signage and led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how ai is changing digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is fine pitch led technology",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to reduce led display power consumption",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a curved led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers be customized",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to add custom messages to led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the warranty on led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to finance an led ticker purchase",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a dealer program for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to become an led ticker reseller",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what certifications should an led ticker have",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is ul certification important for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is etl certification led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose indoor vs outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best led ticker for a casino",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best led ticker for a hotel lobby",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to set up multi zone world clock display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a programmable scrolling sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to sync led ticker with twitter feed",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the average cost per foot for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how many characters can an led ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what font sizes work best on led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers display video",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show images and logos",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how bright are led ticker displays",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is nit brightness for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to control led ticker brightness for daylight",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "does an led ticker need internet connection",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led ticker work offline",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what happens if led ticker loses power",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how often should led ticker content be updated",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can multiple led tickers sync together",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to connect led ticker to office network",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is led ticker installation covered by warranty",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/led-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-stock-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-sports-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports bar ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports score ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports bar led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stadium ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "arena led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sportsbook display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports betting odds display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "gym ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fitness center led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports lounge display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "game day ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live scores display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports scores led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "athletic department display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports ticker for bars",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports ticker for restaurants",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "esports display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fantasy football ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live odds display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stadium scoreboard ticker",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-news-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-financial-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/indoor-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/outdoor-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/flexible-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/circular-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/custom-led-ticker-tape/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-twitter-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/led-rss-ticker/": [
+    {
+      "keyword": "tickerplay led ticker tape",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay financial ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay indoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay outdoor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay flexible ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay circular ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay custom ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay showroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay corporate display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay university ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay world clock",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay scrolling sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "tickerplay led display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/stock-exchange/": [
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have"
+    }
+  ],
+  "/trading-labs/": [
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have"
+    }
+  ],
+  "/university-finance-lab/": [
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "classroom ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school announcement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "k-12 digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "high school led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college campus led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "academic ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab for students",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance classroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "alumni engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "education digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school led display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "dorm lobby display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/stock-market-ticker/": [
+    {
+      "keyword": "stock market ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock market ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock exchange ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance lab led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school trading lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "wealth management ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "investment firm led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "brokerage firm ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock brokerage display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "share trading display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live stock ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nasdaq ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "nyse ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bloomberg style ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "market data display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "financial data display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "real time market data ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for office",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker for lobby",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for bank",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "bank lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hedge fund office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "private equity office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fintech office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stock ticker app",
+      "priority": "Must-Have"
+    }
+  ],
+  "/sports-bars/": [
+    {
+      "keyword": "sports ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports bar ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports score ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports bar led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stadium ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "arena led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sportsbook display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports betting odds display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "gym ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fitness center led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports lounge display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "game day ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live scores display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports scores led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college sports ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "athletic department display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports ticker for bars",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports ticker for restaurants",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "esports display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "fantasy football ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "live odds display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "sports news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "stadium scoreboard ticker",
+      "priority": "Must-Have"
+    }
+  ],
+  "/schools/": [
+    {
+      "keyword": "school led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "classroom ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school announcement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "k-12 digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "high school led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college campus led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "academic ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab for students",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance classroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "alumni engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "education digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school led display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "dorm lobby display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/business-school/": [
+    {
+      "keyword": "school led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "classroom ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school announcement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "k-12 digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "high school led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "college campus led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university finance lab",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business school ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "academic ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "trading lab for students",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "finance classroom display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "university lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "campus news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "student center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "alumni engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "education digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "school led display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "dorm lobby display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/corporate-floors/": [
+    {
+      "keyword": "corporate office ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "workplace digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "employee engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate communication display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "in store digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "storefront led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail promotions display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "mall directory display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "shopping center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "boutique store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "restaurant led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hospitality digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hotel lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "government office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "courthouse display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "airport ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "transit information display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/showrooms/": [
+    {
+      "keyword": "corporate office ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "workplace digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "employee engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate communication display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "in store digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "storefront led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail promotions display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "mall directory display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "shopping center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "boutique store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "restaurant led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hospitality digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hotel lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "government office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "courthouse display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "airport ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "transit information display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/investment-firms/": [
+    {
+      "keyword": "corporate office ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "workplace digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "employee engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate communication display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "in store digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "storefront led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail promotions display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "mall directory display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "shopping center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "boutique store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "restaurant led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hospitality digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hotel lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "government office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "courthouse display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "airport ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "transit information display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/wealth-management-firms/": [
+    {
+      "keyword": "corporate office ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate lobby ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "business news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "office news ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "workplace digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "employee engagement display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "corporate communication display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "in store digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "storefront led display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail promotions display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "showroom display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "retail led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "mall directory display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "shopping center display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "boutique store led sign",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "restaurant led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hospitality digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "hotel lobby display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "casino floor display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "cruise ship digital signage",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "government office display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "courthouse display board",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "airport ticker display",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "transit information display",
+      "priority": "Must-Have"
+    }
+  ],
+  "/contact/": [
+    {
+      "keyword": "led ticker price",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker cost",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "how much does a led ticker cost",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "buy led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for sale",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker quote",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "request led ticker quote",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led sign company near me",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker installation company",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led display manufacturer usa",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "custom led sign company",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker supplier usa",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "commercial led sign company",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker dealer",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker distributor",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led sign rfp",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "ticker specification for rfp",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker bid spec",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led display warranty",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker lease",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led sign financing",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker maintenance",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led display repair",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker replacement",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led sign installation service",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker consultation",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "get a quote led ticker",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker for business",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "enterprise led ticker solution",
+      "priority": "Must-Have"
+    },
+    {
+      "keyword": "led ticker turnkey solution",
+      "priority": "Must-Have"
+    }
+  ],
+  "/ticker-models/": [
+    {
+      "keyword": "indoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weatherproof led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flexible led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "curved led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "circular led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ceiling mounted led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wall mounted led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "vertical led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "horizontal led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "4mm pixel pitch ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "6mm pixel pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "fine pitch led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "high resolution led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "full color led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "single color led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "dual color led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rgb led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker size guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker height",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "32 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "48 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "64 pixel led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom size led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wireless led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "wifi led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker installation guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker mounting options",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker power requirements",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ip65 led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "energy efficient led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "low power led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "smart led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ai powered digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "interactive led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "modular led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led video wall vs ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs lcd display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "direct view led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led cabinet display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "78 inch led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "10 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "20 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "30 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "100 foot led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom length led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "l shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "c shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "u shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "o shape led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "serpentine led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "recessed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "surface mount led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "suspended led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "column wrap led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "corner wrap led ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/solutions/": [
+    {
+      "keyword": "led ticker software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ticker content management software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led sign software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ticker app",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker app",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "remote led sign control",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "cloud based ticker software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led display content management",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ticker programming software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rss feed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "twitter feed led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "social media led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom message led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ticker content app",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led sign remote management",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "digital signage cms",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "ticker scheduling software",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "multi zone led clock",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "world clock led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "time and temperature display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker api",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "licensed data feed ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "real time data integration ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "stock data feed for ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "sports data feed for ticker",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/why-tickerplay/": [
+    {
+      "keyword": "best led ticker company",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "top led ticker companies",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker company reviews",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "tickerplay vs rise display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rise display alternative",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led stock ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led sports ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker brands compared",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led display company comparison",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "digital signage company comparison",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best digital signage companies",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker manufacturer reviews",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "most reliable led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker company usa",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "top led sign companies 2026",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led ticker for trading floor",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led ticker for schools",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led ticker for sports bars",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best led ticker for offices",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vs competitors",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "alternative to rise display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rise display competitor",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "rise display pricing",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "companies like rise display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker company vs risedisplay",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "photonplay led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "photonplay systems",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "best alternative to risedisplay.com",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "tickerplay reviews",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "tickerplay led ticker reviews",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is tickerplay a good company",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/blogs/": [
+    {
+      "keyword": "what is an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a stock ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how does an led ticker work",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how much does an led ticker cost",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to install an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what size led ticker do i need",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best pixel pitch for a ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to program an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to display stock prices on led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why do trading floors use led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why do schools use led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "why install a sports ticker in a bar",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what data feeds can a led ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show real time stock prices",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show sports scores",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "are led tickers weatherproof",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "are led tickers energy efficient",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how long do led tickers last",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to maintain an led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between led ticker and led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between 4mm and 6mm pixel pitch",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to write an rfp for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a finance lab ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to engage students with led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to get free stock data for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is licensed data required for stock ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose an led ticker company",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what makes a good led ticker company",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to get a quote for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the difference between digital signage and led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how ai is changing digital signage",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is fine pitch led technology",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to reduce led display power consumption",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a curved led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers be customized",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to add custom messages to led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the warranty on led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to finance an led ticker purchase",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a dealer program for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to become an led ticker reseller",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what certifications should an led ticker have",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is ul certification important for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is etl certification led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to choose indoor vs outdoor led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best led ticker for a casino",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the best led ticker for a hotel lobby",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to set up multi zone world clock display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is a programmable scrolling sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to sync led ticker with twitter feed",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is the average cost per foot for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how many characters can an led ticker display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what font sizes work best on led tickers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers display video",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led tickers show images and logos",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how bright are led ticker displays",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what is nit brightness for led signs",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to control led ticker brightness for daylight",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "does an led ticker need internet connection",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can led ticker work offline",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "what happens if led ticker loses power",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how often should led ticker content be updated",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "can multiple led tickers sync together",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "how to connect led ticker to office network",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "is led ticker installation covered by warranty",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "government led ticker rfp",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "school district led ticker bid",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "university procurement led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker request for proposal template",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led sign public bid",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker vendor qualification",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led display capital expenditure",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker budget planning",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led sign purchasing guide",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker procurement checklist",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "stock quotes for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "weather data for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "traffic data for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "flight information display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "news headlines for led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "social media feed for led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "custom logo on led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "company kpi dashboard led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "sales leaderboard led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "call center metrics led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "warehouse kpi led ticker",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "manufacturing line status display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "safety metrics led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "attendance tracker led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "donation thermometer led display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "benefits of led ticker displays",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "benefits of digital signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker case studies",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker success stories",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker for employee engagement",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker for customer engagement",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "future of digital signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "history of stock tickers",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "evolution of led display technology",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker design ideas",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "creative led ticker graphics",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker best practices",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led sign content ideas",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "how led tickers boost sales",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "how led tickers improve communication",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker roi",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "digital signage roi",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker for emergency alerts",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "emergency alert led sign",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker for internal communications",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker for external advertising",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "sustainability in led signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "energy efficient digital signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "smart building led displays",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker accessibility",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker readability tips",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "choosing ticker content",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker analytics",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "digital signage analytics",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker vendor checklist",
+      "priority": "Optional"
+    }
+  ],
+  "/industries/": [
+    {
+      "keyword": "led ticker for casinos",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for airports",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for government buildings",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for churches",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for gyms",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for car dealerships",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for museums",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for convention centers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for trade shows",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for restaurants",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for banks",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for auto dealerships",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for medical offices",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for pharmacies",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for gas stations",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for warehouses",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for manufacturing plants",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for call centers",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for co-working spaces",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "led ticker for real estate offices",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "cruise ship led display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "cruise ship ticker",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "hotel led ticker",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "resort digital signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "casino resort led display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "luxury hotel lobby display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "cruise line entertainment display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "onboard ship digital signage",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "maritime led display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "yacht led display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "hospitality guest information display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "resort news ticker",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "hotel event board display",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "luxury retail led display",
+      "priority": "Optional"
+    }
+  ],
+  "/multi-time-zone-digital-wall-clock/": [
+    {
+      "keyword": "led world clock display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "multi time zone clock",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "digital world clock for office",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "time zone display board",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "international time display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "world clock led sign",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "trading floor world clock",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "airport world clock display",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "world clock for lobby",
+      "priority": "Good-to-Have"
+    },
+    {
+      "keyword": "digital time zone clock wall",
+      "priority": "Good-to-Have"
+    }
+  ],
+  "/service-areas/": [
+    {
+      "keyword": "led sign manufacturer usa",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker installation nationwide",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led display company new york",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker company los angeles",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led sign company chicago",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker company texas",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led display installer near me",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "custom led sign shop near me",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "commercial led sign installer",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker manufacturer united states",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "made in usa led ticker",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "us based led sign company",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "nationwide led ticker installation",
+      "priority": "Optional"
+    },
+    {
+      "keyword": "led ticker company for universities usa",
+      "priority": "Optional"
+    }
+  ]
+}

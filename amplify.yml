@@ -9,6 +9,7 @@ frontend:
         - pip3 install --user -r requirements-seo.txt || pip install -r requirements-seo.txt
         - python3 scripts/content_quality.py
         - python3 scripts/optimize_images.py
+        - python3 scripts/apply_keywords.py
         - python3 scripts/seo_build.py
     build:
       commands:

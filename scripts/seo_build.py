@@ -513,6 +513,16 @@ def enhance_html_files(routes: list[str]) -> None:
         text = _inject_head(text, block)
         schema_pages += 1
 
+        # First-party visitor beacon (skip admin UI)
+        if "/admin/" not in str(index) and "analytics-beacon.js" not in text:
+            text = re.sub(
+                r"</body>",
+                '<script src="/js/analytics-beacon.js" defer></script>\n</body>',
+                text,
+                count=1,
+                flags=re.I,
+            )
+
         if text != original:
             index.write_text(text, encoding="utf-8")
 
@@ -598,6 +608,9 @@ def write_llms_txt(routes: list[str]) -> None:
         "",
         f"- [/privacy-policy/]({SITE_ORIGIN}/privacy-policy/)",
         f"- [/shipping-and-handling/]({SITE_ORIGIN}/shipping-and-handling/)",
+        f"- [/why-tickerplay/]({SITE_ORIGIN}/why-tickerplay/): Why Tickerplay / brand comparisons",
+        f"- [/industries/]({SITE_ORIGIN}/industries/): Industry applications",
+        f"- [/service-areas/]({SITE_ORIGIN}/service-areas/): Nationwide installation coverage",
         "",
     ]
     (WEBSITE / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
@@ -605,18 +618,24 @@ def write_llms_txt(routes: list[str]) -> None:
 
 
 def write_amplify_redirects_bundle() -> None:
-    """Merge API proxy + blog 301s for Amplify customRules."""
+    """Merge API proxies + blog 301s for Amplify customRules."""
     contact = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact"
+    analytics = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/analytics"
+    admin = "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/admin"
     app_json = ROOT / "amplify-app.json"
     if app_json.exists():
         try:
             data = json.loads(app_json.read_text())
             contact = data.get("contactApi", contact)
+            analytics = data.get("analyticsApi", analytics)
+            admin = data.get("adminApi", admin)
         except Exception:
             pass
 
     rules = [
         {"source": "/api/contact", "target": contact, "status": "200"},
+        {"source": "/api/analytics", "target": analytics, "status": "200"},
+        {"source": "/api/admin/<*>", "target": f"{admin}/<*>", "status": "200"},
     ]
     rules.extend(load_stub_redirects())
     out = REPORTS / "amplify-custom-rules.json"

@@ -22,8 +22,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
-          cache: npm
-          cache-dependency-path: api/contact/package-lock.json
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -36,18 +34,24 @@ jobs:
           use-installer: true
 
       - name: Install API dependencies
-        working-directory: api/contact
-        run: npm ci --omit=dev || npm install --omit=dev
+        run: |
+          npm install --omit=dev --prefix api/contact
+          npm install --omit=dev --prefix api/analytics
+          npm install --omit=dev --prefix api/admin
 
       - name: Build & deploy SAM stack
         env:
           CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
           CONTACT_FROM_EMAIL: ${{ secrets.CONTACT_FROM_EMAIL }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ADMIN_TOKEN_SECRET: ${{ secrets.ADMIN_TOKEN_SECRET }}
         run: |
           sam build -t infra/template.yaml
           PARAMS=("EnvironmentName=prod" "AllowedOrigin=*")
           if [ -n "$CONTACT_TO_EMAIL" ]; then PARAMS+=("ToEmail=$CONTACT_TO_EMAIL"); fi
           if [ -n "$CONTACT_FROM_EMAIL" ]; then PARAMS+=("FromEmail=$CONTACT_FROM_EMAIL"); fi
+          if [ -n "$ADMIN_PASSWORD" ]; then PARAMS+=("AdminPassword=$ADMIN_PASSWORD"); fi
+          if [ -n "$ADMIN_TOKEN_SECRET" ]; then PARAMS+=("AdminTokenSecret=$ADMIN_TOKEN_SECRET"); fi
           sam deploy \
             --stack-name "$STACK_NAME" \
             --capabilities CAPABILITY_IAM \

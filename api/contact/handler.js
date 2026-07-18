@@ -95,7 +95,7 @@ exports.handler = async (event) => {
       await ddb.send(
         new PutCommand({
           TableName: TABLE_NAME,
-          Item: { id, createdAt, ...lead },
+          Item: { id, createdAt, status: "new", ...lead },
         })
       );
     }
