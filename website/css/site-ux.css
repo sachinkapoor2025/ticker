@@ -1,56 +1,38 @@
 /* Tickerplay UX — search, FAQ accordion, country picker, header phone
    Brand accent: #036eb1 (existing site primary) */
 
-/* —— Cover / page banners (restore image + readable type) —— */
-.cover.imagebg {
-  position: relative;
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: #1a2430;
+/* —— Inner-page video banners (same motion as homepage, slightly shorter) —— */
+.main-banner--page {
+  height: 65vh;
+  min-height: 360px;
+  z-index: 0;
 }
-.cover.imagebg .background-image-holder {
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-}
-.cover.imagebg .background-image-holder > picture,
-.cover.imagebg .background-image-holder > img {
-  /* source asset for JS; keep out of layout */
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-.cover.imagebg::after {
-  content: "";
+.main-banner--page .main-banner-content {
+  margin-top: 0;
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 20, 32, 0.45) 0%,
-    rgba(10, 20, 32, 0.62) 100%
-  );
-  z-index: 1;
-  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 92%);
+  padding: 0 16px;
 }
-.cover.imagebg .container {
-  position: relative;
-  z-index: 2;
-}
-.cover.imagebg h1,
-.cover.imagebg .type--bold,
-.cover.imagebg .lead {
-  color: #fff !important;
+.main-banner--page .main-banner-content h1 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  letter-spacing: 0.04em;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
-.cover.imagebg .lead {
-  opacity: 0.95;
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
+.main-banner--page .main-banner-content .lead {
+  color: #fff;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  max-width: 640px;
+  margin: 14px auto 0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 600px) {
+  .main-banner--page {
+    height: 42vh;
+    min-height: 260px;
+  }
 }
 
 :root {
