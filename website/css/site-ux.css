@@ -1,6 +1,58 @@
 /* Tickerplay UX — search, FAQ accordion, country picker, header phone
    Brand accent: #036eb1 (existing site primary) */
 
+/* —— Cover / page banners (restore image + readable type) —— */
+.cover.imagebg {
+  position: relative;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1a2430;
+}
+.cover.imagebg .background-image-holder {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.cover.imagebg .background-image-holder > picture,
+.cover.imagebg .background-image-holder > img {
+  /* source asset for JS; keep out of layout */
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.cover.imagebg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 20, 32, 0.45) 0%,
+    rgba(10, 20, 32, 0.62) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.cover.imagebg .container {
+  position: relative;
+  z-index: 2;
+}
+.cover.imagebg h1,
+.cover.imagebg .type--bold,
+.cover.imagebg .lead {
+  color: #fff !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+.cover.imagebg .lead {
+  opacity: 0.95;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root {
   --tp-blue: #036eb1;
   --tp-blue-dark: #025a91;

@@ -102,6 +102,25 @@ def rewrite_html() -> int:
             text,
             flags=re.I,
         )
+
+        # Do not wrap hero banner source images — theme JS reads img src for CSS background.
+        # Mark them so the picture rewriter skips them.
+        def _mark_banner_imgs(m: re.Match) -> str:
+            block = m.group(0)
+            return re.sub(
+                r"(<img\b)(?![^>]*\bdata-no-webp=)",
+                r'\1 data-no-webp="banner"',
+                block,
+                flags=re.I,
+            )
+
+        text2 = re.sub(
+            r'<div[^>]*class="[^"]*background-image-holder[^"]*"[^>]*>.*?</div>',
+            _mark_banner_imgs,
+            text2,
+            flags=re.I | re.S,
+        )
+
         text3, n = img_re.subn(repl, text2)
         if text3 != text:
             html.write_text(text3, encoding="utf-8")
