@@ -9,7 +9,7 @@
     "deploy:aws": "bash scripts/setup-aws.sh",
     "sam:build": "sam build -t infra/template.yaml",
     "sam:deploy": "sam deploy --stack-name tickerplay-api-prod --capabilities CAPABILITY_IAM --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset",
-    "seo:build": "python3 scripts/seo_build.py",
-    "seo:build:prod": "IS_PRODUCTION=true python3 scripts/seo_build.py"
+    "seo:build": "python3 scripts/content_quality.py && python3 scripts/seo_build.py",
+    "seo:build:prod": "IS_PRODUCTION=true python3 scripts/content_quality.py && IS_PRODUCTION=true python3 scripts/seo_build.py"
   }
 }

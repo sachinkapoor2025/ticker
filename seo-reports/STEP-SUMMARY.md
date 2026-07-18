@@ -24,3 +24,32 @@
 - Amplify rules bundle: API proxy + 192 blog 301s → `seo-reports/amplify-custom-rules.json`
 
 **Amplify console (manual):** set env `IS_PRODUCTION=false` on staging app `d3b6br5rr6wbn2`. Only set `true` on the future production app.
+
+## Amplify `dev` app (d3b6br5rr6wbn2) — applied
+
+- Branch env: `IS_PRODUCTION=false`
+- Custom rules: 193 (API `/api/contact` proxy + 192 blog 301s → `/blogs/`)
+- Staging URL: https://dev.d3b6br5rr6wbn2.amplifyapp.com/
+- Pushed commit to `dev` with SEO pipeline + blog mirror + schema/CWV/a11y basics
+
+## Steps 3–7 incremental (this push)
+
+- JSON-LD: Organization (all), FAQPage (where FAQs exist), Product (product paths), BreadcrumbList (inner), BlogPosting (blog posts)
+- `llms.txt` + AI crawler allows in production robots
+- Hero video: `preload=metadata` + poster
+- Lazy images, deferred `/js/*`, skip link, `<main id="main-content">`
+- `404.html`, security headers via `customHttp.yml` (staging includes X-Robots-Tag)
+
+## Step 5 — content quality (DONE)
+
+- Unique meta descriptions for all 38 core pages (`scripts/content_quality.py`)
+- Audience-specific **Why Choose Us** copy on application/product pages (sports bars, schools, finance lab, brokerage, etc.)
+- Alt text filled for images missing/empty alt (filename-derived; logos labeled)
+- Fixed broken `img` tags from earlier lazy-load (`"/ loading=` → `" loading=`)
+- Blog posts (208): visible “Last updated” + `article:published_time` / `modified_time` from on-page dates (not invented); BlogPosting schema uses ISO
+
+## Still open (next increments)
+
+- Step 4 deeper: WebP/srcset pipeline, unused CSS purge, font-display
+- Step 6 fuller keyboard/contrast audit
+- Step 8: after-Lighthouse + production cutover checklist

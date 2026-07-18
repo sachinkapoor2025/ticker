@@ -459,17 +459,38 @@ def enhance_html_files(routes: list[str]) -> None:
             graphs.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs})
 
         if route.startswith("/blog/") and route not in ("/blog/", "/blog/blogs/"):
-            date_m = re.search(
-                r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}",
-                text,
-            )
-            # also "June 22, 2021 16:16" style
-            date_m2 = re.search(r"([A-Z][a-z]+\s+\d{1,2},\s+\d{4})", text)
             published = None
-            for cand in (date_m, date_m2):
-                if cand:
-                    published = cand.group(1)
-                    break
+            mod = None
+            pm = re.search(
+                r'property=["\']article:published_time["\'][^>]*content=["\']([^"\']+)["\']',
+                text,
+                re.I,
+            ) or re.search(
+                r'content=["\']([^"\']+)["\'][^>]*property=["\']article:published_time["\']',
+                text,
+                re.I,
+            )
+            mm = re.search(
+                r'property=["\']article:modified_time["\'][^>]*content=["\']([^"\']+)["\']',
+                text,
+                re.I,
+            ) or re.search(
+                r'content=["\']([^"\']+)["\'][^>]*property=["\']article:modified_time["\']',
+                text,
+                re.I,
+            )
+            if pm:
+                published = pm.group(1)
+            if mm:
+                mod = mm.group(1)
+            if not published:
+                # fallback: first visible calendar date in page (not invented)
+                date_m = re.search(
+                    r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}",
+                    text,
+                )
+                if date_m:
+                    published = date_m.group(0)
             article = {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
@@ -484,9 +505,8 @@ def enhance_html_files(routes: list[str]) -> None:
                 },
             }
             if published:
-                # leave as text date; validators accept ISO better — keep visible date string in description if unparsed
                 article["datePublished"] = published
-                article["dateModified"] = published
+                article["dateModified"] = mod or published
             graphs.append(article)
 
         block = "\n".join(_jsonld_script(g) for g in graphs)
