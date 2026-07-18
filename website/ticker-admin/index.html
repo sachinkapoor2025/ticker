@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tickerplay Admin</title>
+  <script src="/ticker-admin/config.js"></script>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --line:#1f2937; --text:#e5e7eb; --muted:#94a3b8; --accent:#38bdf8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:linear-gradient(160deg,#0b1224,#111827 50%,#0f172a); color:var(--text); min-height:100vh; }
+    a { color:var(--accent); }
+    .wrap { max-width:1100px; margin:0 auto; padding:24px; }
+    .card { background:rgba(17,24,39,.92); border:1px solid var(--line); border-radius:14px; padding:18px; margin-bottom:16px; }
+    h1,h2 { margin:0 0 12px; }
+    .muted { color:var(--muted); font-size:13px; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+    @media (max-width:900px){ .grid{ grid-template-columns:repeat(2,1fr);} }
+    .kpi { background:#0b1220; border:1px solid var(--line); border-radius:12px; padding:14px; }
+    .kpi b { display:block; font-size:28px; margin-top:6px; }
+    input, select, textarea, button { font:inherit; }
+    input, select, textarea { width:100%; background:#0b1220; border:1px solid var(--line); color:var(--text); border-radius:10px; padding:10px 12px; }
+    button { background:var(--accent); color:#082f49; border:0; border-radius:10px; padding:10px 14px; font-weight:700; cursor:pointer; }
+    button.secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+    .nav { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0; }
+    .nav button.active { outline:2px solid #7dd3fc; }
+    .login { max-width:400px; margin:10vh auto; }
+    .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; background:#1e293b; font-size:12px; }
+    .pill.new{ background:#1d4ed8;} .pill.contacted{ background:#0f766e;} .pill.follow_up{ background:#b45309;} .pill.converted{ background:#15803d;} .pill.closed{ background:#475569;}
+    .err { color:#fca5a5; margin-top:8px; }
+    .bar { height:8px; background:#1e293b; border-radius:99px; overflow:hidden; }
+    .bar > i { display:block; height:100%; background:linear-gradient(90deg,#38bdf8,#34d399); }
+  </style>
+</head>
+<body>
+
+  <div class="wrap" id="app"></div>
+  <script>
+    const CFG = window.TP_ADMIN_CONFIG || {};
+    const REGION = CFG.region || "us-east-1";
+    const CLIENT_ID = CFG.userPoolClientId || "";
+    const API = CFG.apiBase || "/api/admin";
+    const STORAGE = "tp_admin_cognito";
+
+    const state = {
+      auth: loadAuth(),
+      view: "dashboard",
+      data: null,
+      leads: [],
+      visitors: [],
+      error: "",
+      challenge: null,
+      challengeUser: "",
+    };
+
+    function loadAuth() {
+      try { return JSON.parse(localStorage.getItem(STORAGE) || "null"); } catch { return null; }
+    }
+    function saveAuth(a) {
+      if (a) localStorage.setItem(STORAGE, JSON.stringify(a));
+      else localStorage.removeItem(STORAGE);
+      state.auth = a;
+    }
+
+    function decodeJwt(token) {
+      const part = token.split(".")[1];
+      const json = atob(part.replace(/-/g, "+").replace(/_/g, "/"));
+      return JSON.parse(json);
+    }
+
+    function groupsOf(token) {
+      try {
+        const p = decodeJwt(token);
+        return p["cognito:groups"] || [];
+      } catch { return []; }
+    }
+
+    function isAdminToken(token) {
+      const g = groupsOf(token);
+      return g.includes("admin") || g.includes("super-admin");
+    }
+
+    async function cognitoCall(target, body) {
+      const res = await fetch(`https://cognito-idp.${REGION}.amazonaws.com/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-amz-json-1.1",
+          "X-Amz-Target": target,
+        },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.__type) {
+        const msg = data.message || data.__type || "Auth failed";
+        throw new Error(msg);
+      }
+      return data;
+    }
+
+    async function cognitoLogin(username, password) {
+      if (!CLIENT_ID) throw new Error("Cognito client not configured. Deploy API stack first.");
+      const data = await cognitoCall("AWSCognitoIdentityProviderService.InitiateAuth", {
+        AuthFlow: "USER_PASSWORD_AUTH",
+        ClientId: CLIENT_ID,
+        AuthParameters: { USERNAME: username, PASSWORD: password },
+      });
+      if (data.ChallengeName === "NEW_PASSWORD_REQUIRED") {
+        state.challenge = data;
+        state.challengeUser = username;
+        throw new Error("NEW_PASSWORD_REQUIRED");
+      }
+      const idToken = data.AuthenticationResult?.IdToken;
+      if (!idToken) throw new Error("No ID token returned");
+      if (!isAdminToken(idToken)) {
+        throw new Error("Access denied: your Cognito user is not in the admin group.");
+      }
+      const payload = decodeJwt(idToken);
+      saveAuth({
+        email: payload.email || username,
+        idToken,
+        accessToken: data.AuthenticationResult.AccessToken,
+        refreshToken: data.AuthenticationResult.RefreshToken,
+        expiresAt: Date.now() + (data.AuthenticationResult.ExpiresIn || 3600) * 1000,
+      });
+    }
+
+    async function completeNewPassword(newPassword) {
+      const data = await cognitoCall("AWSCognitoIdentityProviderService.RespondToAuthChallenge", {
+        ClientId: CLIENT_ID,
+        ChallengeName: "NEW_PASSWORD_REQUIRED",
+        Session: state.challenge.Session,
+        ChallengeResponses: {
+          USERNAME: state.challengeUser,
+          NEW_PASSWORD: newPassword,
+        },
+      });
+      const idToken = data.AuthenticationResult?.IdToken;
+      if (!idToken) throw new Error("Password update failed");
+      if (!isAdminToken(idToken)) {
+        throw new Error("Access denied: add this user to the Cognito admin group.");
+      }
+      const payload = decodeJwt(idToken);
+      state.challenge = null;
+      saveAuth({
+        email: payload.email || state.challengeUser,
+        idToken,
+        accessToken: data.AuthenticationResult.AccessToken,
+        refreshToken: data.AuthenticationResult.RefreshToken,
+        expiresAt: Date.now() + (data.AuthenticationResult.ExpiresIn || 3600) * 1000,
+      });
+    }
+
+    async function api(path, opts = {}) {
+      if (!state.auth?.idToken) throw new Error("Unauthorized");
+      const headers = Object.assign(
+        { "Content-Type": "application/json", Authorization: "Bearer " + state.auth.idToken },
+        opts.headers || {}
+      );
+      const res = await fetch(API + path, Object.assign({}, opts, { headers }));
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 401 || res.status === 403) {
+        saveAuth(null);
+        render();
+        throw new Error(data.error || "Unauthorized");
+      }
+      if (!res.ok) throw new Error(data.error || "Request failed");
+      return data;
+    }
+
+    function kpi(label, value, sub = "") {
+      return `<div class="kpi"><div class="muted">${label}</div><b>${value}</b>${sub ? `<div class="muted">${sub}</div>` : ""}</div>`;
+    }
+
+    function renderLogin() {
+      const needNewPw = state.challenge?.ChallengeName === "NEW_PASSWORD_REQUIRED";
+      document.getElementById("app").innerHTML = `
+        <div class="card login">
+          <h1>Tickerplay Admin</h1>
+          <p class="muted">Sign in with your Cognito admin account. This page is not linked from the public site.</p>
+          <form id="loginForm" style="margin-top:16px;display:grid;gap:10px;">
+            ${needNewPw ? `
+              <p class="muted">Set a new password to finish first-time login.</p>
+              <input type="password" id="newPassword" placeholder="New password" required minlength="10" autocomplete="new-password" />
+              <button type="submit">Set password &amp; continue</button>
+            ` : `
+              <input type="email" id="username" placeholder="Email / username" required autocomplete="username" />
+              <input type="password" id="password" placeholder="Password" required autocomplete="current-password" />
+              <button type="submit">Sign in</button>
+            `}
+          </form>
+          <div class="err" id="loginErr"></div>
+        </div>`;
+      document.getElementById("loginForm").onsubmit = async (e) => {
+        e.preventDefault();
+        const errEl = document.getElementById("loginErr");
+        errEl.textContent = "";
+        try {
+          if (needNewPw) {
+            await completeNewPassword(document.getElementById("newPassword").value);
+          } else {
+            await cognitoLogin(
+              document.getElementById("username").value.trim(),
+              document.getElementById("password").value
+            );
+          }
+          await loadAll();
+        } catch (err) {
+          if (err.message === "NEW_PASSWORD_REQUIRED") {
+            render();
+            return;
+          }
+          errEl.textContent = err.message || String(err);
+        }
+      };
+    }
+
+    async function loadAll() {
+      state.error = "";
+      try {
+        const [overview, leads, visitors] = await Promise.all([
+          api("/overview"),
+          api("/leads"),
+          api("/visitors"),
+        ]);
+        state.data = overview;
+        state.leads = leads.leads || [];
+        state.visitors = visitors.visitors || [];
+      } catch (e) {
+        state.error = e.message;
+      }
+      render();
+    }
+
+    function nav() {
+      const tabs = [
+        ["dashboard", "Dashboard"],
+        ["leads", "Enquiries"],
+        ["visitors", "Visitors"],
+      ];
+      return `<div class="nav">${tabs
+        .map(
+          ([id, label]) =>
+            `<button class="secondary ${state.view === id ? "active" : ""}" data-view="${id}">${label}</button>`
+        )
+        .join("")}<button class="secondary" id="logout">Logout</button>
+      <button class="secondary" id="refresh">Refresh</button></div>`;
+    }
+
+    function dashboard() {
+      const t = state.data?.totals || {};
+      const days = state.data?.trafficByDay || [];
+      const max = Math.max(1, ...days.map((d) => d.pageViews));
+      const top = state.data?.topPages || [];
+      const recent = state.data?.recentLeads || [];
+      return `
+        <div class="grid">
+          ${kpi("Leads (all)", t.leads ?? 0)}
+          ${kpi("Leads (30d)", t.leadsLast30d ?? 0)}
+          ${kpi("Page views (30d)", t.pageViewsLast30d ?? 0)}
+          ${kpi("Conversion rate", (t.conversionRate ?? 0) + "%", (t.converted || 0) + " converted")}
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h2>Traffic (30 days)</h2>
+          ${
+            days.length
+              ? days
+                  .map(
+                    (d) => `
+            <div style="margin:8px 0;">
+              <div class="row" style="justify-content:space-between;"><span class="muted">${d.day}</span><span>${d.pageViews}</span></div>
+              <div class="bar"><i style="width:${Math.round((d.pageViews / max) * 100)}%"></i></div>
+            </div>`
+                  )
+                  .join("")
+              : '<p class="muted">No page views yet.</p>'
+          }
+        </div>
+        <div class="card">
+          <h2>Top pages</h2>
+          <table><thead><tr><th>Path</th><th>Views</th></tr></thead>
+          <tbody>${
+            top.map((p) => `<tr><td>${p.path}</td><td>${p.count}</td></tr>`).join("") ||
+            '<tr><td colspan="2" class="muted">No data</td></tr>'
+          }</tbody></table>
+        </div>
+        <div class="card">
+          <h2>Newest enquiries</h2>
+          <table><thead><tr><th>When</th><th>Contact</th><th>Status</th><th>Message</th></tr></thead>
+          <tbody>${
+            recent
+              .map(
+                (l) => `<tr>
+            <td class="muted">${(l.createdAt || "").replace("T", " ").slice(0, 16)}</td>
+            <td><b>${l.name || "—"}</b><br/><span class="muted">${l.email || ""} ${l.mobile || ""}</span></td>
+            <td><span class="pill ${l.status || "new"}">${l.status || "new"}</span></td>
+            <td>${(l.message || l.company || "—").toString().slice(0, 120)}</td>
+          </tr>`
+              )
+              .join("") || '<tr><td colspan="4" class="muted">No leads yet</td></tr>'
+          }</tbody></table>
+        </div>`;
+    }
+
+    function leadsView() {
+      return `<div class="card">
+        <div class="row" style="justify-content:space-between;">
+          <h2>Enquiry pipeline</h2>
+          <span class="muted">${state.leads.length} total</span>
+        </div>
+        <table>
+          <thead><tr><th>Date</th><th>Lead</th><th>Source</th><th>Status</th><th>Notes</th><th></th></tr></thead>
+          <tbody>
+          ${
+            state.leads
+              .map(
+                (l) => `
+            <tr>
+              <td class="muted">${(l.createdAt || "").slice(0, 10)}</td>
+              <td><b>${l.name || "—"}</b><br/><span class="muted">${l.email || ""}<br/>${l.mobile || ""}<br/>${l.country || ""}</span><div>${(l.message || "").slice(0, 160)}</div></td>
+              <td>${l.source || "website"}</td>
+              <td>
+                <select data-id="${l.id}" class="status">
+                  ${["new", "contacted", "follow_up", "converted", "closed"]
+                    .map(
+                      (s) =>
+                        `<option value="${s}" ${(l.status || "new") === s ? "selected" : ""}>${s}</option>`
+                    )
+                    .join("")}
+                </select>
+              </td>
+              <td><textarea data-id="${l.id}" class="notes" rows="2">${l.adminNotes || ""}</textarea></td>
+              <td><button data-id="${l.id}" class="save secondary">Save</button></td>
+            </tr>`
+              )
+              .join("") || '<tr><td colspan="6" class="muted">No enquiries yet</td></tr>'
+          }
+          </tbody>
+        </table>
+      </div>`;
+    }
+
+    function visitorsView() {
+      return `<div class="card">
+        <h2>Recent visitors</h2>
+        <table><thead><tr><th>Time</th><th>Path</th><th>Session</th><th>Referrer</th></tr></thead>
+        <tbody>${
+          state.visitors
+            .slice(0, 200)
+            .map(
+              (v) => `<tr>
+          <td class="muted">${(v.createdAt || "").replace("T", " ").slice(0, 19)}</td>
+          <td>${v.path || ""}</td>
+          <td class="muted">${(v.sessionId || "").slice(0, 10)}</td>
+          <td class="muted">${(v.referrer || "—").toString().slice(0, 60)}</td>
+        </tr>`
+            )
+            .join("") || '<tr><td colspan="4" class="muted">No visitor events yet</td></tr>'
+        }</tbody></table>
+      </div>`;
+    }
+
+    function render() {
+      if (!state.auth?.idToken || !isAdminToken(state.auth.idToken) || state.challenge) {
+        return renderLogin();
+      }
+      const body =
+        state.view === "leads" ? leadsView() : state.view === "visitors" ? visitorsView() : dashboard();
+      document.getElementById("app").innerHTML = `
+        <div class="row" style="justify-content:space-between;align-items:flex-end;">
+          <div>
+            <h1>Tickerplay Admin</h1>
+            <p class="muted">${state.auth.email || ""} · Cognito admin group</p>
+          </div>
+        </div>
+        ${nav()}
+        ${state.error ? `<div class="err">${state.error}</div>` : ""}
+        ${body}`;
+      document.querySelectorAll("[data-view]").forEach(
+        (b) =>
+          (b.onclick = () => {
+            state.view = b.dataset.view;
+            render();
+          })
+      );
+      document.getElementById("logout").onclick = () => {
+        saveAuth(null);
+        render();
+      };
+      document.getElementById("refresh").onclick = () => loadAll();
+      document.querySelectorAll("button.save").forEach(
+        (btn) =>
+          (btn.onclick = async () => {
+            const id = btn.dataset.id;
+            const status = document.querySelector(`select.status[data-id="${id}"]`).value;
+            const adminNotes = document.querySelector(`textarea.notes[data-id="${id}"]`).value;
+            await api("/leads/" + encodeURIComponent(id), {
+              method: "PATCH",
+              body: JSON.stringify({ status, adminNotes }),
+            });
+            await loadAll();
+          })
+      );
+    }
+
+    if (state.auth?.idToken && isAdminToken(state.auth.idToken)) loadAll();
+    else render();
+  </script>
+</body>
+</html>

@@ -11,6 +11,7 @@ frontend:
         - python3 scripts/optimize_images.py
         - python3 scripts/apply_keywords.py
         - python3 scripts/seo_build.py
+        - python3 scripts/write_admin_config.py
     build:
       commands:
         - echo "Static site ready (SEO assets generated)"

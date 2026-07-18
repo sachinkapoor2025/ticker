@@ -43,15 +43,11 @@ jobs:
         env:
           CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
           CONTACT_FROM_EMAIL: ${{ secrets.CONTACT_FROM_EMAIL }}
-          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-          ADMIN_TOKEN_SECRET: ${{ secrets.ADMIN_TOKEN_SECRET }}
         run: |
           sam build -t infra/template.yaml
           PARAMS=("EnvironmentName=prod" "AllowedOrigin=*")
           if [ -n "$CONTACT_TO_EMAIL" ]; then PARAMS+=("ToEmail=$CONTACT_TO_EMAIL"); fi
           if [ -n "$CONTACT_FROM_EMAIL" ]; then PARAMS+=("FromEmail=$CONTACT_FROM_EMAIL"); fi
-          if [ -n "$ADMIN_PASSWORD" ]; then PARAMS+=("AdminPassword=$ADMIN_PASSWORD"); fi
-          if [ -n "$ADMIN_TOKEN_SECRET" ]; then PARAMS+=("AdminTokenSecret=$ADMIN_TOKEN_SECRET"); fi
           sam deploy \
             --stack-name "$STACK_NAME" \
             --capabilities CAPABILITY_IAM \

@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
-Description: Tickerplay API — contact, analytics, admin dashboard
+Description: Tickerplay API — contact, analytics, Cognito admin dashboard
 
 Parameters:
   EnvironmentName:
@@ -15,14 +15,6 @@ Parameters:
   AllowedOrigin:
     Type: String
     Default: "*"
-  AdminPassword:
-    Type: String
-    Default: "TickerplayAdmin!2026"
-    NoEcho: true
-  AdminTokenSecret:
-    Type: String
-    Default: "tickerplay-admin-secret-change-me"
-    NoEcho: true
 
 Globals:
   Function:
@@ -56,6 +48,60 @@ Resources:
       KeySchema:
         - AttributeName: id
           KeyType: HASH
+
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: !Sub tickerplay-users-${EnvironmentName}
+      AutoVerifiedAttributes:
+        - email
+      UsernameAttributes:
+        - email
+      UsernameConfiguration:
+        CaseSensitive: false
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 10
+          RequireUppercase: true
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: false
+      AccountRecoverySetting:
+        RecoveryMechanisms:
+          - Name: verified_email
+            Priority: 1
+      Schema:
+        - Name: email
+          Required: true
+          Mutable: true
+
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: !Sub tickerplay-admin-web-${EnvironmentName}
+      UserPoolId: !Ref UserPool
+      GenerateSecret: false
+      ExplicitAuthFlows:
+        - ALLOW_USER_SRP_AUTH
+        - ALLOW_USER_PASSWORD_AUTH
+        - ALLOW_REFRESH_TOKEN_AUTH
+      SupportedIdentityProviders:
+        - COGNITO
+      PreventUserExistenceErrors: ENABLED
+      AccessTokenValidity: 12
+      IdTokenValidity: 12
+      RefreshTokenValidity: 30
+      TokenValidityUnits:
+        AccessToken: hours
+        IdToken: hours
+        RefreshToken: days
+
+  AdminGroup:
+    Type: AWS::Cognito::UserPoolGroup
+    Properties:
+      GroupName: admin
+      UserPoolId: !Ref UserPool
+      Description: Tickerplay admin dashboard access (/ticker-admin)
 
   HttpApi:
     Type: AWS::Serverless::HttpApi
@@ -145,8 +191,8 @@ Resources:
         Variables:
           LEADS_TABLE: !Ref LeadsTable
           ANALYTICS_TABLE: !Ref AnalyticsTable
-          ADMIN_PASSWORD: !Ref AdminPassword
-          ADMIN_TOKEN_SECRET: !Ref AdminTokenSecret
+          USER_POOL_ID: !Ref UserPool
+          USER_POOL_CLIENT_ID: !Ref UserPoolClient
           ALLOWED_ORIGIN: !Ref AllowedOrigin
       Policies:
         - DynamoDBCrudPolicy:
@@ -154,18 +200,6 @@ Resources:
         - DynamoDBCrudPolicy:
             TableName: !Ref AnalyticsTable
       Events:
-        AdminLogin:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref HttpApi
-            Path: /api/admin/login
-            Method: POST
-        AdminLoginOptions:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref HttpApi
-            Path: /api/admin/login
-            Method: OPTIONS
         AdminOverview:
           Type: HttpApi
           Properties:
@@ -214,6 +248,18 @@ Resources:
             ApiId: !Ref HttpApi
             Path: /api/admin/visitors
             Method: OPTIONS
+        AdminMe:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/me
+            Method: GET
+        AdminMeOptions:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /api/admin/me
+            Method: OPTIONS
 
 Outputs:
   ApiUrl:
@@ -225,6 +271,10 @@ Outputs:
     Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/analytics
   AdminApiBase:
     Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${EnvironmentName}/api/admin
+  UserPoolId:
+    Value: !Ref UserPool
+  UserPoolClientId:
+    Value: !Ref UserPoolClient
   LeadsTableName:
     Value: !Ref LeadsTable
   AnalyticsTableName:

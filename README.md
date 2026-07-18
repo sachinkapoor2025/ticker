@@ -17,14 +17,14 @@ Local copy of [tickerplay.com](https://tickerplay.com) prepared for serverless h
 Browser → Amplify → website/*
          ↘ /api/contact    → Lambda → DynamoDB (+ SES)
          ↘ /api/analytics  → Lambda → DynamoDB
-         ↘ /api/admin/*    → Lambda → DynamoDB (JWT)
-Admin UI → /admin/ (static, noindex)
+         ↘ /api/admin/*    → Lambda → DynamoDB (Cognito JWT + admin group)
+Admin UI → /ticker-admin/ (hidden URL, Cognito login, noindex)
 ```
 
 ## Repo layout
 
 ```
-website/              # Public site + /admin dashboard
+website/              # Public site + /ticker-admin (hidden)
 api/contact|analytics|admin/
 infra/template.yaml
 scripts/              # SEO, keywords, image optimize
@@ -37,7 +37,7 @@ Seo.xlsx              # Source keyword list (501)
 ```bash
 npm run serve
 # site: http://localhost:4173
-# admin: http://localhost:4173/admin/
+# admin (manual URL only): http://localhost:4173/ticker-admin/
 ```
 
 ## SEO keywords
@@ -48,10 +48,10 @@ npm run serve
 
 ## Admin dashboard
 
-- URL: `/admin/` (password-gated API).
-- Tracks: visitors (page views), enquiries/leads, status pipeline, conversion rate, top pages.
-- Default SAM password: `TickerplayAdmin!2026` — **change** via parameter `AdminPassword` or GitHub secret `ADMIN_PASSWORD`.
-- Plan: `seo-reports/ADMIN-PLAN.md`.
+- **URL:** `/ticker-admin/` — type it manually; there is **no** login link on the public site.
+- **Auth:** Cognito email + password; user must be in group **`admin`**.
+- Tracks: visitors, enquiries/leads, pipeline status, conversion, top pages.
+- Details: `seo-reports/ADMIN-PLAN.md`.
 
 ## Deploy API (local)
 
@@ -60,14 +60,15 @@ npm run api:install
 sam build -t infra/template.yaml
 sam deploy --stack-name tickerplay-api-prod --capabilities CAPABILITY_IAM --resolve-s3 \
   --no-confirm-changeset --no-fail-on-empty-changeset \
-  --parameter-overrides EnvironmentName=prod AllowedOrigin=* AdminPassword='YOUR_STRONG_PASSWORD'
+  --parameter-overrides EnvironmentName=prod AllowedOrigin=*
+# then refresh Cognito IDs into amplify-app.json + config.js:
+python3 scripts/sync_cognito_config.py
 ```
 
 ## GitHub Actions secrets
 
 - `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`
 - `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL` (optional)
-- `ADMIN_PASSWORD` / `ADMIN_TOKEN_SECRET` (recommended)
 
 ## Amplify rewrites (status 200)
 

@@ -1,31 +1,38 @@
-# Tickerplay Admin Dashboard — plan (vs hr-ecom)
+# Tickerplay Admin Dashboard
 
-Reference: `/Users/sachinkapoor/Desktop/HR_EC/hr-ecom` admin (ecommerce).
+## Access (hidden URL — no public login button)
 
-## Included (relevant to LED ticker B2B)
-
-| Module | Why |
+| Item | Value |
 | --- | --- |
-| Dashboard KPIs | Leads, 30d leads, page views, conversion rate |
-| Enquiry pipeline | new → contacted → follow_up → converted / closed + notes |
-| Visitors | Recent page views + referrer/session (lite analytics) |
-| Top pages | See which product/industry pages convert interest |
-| Site beacon | `/js/analytics-beacon.js` → `POST /api/analytics` |
+| URL | `/ticker-admin/` (type manually; not linked from the site) |
+| Auth | Amazon Cognito username (email) + password |
+| Authorization | User must be in Cognito group **`admin`** |
 
-## Excluded (ecommerce-only noise)
+## Modules
 
-Products, categories, cart, checkout, coupons, payments/Stripe, shipping rates, email campaign blast tools, load-test console.
+- Dashboard KPIs (leads, visitors, conversion)
+- Enquiry pipeline (status + notes)
+- Recent visitors / top pages
 
-## Future (phase 2)
+## Excluded (ecommerce-only)
 
-- Quote value / estimated project size fields  
-- Email/Slack alert on new lead  
-- UTM capture on forms  
-- Cognito instead of shared password  
-- CSV export  
+Products, cart, coupons, Stripe, etc.
 
-## Access
+## Create an admin user
 
-- URL: `/admin/` (noindex)  
-- Default password via SAM param `AdminPassword` (change in deploy)  
-- APIs under `/api/admin/*` (proxied by Amplify like contact)
+```bash
+POOL_ID=<UserPoolId from stack outputs>
+aws cognito-idp admin-create-user \
+  --user-pool-id "$POOL_ID" \
+  --username you@company.com \
+  --user-attributes Name=email,Value=you@company.com Name=email_verified,Value=true \
+  --temporary-password 'TempPass1234' \
+  --message-action SUPPRESS
+
+aws cognito-idp admin-add-user-to-group \
+  --user-pool-id "$POOL_ID" \
+  --username you@company.com \
+  --group-name admin
+```
+
+First login at `/ticker-admin/` will prompt to set a new password.

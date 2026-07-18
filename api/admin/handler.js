@@ -1,17 +1,19 @@
+/**
+ * Admin API — Cognito ID token required; user must be in group "admin".
+ */
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
   DynamoDBDocumentClient,
   ScanCommand,
   UpdateCommand,
-  QueryCommand,
 } = require("@aws-sdk/lib-dynamodb");
-const crypto = require("crypto");
+const { CognitoJwtVerifier } = require("aws-jwt-verify");
 
 const ddb = DynamoDBDocumentClient.from(new DynamoDBClient({}));
 const LEADS_TABLE = process.env.LEADS_TABLE;
 const ANALYTICS_TABLE = process.env.ANALYTICS_TABLE;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "TickerplayAdmin!2026";
-const ADMIN_TOKEN_SECRET = process.env.ADMIN_TOKEN_SECRET || "tickerplay-admin-secret-change-me";
+const USER_POOL_ID = process.env.USER_POOL_ID;
+const USER_POOL_CLIENT_ID = process.env.USER_POOL_CLIENT_ID;
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "*";
 
 const CORS = {
@@ -20,39 +22,27 @@ const CORS = {
   "Access-Control-Allow-Methods": "GET,POST,PATCH,OPTIONS",
 };
 
+let verifier;
+function getVerifier() {
+  if (!verifier) {
+    if (!USER_POOL_ID || !USER_POOL_CLIENT_ID) {
+      throw new Error("Cognito not configured");
+    }
+    verifier = CognitoJwtVerifier.create({
+      userPoolId: USER_POOL_ID,
+      tokenUse: "id",
+      clientId: USER_POOL_CLIENT_ID,
+    });
+  }
+  return verifier;
+}
+
 function json(code, body) {
-  return { statusCode: code, headers: { "Content-Type": "application/json", ...CORS }, body: JSON.stringify(body) };
-}
-
-function b64url(buf) {
-  return Buffer.from(buf).toString("base64url");
-}
-
-function signToken(payload, ttlSec = 60 * 60 * 12) {
-  const body = { ...payload, exp: Math.floor(Date.now() / 1000) + ttlSec };
-  const data = b64url(JSON.stringify(body));
-  const sig = crypto.createHmac("sha256", ADMIN_TOKEN_SECRET).update(data).digest("base64url");
-  return `${data}.${sig}`;
-}
-
-function verifyToken(token) {
-  if (!token) return null;
-  const [data, sig] = token.split(".");
-  if (!data || !sig) return null;
-  const expect = crypto.createHmac("sha256", ADMIN_TOKEN_SECRET).update(data).digest("base64url");
-  const a = Buffer.from(sig);
-  const b = Buffer.from(expect);
-  if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
-  const body = JSON.parse(Buffer.from(data, "base64url").toString("utf8"));
-  if (body.exp < Math.floor(Date.now() / 1000)) return null;
-  return body;
-}
-
-function getAuth(event) {
-  const h = event.headers || {};
-  const raw = h.authorization || h.Authorization || "";
-  const token = raw.replace(/^Bearer\s+/i, "").trim();
-  return verifyToken(token);
+  return {
+    statusCode: code,
+    headers: { "Content-Type": "application/json", ...CORS },
+    body: JSON.stringify(body),
+  };
 }
 
 function pathOf(event) {
@@ -61,6 +51,45 @@ function pathOf(event) {
 
 function methodOf(event) {
   return event.requestContext?.http?.method || event.httpMethod || "GET";
+}
+
+function getBearer(event) {
+  const h = event.headers || {};
+  const raw = h.authorization || h.Authorization || "";
+  return raw.replace(/^Bearer\s+/i, "").trim();
+}
+
+function isAdminGroup(groups) {
+  const g = Array.isArray(groups) ? groups : [];
+  return g.includes("admin") || g.includes("super-admin");
+}
+
+async function requireAdmin(event) {
+  const token = getBearer(event);
+  if (!token) {
+    const err = new Error("Unauthorized");
+    err.statusCode = 401;
+    throw err;
+  }
+  try {
+    const payload = await getVerifier().verify(token);
+    const groups = payload["cognito:groups"] || [];
+    if (!isAdminGroup(groups)) {
+      const err = new Error("Forbidden: admin group required");
+      err.statusCode = 403;
+      throw err;
+    }
+    return {
+      email: payload.email || payload["cognito:username"] || "",
+      groups,
+      sub: payload.sub,
+    };
+  } catch (e) {
+    if (e.statusCode) throw e;
+    const err = new Error("Unauthorized");
+    err.statusCode = 401;
+    throw err;
+  }
 }
 
 async function scanAll(table, filter) {
@@ -86,23 +115,18 @@ exports.handler = async (event) => {
 
   const path = pathOf(event);
   try {
-    if (method === "POST" && path.endsWith("/api/admin/login")) {
-      const raw = event.isBase64Encoded
-        ? Buffer.from(event.body || "", "base64").toString("utf8")
-        : event.body || "{}";
-      const { password } = JSON.parse(raw || "{}");
-      if (String(password) !== ADMIN_PASSWORD) return json(401, { ok: false, error: "Invalid credentials" });
-      const token = signToken({ role: "admin" });
-      return json(200, { ok: true, token, expiresIn: 43200 });
-    }
+    const auth = await requireAdmin(event);
 
-    const auth = getAuth(event);
-    if (!auth) return json(401, { ok: false, error: "Unauthorized" });
+    if (method === "GET" && path.endsWith("/api/admin/me")) {
+      return json(200, { ok: true, email: auth.email, groups: auth.groups });
+    }
 
     if (method === "GET" && path.endsWith("/api/admin/overview")) {
       const leads = (await scanAll(LEADS_TABLE)).filter((i) => i.email || i.name || i.mobile);
       const analytics = ANALYTICS_TABLE
-        ? (await scanAll(ANALYTICS_TABLE)).filter((i) => i.type === "page_view" || i.entityType === "day_total")
+        ? (await scanAll(ANALYTICS_TABLE)).filter(
+            (i) => i.type === "page_view" || i.entityType === "day_total"
+          )
         : [];
       const now = Date.now();
       const days = 30;
@@ -132,6 +156,7 @@ exports.handler = async (event) => {
       const converted = leads.filter((l) => (l.status || "") === "converted").length;
       return json(200, {
         ok: true,
+        user: { email: auth.email },
         totals: {
           leads: leads.length,
           leadsLast30d: recentLeads.length,
@@ -202,7 +227,11 @@ exports.handler = async (event) => {
 
     return json(404, { ok: false, error: "Not found" });
   } catch (e) {
-    console.error(e);
-    return json(500, { ok: false, error: "Internal error" });
+    const code = e.statusCode || 500;
+    if (code >= 500) console.error(e);
+    return json(code, {
+      ok: false,
+      error: code === 500 ? "Internal error" : e.message || "Error",
+    });
   }
 };

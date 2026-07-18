@@ -42,7 +42,7 @@ def load_stub_redirects() -> list[dict]:
 
 def write_sitemap(routes: list[str]) -> None:
     """Indexable routes only — exclude thank-you style paths if added later."""
-    exclude_prefixes = ("/thankyou", "/thank-you", "/admin", "/cgi-bin")
+    exclude_prefixes = ("/thankyou", "/thank-you", "/admin", "/ticker-admin", "/cgi-bin")
     stubs = {r["source"] if r["source"].endswith("/") else r["source"] + "/" for r in load_stub_redirects()}
     # stubs file may have both with/without slash; normalize
     stub_paths = set()
@@ -145,6 +145,7 @@ Disallow: /thankyou
 Disallow: /thank-you
 Disallow: /cgi-bin
 Disallow: /admin
+Disallow: /ticker-admin
 
 Sitemap: {SITE_ORIGIN}/sitemap.xml
 """
@@ -335,9 +336,12 @@ def enhance_html_files(routes: list[str]) -> None:
     sports_fixed = 0
     canonical_fixed = 0
     schema_pages = 0
+    skip_prefixes = ("/ticker-admin/", "/admin/")
     for index in WEBSITE.rglob("index.html"):
         rel = index.parent.relative_to(WEBSITE).as_posix()
         route = "/" if rel == "." else f"/{rel}/"
+        if any(route.startswith(p) for p in skip_prefixes):
+            continue
         text = index.read_text(encoding="utf-8", errors="replace")
         original = text
 
@@ -514,7 +518,7 @@ def enhance_html_files(routes: list[str]) -> None:
         schema_pages += 1
 
         # First-party visitor beacon (skip admin UI)
-        if "/admin/" not in str(index) and "analytics-beacon.js" not in text:
+        if "ticker-admin" not in str(index) and "/admin/" not in str(index) and "analytics-beacon.js" not in text:
             text = re.sub(
                 r"</body>",
                 '<script src="/js/analytics-beacon.js" defer></script>\n</body>',

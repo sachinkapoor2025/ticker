@@ -8,6 +8,8 @@
   "contactApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/contact",
   "analyticsApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/analytics",
   "adminApi": "https://9h23e2v4l9.execute-api.us-east-1.amazonaws.com/prod/api/admin",
-  "adminUrl": "https://dev.d3b6br5rr6wbn2.amplifyapp.com/admin/",
-  "note": "Amplify managed in console. GitHub Actions deploys API only. Set IS_PRODUCTION=true only on the production Amplify app/branch. Change AdminPassword via SAM parameter / GitHub secret."
+  "adminUrl": "https://dev.d3b6br5rr6wbn2.amplifyapp.com/ticker-admin/",
+  "note": "Admin is /ticker-admin only (Cognito admin group). No public login link.",
+  "userPoolId": "us-east-1_Zonn9umiP",
+  "userPoolClientId": "5se71f1oc6isdufb641mh9ortm"
 }
