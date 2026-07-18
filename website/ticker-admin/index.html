@@ -4,42 +4,273 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Tickerplay Admin</title>
+  <title>Admin | Tickerplay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="/ticker-admin/config.js"></script>
   <style>
-    :root { --bg:#0f172a; --card:#111827; --line:#1f2937; --text:#e5e7eb; --muted:#94a3b8; --accent:#38bdf8; }
+    :root {
+      --primary: #036eb1;
+      --primary-dark: #025a91;
+      --accent: #4a90e2;
+      --orange: #ff931e;
+      --text: #252525;
+      --muted: #666666;
+      --line: #ececec;
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --soft: #fafafa;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:linear-gradient(160deg,#0b1224,#111827 50%,#0f172a); color:var(--text); min-height:100vh; }
-    a { color:var(--accent); }
-    .wrap { max-width:1100px; margin:0 auto; padding:24px; }
-    .card { background:rgba(17,24,39,.92); border:1px solid var(--line); border-radius:14px; padding:18px; margin-bottom:16px; }
-    h1,h2 { margin:0 0 12px; }
-    .muted { color:var(--muted); font-size:13px; }
-    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
-    @media (max-width:900px){ .grid{ grid-template-columns:repeat(2,1fr);} }
-    .kpi { background:#0b1220; border:1px solid var(--line); border-radius:12px; padding:14px; }
-    .kpi b { display:block; font-size:28px; margin-top:6px; }
-    input, select, textarea, button { font:inherit; }
-    input, select, textarea { width:100%; background:#0b1220; border:1px solid var(--line); color:var(--text); border-radius:10px; padding:10px 12px; }
-    button { background:var(--accent); color:#082f49; border:0; border-radius:10px; padding:10px 14px; font-weight:700; cursor:pointer; }
-    button.secondary { background:transparent; color:var(--text); border:1px solid var(--line); }
-    table { width:100%; border-collapse:collapse; font-size:14px; }
-    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
-    th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
-    .nav { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0; }
-    .nav button.active { outline:2px solid #7dd3fc; }
-    .login { max-width:400px; margin:10vh auto; }
-    .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-    .pill { display:inline-block; padding:2px 8px; border-radius:999px; background:#1e293b; font-size:12px; }
-    .pill.new{ background:#1d4ed8;} .pill.contacted{ background:#0f766e;} .pill.follow_up{ background:#b45309;} .pill.converted{ background:#15803d;} .pill.closed{ background:#475569;}
-    .err { color:#fca5a5; margin-top:8px; }
-    .bar { height:8px; background:#1e293b; border-radius:99px; overflow:hidden; }
-    .bar > i { display:block; height:100%; background:linear-gradient(90deg,#38bdf8,#34d399); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      font-size: 14px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--primary-dark); text-decoration: underline; }
+
+    /* Site-matching top bar */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 0 rgba(0,0,0,.03);
+    }
+    .site-header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+    .brand-meta {
+      border-left: 1px solid var(--line);
+      padding-left: 14px;
+    }
+    .brand-meta strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: .02em;
+    }
+    .brand-meta span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .header-actions .user {
+      font-size: 12px;
+      color: var(--muted);
+      margin-right: 4px;
+    }
+
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 24px 20px 48px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.03);
+    }
+    h1, h2 {
+      margin: 0 0 10px;
+      font-weight: 300;
+      color: var(--text);
+    }
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.25rem; font-weight: 400; }
+    .muted { color: var(--muted); font-size: 13px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 16px;
+      border-top: 3px solid var(--primary);
+    }
+    .kpi b {
+      display: block;
+      font-size: 28px;
+      margin-top: 6px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    input, select, textarea, button { font: inherit; }
+    input, select, textarea {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #d3d3d3;
+      color: var(--text);
+      border-radius: 4px;
+      padding: 10px 12px;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(3,110,177,.15);
+    }
+
+    button, .btn {
+      background: var(--primary);
+      color: #fff;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      padding: 10px 16px;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: .02em;
+    }
+    button:hover, .btn:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+    button.secondary, .btn.secondary {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid #d3d3d3;
+      font-weight: 600;
+    }
+    button.secondary:hover, .btn.secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: #fff;
+    }
+    button.secondary.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      background: var(--soft);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .login-wrap {
+      max-width: 420px;
+      margin: 48px auto;
+    }
+    .login-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-logo img { height: 48px; }
+    .row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .pill.new { background: var(--primary); }
+    .pill.contacted { background: #31639c; }
+    .pill.follow_up { background: var(--orange); }
+    .pill.converted { background: #20a712; }
+    .pill.closed { background: #777; }
+    .err { color: #c0392b; margin-top: 8px; font-size: 13px; }
+    .meter {
+      height: 8px;
+      background: var(--line);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .meter > i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    .page-title { margin-bottom: 4px; }
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 24px 16px 40px;
+    }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <a href="/" title="Tickerplay home">
+          <picture>
+            <source type="image/webp" srcset="/img/logo-dark.webp" />
+            <img src="/img/logo-dark.png" alt="Tickerplay" />
+          </picture>
+        </a>
+        <div class="brand-meta">
+          <strong>Admin</strong>
+          <span>Leads · visitors · conversion</span>
+        </div>
+      </div>
+      <div class="header-actions" id="headerActions"></div>
+    </div>
+  </header>
 
   <div class="wrap" id="app"></div>
+  <p class="footer-note">© Tickerplay · Internal admin · Not linked from the public website</p>
+
   <script>
     const CFG = window.TP_ADMIN_CONFIG || {};
     const REGION = CFG.region || "us-east-1";
@@ -176,24 +407,51 @@
       return `<div class="kpi"><div class="muted">${label}</div><b>${value}</b>${sub ? `<div class="muted">${sub}</div>` : ""}</div>`;
     }
 
+    function updateHeaderActions() {
+      const el = document.getElementById("headerActions");
+      if (!state.auth?.idToken || !isAdminToken(state.auth.idToken) || state.challenge) {
+        el.innerHTML = `<a class="btn secondary" href="/">View website</a>`;
+        return;
+      }
+      el.innerHTML = `
+        <span class="user">${state.auth.email || ""}</span>
+        <button type="button" class="secondary" id="hdrRefresh">Refresh</button>
+        <button type="button" class="secondary" id="hdrLogout">Logout</button>
+        <a class="btn secondary" href="/">Website</a>`;
+      document.getElementById("hdrRefresh").onclick = () => loadAll();
+      document.getElementById("hdrLogout").onclick = () => {
+        saveAuth(null);
+        render();
+      };
+    }
+
     function renderLogin() {
+      updateHeaderActions();
       const needNewPw = state.challenge?.ChallengeName === "NEW_PASSWORD_REQUIRED";
       document.getElementById("app").innerHTML = `
-        <div class="card login">
-          <h1>Tickerplay Admin</h1>
-          <p class="muted">Sign in with your Cognito admin account. This page is not linked from the public site.</p>
-          <form id="loginForm" style="margin-top:16px;display:grid;gap:10px;">
-            ${needNewPw ? `
-              <p class="muted">Set a new password to finish first-time login.</p>
-              <input type="password" id="newPassword" placeholder="New password" required minlength="10" autocomplete="new-password" />
-              <button type="submit">Set password &amp; continue</button>
-            ` : `
-              <input type="email" id="username" placeholder="Email / username" required autocomplete="username" />
-              <input type="password" id="password" placeholder="Password" required autocomplete="current-password" />
-              <button type="submit">Sign in</button>
-            `}
-          </form>
-          <div class="err" id="loginErr"></div>
+        <div class="login-wrap">
+          <div class="login-logo">
+            <picture>
+              <source type="image/webp" srcset="/img/logo-dark.webp" />
+              <img src="/img/logo-dark.png" alt="Tickerplay" />
+            </picture>
+          </div>
+          <div class="card">
+            <h1 class="page-title">Admin sign in</h1>
+            <p class="muted">Use your Cognito admin email and password.</p>
+            <form id="loginForm" style="margin-top:16px;display:grid;gap:12px;">
+              ${needNewPw ? `
+                <p class="muted">Set a new password to finish first-time login.</p>
+                <input type="password" id="newPassword" placeholder="New password" required minlength="10" autocomplete="new-password" />
+                <button type="submit">Set password &amp; continue</button>
+              ` : `
+                <input type="email" id="username" placeholder="Email" required autocomplete="username" />
+                <input type="password" id="password" placeholder="Password" required autocomplete="current-password" />
+                <button type="submit">Sign in</button>
+              `}
+            </form>
+            <div class="err" id="loginErr"></div>
+          </div>
         </div>`;
       document.getElementById("loginForm").onsubmit = async (e) => {
         e.preventDefault();
@@ -242,13 +500,12 @@
         ["leads", "Enquiries"],
         ["visitors", "Visitors"],
       ];
-      return `<div class="nav">${tabs
+      return `<div class="tabs">${tabs
         .map(
           ([id, label]) =>
-            `<button class="secondary ${state.view === id ? "active" : ""}" data-view="${id}">${label}</button>`
+            `<button type="button" class="secondary ${state.view === id ? "active" : ""}" data-view="${id}">${label}</button>`
         )
-        .join("")}<button class="secondary" id="logout">Logout</button>
-      <button class="secondary" id="refresh">Refresh</button></div>`;
+        .join("")}</div>`;
     }
 
     function dashboard() {
@@ -264,16 +521,16 @@
           ${kpi("Page views (30d)", t.pageViewsLast30d ?? 0)}
           ${kpi("Conversion rate", (t.conversionRate ?? 0) + "%", (t.converted || 0) + " converted")}
         </div>
-        <div class="card" style="margin-top:16px;">
+        <div class="card">
           <h2>Traffic (30 days)</h2>
           ${
             days.length
               ? days
                   .map(
                     (d) => `
-            <div style="margin:8px 0;">
+            <div style="margin:10px 0;">
               <div class="row" style="justify-content:space-between;"><span class="muted">${d.day}</span><span>${d.pageViews}</span></div>
-              <div class="bar"><i style="width:${Math.round((d.pageViews / max) * 100)}%"></i></div>
+              <div class="meter"><i style="width:${Math.round((d.pageViews / max) * 100)}%"></i></div>
             </div>`
                   )
                   .join("")
@@ -334,7 +591,7 @@
                 </select>
               </td>
               <td><textarea data-id="${l.id}" class="notes" rows="2">${l.adminNotes || ""}</textarea></td>
-              <td><button data-id="${l.id}" class="save secondary">Save</button></td>
+              <td><button type="button" data-id="${l.id}" class="save secondary">Save</button></td>
             </tr>`
               )
               .join("") || '<tr><td colspan="6" class="muted">No enquiries yet</td></tr>'
@@ -368,17 +625,14 @@
       if (!state.auth?.idToken || !isAdminToken(state.auth.idToken) || state.challenge) {
         return renderLogin();
       }
+      updateHeaderActions();
       const body =
         state.view === "leads" ? leadsView() : state.view === "visitors" ? visitorsView() : dashboard();
       document.getElementById("app").innerHTML = `
-        <div class="row" style="justify-content:space-between;align-items:flex-end;">
-          <div>
-            <h1>Tickerplay Admin</h1>
-            <p class="muted">${state.auth.email || ""} · Cognito admin group</p>
-          </div>
-        </div>
+        <h1 class="page-title">Dashboard</h1>
+        <p class="muted" style="margin-bottom:16px;">Track website traffic and convert enquiries into projects.</p>
         ${nav()}
-        ${state.error ? `<div class="err">${state.error}</div>` : ""}
+        ${state.error ? `<div class="err" style="margin-bottom:12px;">${state.error}</div>` : ""}
         ${body}`;
       document.querySelectorAll("[data-view]").forEach(
         (b) =>
@@ -387,11 +641,6 @@
             render();
           })
       );
-      document.getElementById("logout").onclick = () => {
-        saveAuth(null);
-        render();
-      };
-      document.getElementById("refresh").onclick = () => loadAll();
       document.querySelectorAll("button.save").forEach(
         (btn) =>
           (btn.onclick = async () => {
