@@ -910,10 +910,7 @@
     document.getElementById("root").innerHTML = `
       <div class="login-screen">
         <div class="login-card">
-          <picture>
-            <source type="image/webp" srcset="/img/logo-dark.webp" />
-            <img class="logo" src="/img/logo-dark.png" alt="Tickerplay" />
-          </picture>
+          <img class="logo" src="/img/logo-dark.png" alt="Tickerplay" width="205" height="45" />
           <h1>Admin portal</h1>
           <p class="muted">Sign in with your Cognito admin account to manage leads, analytics, and live visitors.</p>
           <form id="loginForm">
@@ -1190,14 +1187,14 @@
         <aside class="sidebar ${state.menuOpen ? "open" : ""}">
           <div class="sidebar-brand">
             <a class="logo-plate" href="/" title="Tickerplay home" target="_blank" rel="noopener">
-              <picture>
-                <source type="image/webp" srcset="/img/logo-dark.webp" />
-                <img src="/img/logo-dark.png" alt="Tickerplay" />
-              </picture>
+              <span class="logo-mark">
+                <img src="/img/logo-dark.png" alt="Tickerplay" width="205" height="45" />
+              </span>
+              <span class="logo-badge">Admin</span>
             </a>
             <div class="brand-text">
-              <strong>Admin</strong>
-              <span>Business dashboard</span>
+              <strong>Business dashboard</strong>
+              <span>Leads · traffic · conversion</span>
             </div>
           </div>
           <nav>
