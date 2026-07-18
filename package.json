@@ -9,8 +9,9 @@
     "deploy:aws": "bash scripts/setup-aws.sh",
     "sam:build": "sam build -t infra/template.yaml",
     "sam:deploy": "sam deploy --stack-name tickerplay-api-prod --capabilities CAPABILITY_IAM --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset",
-    "seo:build": "python3 scripts/content_quality.py && python3 scripts/optimize_images.py && python3 scripts/apply_keywords.py && python3 scripts/seo_build.py && python3 scripts/write_admin_config.py",
-    "seo:build:prod": "IS_PRODUCTION=true python3 scripts/content_quality.py && python3 scripts/optimize_images.py && python3 scripts/apply_keywords.py && IS_PRODUCTION=true python3 scripts/seo_build.py && python3 scripts/write_admin_config.py",
+    "seo:build": "python3 scripts/content_quality.py && python3 scripts/optimize_images.py && python3 scripts/apply_keywords.py && python3 scripts/seo_build.py && python3 scripts/build_search_index.py && python3 scripts/restructure_scannable.py && python3 scripts/inject_ux_assets.py && python3 scripts/write_admin_config.py",
+    "seo:build:prod": "IS_PRODUCTION=true python3 scripts/content_quality.py && python3 scripts/optimize_images.py && python3 scripts/apply_keywords.py && IS_PRODUCTION=true python3 scripts/seo_build.py && python3 scripts/build_search_index.py && python3 scripts/restructure_scannable.py && python3 scripts/inject_ux_assets.py && python3 scripts/write_admin_config.py",
+    "ux:build": "python3 scripts/build_search_index.py && python3 scripts/restructure_scannable.py && python3 scripts/inject_ux_assets.py",
     "images:optimize": "python3 scripts/optimize_images.py"
   }
 }

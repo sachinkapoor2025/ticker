@@ -48,11 +48,21 @@
 - Fixed broken `img` tags from earlier lazy-load (`"/ loading=` → `" loading=`)
 - Blog posts (208): visible “Last updated” + `article:published_time` / `modified_time` from on-page dates (not invented); BlogPosting schema uses ISO
 
+## UX / professional polish pass (2026-07-18) — DONE locally
+
+- Site search: Fuse.js + `search-index.json` (249 pages), polished overlay UI (not Rise underline)
+- FAQ → accordion on homepage; FAQPage schema synced (10 Qs)
+- Country type-ahead on large country selects; header phone `800.966.9329`
+- Dense intros → intro + bullets on homepage + 13 application/product pages
+- Staging robots restored to `Disallow: /`
+- Report + screenshots: `seo-reports/UX-PASS-REPORT.md`, `seo-reports/ux-screenshots/`
+
 ## Still open (next increments)
 
-- Step 4 deeper: WebP/srcset pipeline, unused CSS purge, font-display
+- Owner decisions: client logo verification, Photonplay brand line, quote SLA, blog date cleanup, real testimonials
+- Step 4 deeper: unused CSS purge
 - Step 6 fuller keyboard/contrast audit
-- Step 8: after-Lighthouse + production cutover checklist
+- Production cutover checklist
 
 ## Step 8 — Lighthouse after + pre-launch checklist (DONE)
 

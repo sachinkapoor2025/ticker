@@ -150,9 +150,9 @@ Disallow: /ticker-admin
 Sitemap: {SITE_ORIGIN}/sitemap.xml
 """
     else:
-        # TEMP (SEO audit): staging Allow — revert to Disallow: / after audit
+        # Staging / Amplify preview — keep fully closed to crawlers
         body = """User-agent: *
-Allow: /
+Disallow: /
 """
     (WEBSITE / "robots.txt").write_text(body, encoding="utf-8")
     print(f"robots.txt written (IS_PRODUCTION={IS_PRODUCTION})")
@@ -278,18 +278,41 @@ def _extract_title(text: str) -> str:
 
 
 def _extract_faqs(text: str) -> list[dict]:
+    # Ignore commented-out legacy FAQ blocks
+    text = re.sub(r"(?is)<!--.*?-->", "", text)
     faqs = []
     seen = set()
+
+    def add(q: str, a: str) -> None:
+        q, a = _strip_tags(q), _strip_tags(a)
+        key = q.lower()
+        if q and a and key not in seen:
+            seen.add(key)
+            faqs.append(
+                {
+                    "@type": "Question",
+                    "name": q,
+                    "acceptedAnswer": {"@type": "Answer", "text": a},
+                }
+            )
+
+    # Prefer visible accordion FAQ when present
+    for m in re.finditer(
+        r'<button[^>]*class="[^"]*tp-faq-button[^"]*"[^>]*>\s*<span>(.*?)</span>.*?</button>\s*'
+        r'<div[^>]*class="[^"]*tp-faq-panel[^"]*"[^>]*>\s*<p>(.*?)</p>',
+        text,
+        re.I | re.S,
+    ):
+        add(m.group(1), m.group(2))
+    if faqs:
+        return faqs
+
     for m in re.finditer(
         r"<h4[^>]*>\s*<b>\s*Q:\s*(.*?)</b>\s*</h4>\s*<p[^>]*>\s*<b>\s*A:\s*</b>\s*(.*?)</p>",
         text,
         re.I | re.S,
     ):
-        q, a = _strip_tags(m.group(1)), _strip_tags(m.group(2))
-        key = q.lower()
-        if q and a and key not in seen:
-            seen.add(key)
-            faqs.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+        add(m.group(1), m.group(2))
     return faqs
 
 
