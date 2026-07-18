@@ -150,9 +150,9 @@ Disallow: /ticker-admin
 Sitemap: {SITE_ORIGIN}/sitemap.xml
 """
     else:
-        body = """# Staging / Amplify preview — do not index
-User-agent: *
-Disallow: /
+        # TEMP (SEO audit): staging Allow — revert to Disallow: / after audit
+        body = """User-agent: *
+Allow: /
 """
     (WEBSITE / "robots.txt").write_text(body, encoding="utf-8")
     print(f"robots.txt written (IS_PRODUCTION={IS_PRODUCTION})")
