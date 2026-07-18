@@ -777,7 +777,7 @@
 
   function viewTitles() {
     return {
-      dashboard: ["Command center", "Live traffic, enquiries, and conversion at a glance."],
+      dashboard: ["Dashboard", "Live traffic, enquiries, and conversion at a glance."],
       live: ["Live users", "See who is on tickerplay.com right now and which page they’re on."],
       analytics: ["Analytics", "Devices, locations, sources, pages, and engagement."],
       searches: ["Search keywords", "What visitors search for and how often."],
@@ -1189,13 +1189,15 @@
       <div class="app-shell">
         <aside class="sidebar ${state.menuOpen ? "open" : ""}">
           <div class="sidebar-brand">
-            <picture>
-              <source type="image/webp" srcset="/img/logo-dark.webp" />
-              <img src="/img/logo-dark.png" alt="" />
-            </picture>
-            <div>
-              <strong>Tickerplay</strong>
-              <span>Business admin</span>
+            <a class="logo-plate" href="/" title="Tickerplay home" target="_blank" rel="noopener">
+              <picture>
+                <source type="image/webp" srcset="/img/logo-dark.webp" />
+                <img src="/img/logo-dark.png" alt="Tickerplay" />
+              </picture>
+            </a>
+            <div class="brand-text">
+              <strong>Admin</strong>
+              <span>Business dashboard</span>
             </div>
           </div>
           <nav>
