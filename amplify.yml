@@ -3,9 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
-        # Staging Amplify apps: leave IS_PRODUCTION unset/false → robots disallow + X-Robots-Tag
-        # Production Amplify app: set env IS_PRODUCTION=true in Amplify console
+        # CRITICAL: demo branches (main/dev/dev-*) must keep IS_PRODUCTION unset/false
+        # so robots Disallow + X-Robots-Tag noindex protect live tickerplay.com rankings.
+        # Only a dedicated production Amplify app should set IS_PRODUCTION=true.
         - echo "IS_PRODUCTION=${IS_PRODUCTION:-false}"
+        - |
+          if [ "${IS_PRODUCTION:-false}" = "true" ]; then
+            echo "WARNING: IS_PRODUCTION=true — this build will be crawlable like production"
+          else
+            echo "Demo/staging build: search engines blocked (noindex + robots Disallow)"
+          fi
         - pip3 install --user -r requirements-seo.txt || pip install -r requirements-seo.txt
         - python3 scripts/content_quality.py
         - python3 scripts/optimize_images.py

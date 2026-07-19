@@ -81,6 +81,24 @@ def write_sitemap(routes: list[str]) -> None:
             + "\n</urlset>\n"
         )
 
+    if not IS_PRODUCTION:
+        # Demo Amplify hosts must not publish crawl maps (live site owns sitemaps).
+        empty = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            "</urlset>\n"
+        )
+        (WEBSITE / "sitemap-pages.xml").write_text(empty, encoding="utf-8")
+        (WEBSITE / "sitemap-blog.xml").write_text(empty, encoding="utf-8")
+        (WEBSITE / "sitemap.xml").write_text(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            "</sitemapindex>\n",
+            encoding="utf-8",
+        )
+        print("sitemap: empty on staging/demo (production owns crawl maps)")
+        return
+
     (WEBSITE / "sitemap-pages.xml").write_text(urlset(core, "0.8"), encoding="utf-8")
     (WEBSITE / "sitemap-blog.xml").write_text(urlset(blogs, "0.6"), encoding="utf-8")
 
@@ -150,9 +168,35 @@ Disallow: /ticker-admin
 Sitemap: {SITE_ORIGIN}/sitemap.xml
 """
     else:
-        # TEMP: allow staging crawl for SEO/UX audit — revert to Disallow: / before production cutover
-        body = """User-agent: *
-Allow: /
+        # Demo / Amplify preview branches (main, dev, dev-*, etc.) — never indexable.
+        # Must stay Disallow unless IS_PRODUCTION=true on a dedicated production Amplify app.
+        body = """# DEMO / STAGING — not for search engines. Live site is https://www.tickerplay.com
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
 """
     (WEBSITE / "robots.txt").write_text(body, encoding="utf-8")
     print(f"robots.txt written (IS_PRODUCTION={IS_PRODUCTION})")
@@ -180,9 +224,8 @@ def write_custom_http() -> None:
         },
     ]
     if not IS_PRODUCTION:
-        # TEMP: omit X-Robots-Tag on staging during audit (pair with robots Allow).
-        # Restore noindex,nofollow before production cutover.
-        pass
+        # Hard noindex for every Amplify demo URL (main / dev / dev-* branches)
+        common.insert(0, {"key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive"})
 
     # Amplify customHttp.yml format
     lines = ["customHeaders:", "  - pattern: '**'", "    headers:"]
@@ -357,6 +400,45 @@ def _inject_head(text: str, block: str) -> str:
     return injection + text
 
 
+def _apply_staging_robots_meta(text: str) -> str:
+    """Force noindex on demo/staging HTML so Amplify URLs never compete with production."""
+    if IS_PRODUCTION:
+        return text
+    meta = '<meta name="robots" content="noindex, nofollow, noarchive" />'
+    if re.search(r'<meta[^>]+name=["\']robots["\']', text, re.I):
+        text = re.sub(
+            r'<meta[^>]+name=["\']robots["\'][^>]*/?>',
+            meta,
+            text,
+            count=1,
+            flags=re.I,
+        )
+        # Also catch content-before-name form
+        text = re.sub(
+            r'<meta[^>]+content=["\'][^"\']*["\'][^>]+name=["\']robots["\'][^>]*/?>',
+            meta,
+            text,
+            count=1,
+            flags=re.I,
+        )
+    else:
+        text = re.sub(r"</head>", f"    {meta}\n</head>", text, count=1, flags=re.I)
+    # Google / Bing specific
+    for name in ("googlebot", "bingbot"):
+        tag = f'<meta name="{name}" content="noindex, nofollow" />'
+        if re.search(rf'<meta[^>]+name=["\']{name}["\']', text, re.I):
+            text = re.sub(
+                rf'<meta[^>]+name=["\']{name}["\'][^>]*/?>',
+                tag,
+                text,
+                count=1,
+                flags=re.I,
+            )
+        else:
+            text = re.sub(r"</head>", f"    {tag}\n</head>", text, count=1, flags=re.I)
+    return text
+
+
 def enhance_html_files(routes: list[str]) -> None:
     sports_fixed = 0
     canonical_fixed = 0
@@ -374,6 +456,8 @@ def enhance_html_files(routes: list[str]) -> None:
         text, sports_fixed = text2, sports_fixed + n
         text2, n = re.subn(r"href='//sports-bars/'", "href='/sports-bars/'", text)
         text, sports_fixed = text2, sports_fixed + n
+
+        text = _apply_staging_robots_meta(text)
 
         abs_canonical = f"{SITE_ORIGIN}{route}"
         if re.search(r'rel=["\']canonical["\']', text, re.I):
@@ -592,6 +676,25 @@ def write_404() -> None:
 
 def write_llms_txt(routes: list[str]) -> None:
     """Curated map for AI crawlers (Step 3 partial — authoritative pages)."""
+    if not IS_PRODUCTION:
+        (WEBSITE / "llms.txt").write_text(
+            "\n".join(
+                [
+                    "# Tickerplay — DEMO / STAGING HOST",
+                    "",
+                    "> This Amplify preview URL is for client demos only. Do not crawl or cite this host.",
+                    f"> Canonical live website: {SITE_ORIGIN}/",
+                    "",
+                    "User-agent: *",
+                    "Disallow: /",
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+        )
+        print("llms.txt written (staging/demo — crawl blocked)")
+        return
+
     descriptions = {
         "/": "LED stock ticker displays and ticker tapes for real-time market, news, and sports data.",
         "/about-us/": "About Tickerplay — LED ticker manufacturer and integrator.",
