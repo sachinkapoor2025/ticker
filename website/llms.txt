@@ -1,41 +1,7 @@
-# Tickerplay
+# Tickerplay — DEMO / STAGING HOST
 
-> Tickerplay designs and installs LED stock tickers, financial tickers, sports tickers, and custom LED ticker tapes for universities, brokerages, corporate floors, and venues.
+> This Amplify preview URL is for client demos only. Do not crawl or cite this host.
+> Canonical live website: https://www.tickerplay.com/
 
-Canonical site: https://www.tickerplay.com/
-
-## Primary pages
-
-- [/](https://www.tickerplay.com/): LED stock ticker displays and ticker tapes for real-time market, news, and sports data.
-- [/about-us/](https://www.tickerplay.com/about-us/): About Tickerplay — LED ticker manufacturer and integrator.
-- [/contact/](https://www.tickerplay.com/contact/): Contact Tickerplay for quotes and project consultation.
-- [/led-stock-ticker/](https://www.tickerplay.com/led-stock-ticker/): LED stock ticker displays for trading floors and finance labs.
-- [/led-financial-ticker/](https://www.tickerplay.com/led-financial-ticker/): Financial LED tickers for banks, brokerages, and wealth firms.
-- [/led-sports-ticker/](https://www.tickerplay.com/led-sports-ticker/): Sports LED tickers for scores, live updates, and venues.
-- [/led-news-ticker/](https://www.tickerplay.com/led-news-ticker/): News LED ticker tapes for headlines and breaking updates.
-- [/led-ticker-tape/](https://www.tickerplay.com/led-ticker-tape/): Overview of LED ticker tape products and form factors.
-- [/indoor-ticker-tape/](https://www.tickerplay.com/indoor-ticker-tape/): Indoor LED ticker tape solutions.
-- [/outdoor-ticker-tape/](https://www.tickerplay.com/outdoor-ticker-tape/): Weather-resistant outdoor LED ticker tapes.
-- [/flexible-ticker-tape/](https://www.tickerplay.com/flexible-ticker-tape/): Flexible LED ticker tapes for custom shapes.
-- [/circular-ticker-tape/](https://www.tickerplay.com/circular-ticker-tape/): Circular LED ticker displays.
-- [/custom-led-ticker-tape/](https://www.tickerplay.com/custom-led-ticker-tape/): Custom-angle and bespoke LED ticker installations.
-- [/university-finance-lab/](https://www.tickerplay.com/university-finance-lab/): LED tickers for university finance labs and trading rooms.
-- [/stock-brokerage-firms/](https://www.tickerplay.com/stock-brokerage-firms/): Ticker displays for stock brokerage firms.
-- [/business-school/](https://www.tickerplay.com/business-school/): LED tickers for business schools.
-- [/sports-bars/](https://www.tickerplay.com/sports-bars/): Sports ticker installations for sports bars and hospitality.
-- [/blogs/](https://www.tickerplay.com/blogs/): Tickerplay news, guides, and industry articles.
-- [/gallery/](https://www.tickerplay.com/gallery/): Installation gallery of Tickerplay LED ticker projects.
-- [/ticker-models/](https://www.tickerplay.com/ticker-models/): Tickerplay LED ticker models and configurations.
-
-## Blog
-
-- [/blogs/](https://www.tickerplay.com/blogs/): Article index
-- See https://www.tickerplay.com/sitemap-blog.xml for the full post list
-
-## Optional
-
-- [/privacy-policy/](https://www.tickerplay.com/privacy-policy/)
-- [/shipping-and-handling/](https://www.tickerplay.com/shipping-and-handling/)
-- [/why-tickerplay/](https://www.tickerplay.com/why-tickerplay/): Why Tickerplay / brand comparisons
-- [/industries/](https://www.tickerplay.com/industries/): Industry applications
-- [/service-areas/](https://www.tickerplay.com/service-areas/): Nationwide installation coverage
+User-agent: *
+Disallow: /
