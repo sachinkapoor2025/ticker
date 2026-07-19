@@ -27,7 +27,7 @@
     <meta name="publisher" content="Tickerplay">
     <meta property="locale" content="en_US" />
     <meta property="type" content="website" />
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
 
     <style>
     
@@ -223,7 +223,7 @@
     <!-- End Schema -->
 
     <!-- Start Canonical -->
-    <link rel="canonical" href="/about-us/" />
+    <link rel="canonical" href="https://www.tickerplay.com/about-us/" />
     <!-- Start Canonical -->
 
 <link rel="shortcut icon" href="/img/icon.png" />
@@ -277,9 +277,17 @@
         initApollo();
     </script>
 
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="bingbot" content="noindex, nofollow" />
+<!-- tickerplay-seo-start -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tickerplay","alternateName":"Tickerplay Systems","url":"https://www.tickerplay.com/","logo":"https://www.tickerplay.com/img/logo-dark.png","telephone":"+1-800-966-9329","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-966-9329","contactType":"sales","areaServed":"US","availableLanguage":["English"]}],"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tickerplay.com/"},{"@type":"ListItem","position":2,"name":"About Tickerplay | LED Ticker Display Manufacturer &amp; Solutions Provider","item":"https://www.tickerplay.com/about-us/"}]}</script>
+<!-- tickerplay-seo-end -->
 </head>
 
 <body>
+<a class="sr-only sr-only-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTHDPF" height="0" width="0"
@@ -558,11 +566,11 @@
     </nav>
     <!--end bar-->
 </div>
-<div class="main-container">
+<main id="main-content" class="main-container" role="main">
 
     <section class="cover imagebg height-40 text-center" data-overlay="1" style="margin-top:0">
         <div class="background-image-holder" style="background: url('img/led-stock-ticker-tapes.jpg'); opacity: 1;">
-            <img alt="led ticker tapes" src="/img/led-stock-ticker-tapes.jpg">
+            <img alt="led ticker tapes" src="/img/led-stock-ticker-tapes.jpg" loading="lazy" decoding="async">
         </div>
         <div class="container">
           <div class="row justify-content-around">
@@ -722,21 +730,21 @@
             <div class="col-md-5 pr-5 mb-2">
                 <h2 class="text pt-5"><b>Why Choose Us? </b></h2>
                 <h4 class="mb-0 mt-5">
-                    <img src="/img/icon/Advanced Technology.png" alt="advance technology" style="height: 30px; width: 30px;"/>
+                    <img src="/img/icon/Advanced Technology.png" alt="advance technology" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
                     <b>Advanced Technology</b>
                 </h4>
                 <p style="padding-left: 35px;">With advanced technology, we provide real-time, accurate, and visually captivating information to enhance your 
                     investment experience.
                 </p>
                 <h4 class="mb-0 mt-5">
-                    <img src="/img/icon/Need Icon.png" alt="Need icon" style="height: 30px; width: 30px;"/>
+                    <img src="/img/icon/Need Icon.png" alt="Need icon" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
                     <b>Customization Based on Needs</b>
                 </h4>
                 <p style="padding-left: 35px;">We understand that every business is distinct, and we are committed to thoroughly studying your needs to develop a 
                     solution that perfectly aligns with your objectives.
                 </p>
                 <h4 class="mb-0 mt-5">
-                    <img src="/img/icon/CertificationIconLogo.png" alt="certification logo" style="height: 30px; width: 25px;"/>
+                    <img src="/img/icon/CertificationIconLogo.png" alt="certification logo" style="height: 30px; width: 25px;"/ loading="lazy" decoding="async">
                     <b>Certified Company</b>
                 </h4>
                 <p style="padding-left: 35px;">Have complete confidence in the durability and integrity of our company, as they are tested and meet the stringent 
@@ -746,7 +754,7 @@
                     ETL & CE.
                 </p>
                 <h4 class="mb-0 mt-5">
-                    <img src="/img/icon/Customer Support.png" alt="customer support" style="height: 30px; width: 30px;"/>
+                    <img src="/img/icon/Customer Support.png" alt="customer support" style="height: 30px; width: 30px;"/ loading="lazy" decoding="async">
                     <b>Customer Support</b>
                 </h4>
                 <p style="padding-left: 35px;">Whether you require advice, troubleshooting, or ongoing support, we remain by your side, offering continuous technical 
@@ -1074,7 +1082,8 @@
         </div>
     </div>
     <!--end of container-->
-</section><footer class="footer-2 bg--secondary">
+</section></main>
+<footer class="footer-2 bg--secondary">
   <div class="container">
       <div class="row">
           <div class="col-md-6 col-lg-3 col-6">
@@ -1782,13 +1791,13 @@ window.onclick = function(event) {
 
     <!-- Loading Scripts -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="/js/isotope.min.js"></script>
-    <script src="/js/granim.min.js"></script>
-    <script src="/js/jquery.steps.min.js"></script>
-    <script src="/js/smooth-scroll.min.js"></script>
-    <script src="/js/zoom.js"></script>
-    <script src="/js/owl.carousel.js"></script>
-    <script src="/js/scripts.js"></script>
+    <script src="/js/isotope.min.js" defer></script>
+    <script src="/js/granim.min.js" defer></script>
+    <script src="/js/jquery.steps.min.js" defer></script>
+    <script src="/js/smooth-scroll.min.js" defer></script>
+    <script src="/js/zoom.js" defer></script>
+    <script src="/js/owl.carousel.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -2026,6 +2035,7 @@ window.onclick = function(event) {
         });
 
     </script>
+<script src="/js/analytics-beacon.js?v=2" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+# Tickerplay — DEMO / STAGING HOST
+
+> This Amplify preview URL is for client demos only. Do not crawl or cite this host.
+> Canonical live website: https://www.tickerplay.com/
+
+User-agent: *
+Disallow: /

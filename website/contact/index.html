@@ -218,7 +218,7 @@
     <meta name="publisher" content="Tickerplay">
     <meta property="locale" content="en_US" />
     <meta property="type" content="website" />
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
 
     <style>
     
@@ -410,7 +410,7 @@
     <!-- End Schema -->
 
     <!-- Start Canonical -->
-    <link rel="canonical" href="/contact/" />
+    <link rel="canonical" href="https://www.tickerplay.com/contact/" />
     <!-- Start Canonical -->
 
 <link rel="shortcut icon" href="/img/icon.png" />
@@ -464,9 +464,17 @@
         initApollo();
     </script>
 
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="bingbot" content="noindex, nofollow" />
+<!-- tickerplay-seo-start -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tickerplay","alternateName":"Tickerplay Systems","url":"https://www.tickerplay.com/","logo":"https://www.tickerplay.com/img/logo-dark.png","telephone":"+1-800-966-9329","contactPoint":[{"@type":"ContactPoint","telephone":"+1-800-966-9329","contactType":"sales","areaServed":"US","availableLanguage":["English"]}],"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tickerplay.com/"},{"@type":"ListItem","position":2,"name":"Contact - TickerPlay","item":"https://www.tickerplay.com/contact/"}]}</script>
+<!-- tickerplay-seo-end -->
 </head>
 
 <body>
+<a class="sr-only sr-only-focusable" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQTHDPF" height="0" width="0"
@@ -746,7 +754,7 @@
     <!--end bar-->
 </div><script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<div class="main-container">
+<main id="main-content" class="main-container" role="main">
 
     <section class="contact-hero">
         <div class="container position-relative">
@@ -1268,7 +1276,8 @@ $(document).ready(function () {
     });
 
 });
-</script><footer class="footer-2 bg--secondary">
+</script></main>
+<footer class="footer-2 bg--secondary">
   <div class="container">
       <div class="row">
           <div class="col-md-6 col-lg-3 col-6">
@@ -1976,13 +1985,13 @@ window.onclick = function(event) {
 
     <!-- Loading Scripts -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="/js/isotope.min.js"></script>
-    <script src="/js/granim.min.js"></script>
-    <script src="/js/jquery.steps.min.js"></script>
-    <script src="/js/smooth-scroll.min.js"></script>
-    <script src="/js/zoom.js"></script>
-    <script src="/js/owl.carousel.js"></script>
-    <script src="/js/scripts.js"></script>
+    <script src="/js/isotope.min.js" defer></script>
+    <script src="/js/granim.min.js" defer></script>
+    <script src="/js/jquery.steps.min.js" defer></script>
+    <script src="/js/smooth-scroll.min.js" defer></script>
+    <script src="/js/zoom.js" defer></script>
+    <script src="/js/owl.carousel.js" defer></script>
+    <script src="/js/scripts.js" defer></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -2220,6 +2229,7 @@ window.onclick = function(event) {
         });
 
     </script>
+<script src="/js/analytics-beacon.js?v=2" defer></script>
 </body>
 
 </html>

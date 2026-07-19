@@ -1,9 +1,34 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        # CRITICAL: demo branches must keep IS_PRODUCTION unset/false
+        # so robots Disallow + X-Robots-Tag noindex protect live tickerplay.com.
+        - echo "IS_PRODUCTION=${IS_PRODUCTION:-false}"
+        - |
+          if [ "${IS_PRODUCTION:-false}" = "true" ]; then
+            echo "WARNING: IS_PRODUCTION=true — this build will be crawlable like production"
+          else
+            echo "Demo/staging build: search engines blocked (noindex + robots Disallow)"
+          fi
+        # main branch has a smaller script set — only run steps that exist
+        - |
+          if [ -f requirements-seo.txt ]; then
+            pip3 install --user -r requirements-seo.txt || pip install -r requirements-seo.txt || true
+          fi
+        - |
+          for s in content_quality.py optimize_images.py apply_keywords.py seo_build.py build_search_index.py restructure_scannable.py inject_ux_assets.py write_admin_config.py; do
+            if [ -f "scripts/$s" ]; then
+              echo "Running scripts/$s"
+              python3 "scripts/$s" || exit 1
+            else
+              echo "Skip missing scripts/$s"
+            fi
+          done
     build:
       commands:
-        - echo "Static mirror of tickerplay.com — no build step"
+        - echo "Static site ready (SEO assets generated)"
   artifacts:
     baseDirectory: website
     files:
