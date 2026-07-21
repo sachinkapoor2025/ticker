@@ -82,3 +82,4 @@ python3 scripts/sync_cognito_config.py
 Generated bundle: `seo-reports/amplify-custom-rules.json`.
 
 Staging app: `https://dev.d3b6br5rr6wbn2.amplifyapp.com` (`IS_PRODUCTION` unset → noindex).
+
